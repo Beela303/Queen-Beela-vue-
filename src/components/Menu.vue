@@ -6,7 +6,7 @@
     <header id="header">
         <p class="typing-name">NABILA</p>
 
-        <div id="header-menu">
+        <!--<div id="header-menu">
             <ul>
                 <li><a href="#what-i-do">What I do</a></li>
                 <li><a href="#service">Services</a></li>
@@ -14,7 +14,7 @@
                 <li><a href="#work">My Work</a></li>
                 <li><a href="#contact-email">Contact</a></li>
             </ul>
-        </div>
+        </div>-->
 
         <div id="header-themes">
             <ul>
@@ -35,18 +35,18 @@
 
         <div id="nav-menu">
             <ul>
-                <li class="nav-menu-list"><a href="index.html" title="Home"><i class="fas fa-home"></i><span
-                            class="nav-menu-other">Home</span></a></li>
-                <li class="nav-menu-list"><a href="blogs.html" title="Blog"><i class="fas fa-blog"></i><span
-                            class="nav-menu-other">Blog</span></a></li>
-                <li class="nav-menu-list"><a href="podcast.html" title="Podcast"><i class="fas fa-podcast"></i><span
-                            class="nav-menu-other">Podcast</span></a></li>
-                <li class="nav-menu-list"><a href="work.html" title="Work"><i class="fas fa-stream"></i><span
-                            class="nav-menu-other">Work</span></a></li>
-                <li class="nav-menu-list"><a href="gallery.html" title="Gallery"><i class="fas fa-video"></i><span
-                            class="nav-menu-other">Gallery</span></a></li>
-                <li class="nav-menu-list"><a href="socials.html" title="Socials"><i class="fas fa-user"></i><span
-                            class="nav-menu-other">Socials & Links</span></a></li>
+                <li class="nav-menu-list"><router-link to="/" title="Home"><i class="fas fa-home"></i><span
+                            class="nav-menu-other">Home</span></router-link></li>
+                <li class="nav-menu-list"><router-link to="/blogs" title="Blog"><i class="fas fa-blog"></i><span
+                            class="nav-menu-other">Blog</span></router-link></li>
+                <li class="nav-menu-list"><router-link to="/podcast" title="Podcast"><i class="fas fa-podcast"></i><span
+                            class="nav-menu-other">Podcast</span></router-link></li>
+                <li class="nav-menu-list"><router-link to="/work" title="Work"><i class="fas fa-stream"></i><span
+                            class="nav-menu-other">Work</span></router-link></li>
+                <li class="nav-menu-list"><router-link to="/gallery" title="Gallery"><i class="fas fa-video"></i><span
+                            class="nav-menu-other">Gallery</span></router-link></li>
+                <li class="nav-menu-list"><router-link to="/socials" title="Socials"><i class="fas fa-user"></i><span
+                            class="nav-menu-other">Socials & Links</span></router-link></li>
                 <li class="nav-menu-list"><a href="mailto:nabilaabubakar333@gmail.com" title="E-mail"><i
                             class="fas fa-envelope"></i><span class="nav-menu-other">Send an E-mail</span></a></li>
             </ul>
@@ -176,7 +176,7 @@ header {
 
     position: fixed;
 
-    header ul {
+    ul {
         display: flex;
 
         font-size: 1.2rem;

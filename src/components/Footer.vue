@@ -68,15 +68,16 @@ footer {
             }
         }
 
-        p {
-            color: #fafafa;
 
-            padding-top: 20px;
+    }
 
-            font-size: 20px;
-            text-align: center;
-        }
+    p {
+        color: #fafafa;
 
+        padding-top: 20px;
+
+        font-size: 20px;
+        text-align: center;
     }
 }
 

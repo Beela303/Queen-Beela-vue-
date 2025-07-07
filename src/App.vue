@@ -16,48 +16,58 @@ import ScrollToTop from './components/ScrollToTop.vue';
 
 <style lang="scss">
 :root {
-  --main: #160214;
-  --main2: #1b0118;
+  --main: #801375;
+  --main2: #3f0938;
+  /*--main2: #d48ecc; #3f0938*/
 
-  /*--hover: #a51c45c2;*/
-  /*--hover: #d61586ed;*/
-  --hover: #d61586ed;
+  --background-color1: #610858;
+  --background-color2: #333335;
+  --background-color3: #52134a;
+  --background-color4: #1f1d1e;
+  --background-color5: #252525;
+
+  /*--background-color: #2e0b2a;*/
+  --background-color: #160214;
+
+  /*--hover: #a51c45c2; #e667b1ed */
+  --hover: #eec7ea;
 
   --main-transparent: #e3160214;
   --transparent: #0000008e;
-  --transparent2: rgba(0, 0, 0, 0.5);
+  --transparent2: #00000080;
 
-  --white: #fff;
-  --black: #252525;
-
-  --link: #145353;
-
+  --white: #fafafa;
+  --link: #50c7c7;
   --border: grey;
-  /*--border-main: #2a1628;*/
-  --border-main: 2px solid #2a1628;
-  --border-main2: #160f15;
+  --border-main: 2px solid #64055b;
 
-  --dark-purple: #290826;
-  --light-purple: #2a1628;
+  --dark-purple: #551150;
+  /*#270624 #53164e #6e3169 #ff0aeb #ff0aebb2 #ff0ae #ff0aeba4*/
+  --light-purple: #e48fdb;
+  /* #5c0555 #53204f #74246db0
+  #97298c
+  --dark-purple: #af4ea7;
+  --light-purple: #ac33a0;
+  */
   --pretty-dark-blue: #16021400;
   --pretty-blue: #3f729b;
   --pretty-purple: #5c1e5c;
 
-  --table-of-content-bg: #e4dada;
+  --table-of-content-bg: #a367a0;
+  --table-of-content-bg--2: #164952;
   --table-of-content-bg2: #2a1628d7;
 
   --another-green: #089000;
 
-  --warning: #ac1010;
+  --warning: #c81616;
+  /*#eb7070 #c32424*/
 
   --pretty-yellow: #ffff5f;
-  --gallery-bg: #f1f1f1;
-
-  --linear-gradient: linear-gradient(43deg, #50c7c7 0%, #3f729b 46%, #1b0112 100%);
-  --linear-gradient-hover: linear-gradient(43deg, #1b0112 0%, #3f729b 46%, #50c7c7 100%);
+  --gallery-bg: #f1f1f1a8;
 
   /*========================== THEMES =============================*/
   --sky: #053b50;
+  --sky-2: #287fa1;
   --emerald: #3de712;
   --forest-green: #1f690d;
   --wood: brown;
@@ -151,6 +161,9 @@ import ScrollToTop from './components/ScrollToTop.vue';
 }
 
 body {
+  color: var(--white) !important;
+  background-color: var(--background-color) !important;
+
   outline: none;
   overflow-x: hidden;
 }
@@ -1091,6 +1104,24 @@ option {
   color: var(--white);
 }
 
+.fa-imdb {
+  color: #f5c518;
+}
+
+.fa-hashnode {
+  color: #2962ff;
+}
+
+.fa-deviantart {
+  color: #05cc47;
+}
+
+.fa-artstation {
+  color: #1caad9;
+}
+.fa-x-twitter {
+  color: #1da1f2;
+}
 
 /*========================== RESPONSIVE MEDIA QUERIES 500 690 947 999 1104 1330 =============================*/
 @media screen and (min-width: 1330px) {
@@ -1175,5 +1206,245 @@ option {
   .display-tablet {
     display: none;
   }
+}
+
+//IA CONTAINER
+
+.ia-container {
+  width: 95%;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
+  border: 7px solid rgba(255, 255, 255, 0.6);
+}
+
+.ia-container figure {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  /* width of visible piece */
+  width: 335px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.ia-container>figure {
+  position: relative;
+  left: 0 !important;
+}
+
+.ia-container img {
+  display: block;
+  width: 200%;
+  height: 300px;
+}
+
+.ia-container input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  /* just cover visible part */
+  height: 100%;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  z-index: 100;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.ia-container input:checked {
+  width: 5px;
+  left: auto;
+  right: 0px;
+}
+
+.ia-container input:checked~figure {
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  left: 335px;
+}
+
+.ia-container figcaption {
+  width: 100%;
+  height: 100%;
+  background: rgba(87, 73, 81, 0.1);
+  position: absolute;
+  top: 0px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.ia-container figcaption span {
+  position: absolute;
+  top: 40%;
+  margin-top: -30px;
+  right: 20px;
+  left: 20px;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(87, 73, 81, 0.3);
+  line-height: 20px;
+  font-size: 18px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  padding: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.ia-container input:checked+figcaption,
+.ia-container input:checked:hover+figcaption {
+  background: rgba(87, 73, 81, 0);
+}
+
+.ia-container input:checked+figcaption span {
+  -webkit-transition: all 0.4s ease-in-out 0.5s;
+  -moz-transition: all 0.4s ease-in-out 0.5s;
+  -o-transition: all 0.4s ease-in-out 0.5s;
+  -ms-transition: all 0.4s ease-in-out 0.5s;
+  transition: all 0.4s ease-in-out 0.5s;
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+  filter: alpha(opacity=99);
+  opacity: 1;
+
+  top: 50%;
+}
+
+.ia-container #ia-selector-last:checked+figcaption span {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -ms-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.ia-container input:hover+figcaption {
+  background: rgba(87, 73, 81, 0.03);
+}
+
+.ia-container input:checked~figure input {
+  z-index: 1;
+}
+
+@media screen and (max-width: 720px) {
+  .ia-container {
+    width: 540px;
+  }
+
+  .ia-container figure {
+    left: 40px;
+    width: 260px;
+  }
+
+  .ia-container input {
+    width: 40px;
+  }
+
+  .ia-container input:checked~figure {
+    left: 260px;
+  }
+
+  .ia-container figcaption span {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .ia-container {
+    width: 320px;
+  }
+
+  .ia-container figure {
+    left: 20px;
+    width: 180px;
+  }
+
+  .ia-container input {
+    width: 20px;
+  }
+
+  .ia-container input:checked~figure {
+    left: 180px;
+  }
+
+  .ia-container figcaption span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-top: -20px;
+  }
+
+}
+
+
+/// DARK THEME ////
+
+#phone-header li a {
+  color: #fffafa !important;
+}
+
+.title,
+.small-title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.comment,
+.important-info-box p a,
+.back-to-topic-go-back-title,
+#blog-title,
+#podcast-title,
+#audio-title,
+#video-title,
+#about-me-title,
+#socials-title,
+#faqs-title,
+#contact-me-title,
+#social-media-title,
+#art-portfolio-title h2,
+#web-dev-portfolio-title h2,
+.project-box p,
+.title,
+.sub-title,
+.blog-heading,
+.items-list-in-prod-item-title,
+#signin-form form label,
+#signup-form form label,
+#form .button:hover {
+  color: var(--white);
+}
+
+#gallery-picture-prev,
+#gallery-picture-next,
+#close-picture {
+  color: var(--dark-purple);
+}
+
+.project-box a p {
+  color: #fafafa;
 }
 </style>
