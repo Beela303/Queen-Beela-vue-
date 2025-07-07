@@ -1,15 +1,37 @@
 <script>
 export default {
-  methods: {
-    scrollToTop() {
-        window.scrollTo(0, 0)
+  data() {
+    return {
+        showScrollButton: false,
     }
-  }
+  },
+
+  methods: {
+    handleScroll() {
+        this.showScrollButton = window.scrollY > 200;
+    },
+
+    scrollToTop() {
+        //window.scrollTo(0, 0)
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    },
+  },
+
+  mounted() {
+    window.addEventListener ('scroll', this.handleScroll);
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
 }
 </script>
 
 <template>
-    <button title="Scroll to Top" id="scroll-to-top" type="button" @click="scrollToTop"><i class="fas fa-arrow-up-long"></i></button>
+    <button title="Scroll to Top" id="scroll-to-top" type="button" v-if="showScrollButton" @click="scrollToTop"><i class="fas fa-arrow-up-long"></i></button>
 </template>
 
 <style lang="scss">

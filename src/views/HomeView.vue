@@ -660,23 +660,20 @@ export default {
 
 /*========================== RESPONSIVE MEDIA QUERIES 500 690 947 999 1104 1330 =============================*/
 @media screen and (max-width: 1330px) {
-
-    /*========================== HOME-PAGE =============================*/
     #home-page .max-width {
         margin-left: 0;
     }
 }
 
 @media screen and (min-width:501px) and (max-width:1023px) {
+    #home-page #home-page-content {
+        .text-2 {
+            font-size: 50px;
+        }
 
-    /*========================== HOME-PAGE =============================*/
-    #home-page #home-page-content .text-2 {
-        font-size: 50px;
+        .text-3 {
+            font-size: 27px;
     }
-
-    #home-page #home-page-content .text-3 {
-        font-size: 27px;
-        /*font-size: 27px;*/
     }
 
     /*========================== HOME-PAGE =============================*/
@@ -805,4 +802,40 @@ export default {
     }
 
 }
+
+@media screen and (max-width: 768px) {
+    #contact-text{
+        font-size: 1rem;
+        padding: 15px;
+    } 
+
+    #contact-img-right{
+        height: 250px !important;
+    }
+    
+    #about-text{
+        font-size: 2rem;
+    }
+
+    #services{
+        display: block !important;
+    }
+
+    .service-box{
+        width: 100% !important;
+        margin-bottom: 3% !important;
+    }
+}
+
+@media screen and (max-width: 400px) {       
+    #contact-div{
+        display: block !important;
+    }
+
+    #contact-img-right{
+        width: 100% !important;
+        height: 100%;
+    }
+}
+
 </style>
