@@ -1,11 +1,15 @@
 <script>
 export default {
-
+  methods: {
+    scrollToTop() {
+        window.scrollTo(0, 0)
+    }
+  }
 }
 </script>
 
 <template>
-    <button title="Scroll to Top" id="scroll-to-top" type="button"><i class="fas fa-arrow-up-long"></i></button>
+    <button title="Scroll to Top" id="scroll-to-top" type="button" @click="scrollToTop"><i class="fas fa-arrow-up-long"></i></button>
 </template>
 
 <style lang="scss">

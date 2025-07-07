@@ -1,7 +1,5 @@
 <script>
-export default {
 
-}
 </script>
 
 <template>
@@ -21,6 +19,7 @@ export default {
                             <p>JQuery</p>
                         </div>
                         <div class="project-img-body">
+                            
                             <img src="../assets/website assets/blog website - intro.jpeg" alt="Blog website's intro">
                             <img src="../assets/website assets/blog website - pagination.jpeg"
                                 alt="Blog website's pagination">
@@ -36,6 +35,7 @@ export default {
                                 alt="Blog website's account">
                             <img src="../assets/website assets/blog website - account settings.jpeg"
                                 alt="Blog website's account settings">
+                            
                         </div>
                         <p class="link">BLOG WEBSITE</p>
                     </div>
