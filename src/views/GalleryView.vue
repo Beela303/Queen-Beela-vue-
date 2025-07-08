@@ -17,7 +17,7 @@ export default {
 			<p class="comment">On IG</p>
 		</div>-->
         <div class="box">
-            <img src="../assets/My Art/Artwork - copyright/fashionista in a museum (pink frame, black bg).jpg"
+            <img src="../assets/My Art/Artwork - copyright/fashionista in a museum (pink frame-black bg).jpg"
                 alt="Fashionista in a museum" class="photo">
         </div>
 
@@ -78,12 +78,12 @@ export default {
         </div>
 
         <div class="box">
-            <img src="../assets/My Art/Artwork - copyright/the city's starry sky (night).jpg"
+            <img src="../assets/My Art/Artwork - copyright/the city starry sky-night.jpg"
                 alt="The city's starry sky(night)" class="photo">
         </div>
 
         <div class="box">
-            <img src="../assets/My Art/Artwork - copyright/the city's starry sky (day).jpg"
+            <img src="../assets/My Art/Artwork - copyright/the city starry sky-day.jpg"
                 alt="The city's starry sky (day)" class="photo">
         </div>
 

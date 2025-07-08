@@ -16,10 +16,6 @@ export default {
 				<video src="../assets/Videos/1.mp4" autoplay loop muted></video>
 				<p class="comment">On IG</p>
 			</div>-->
-            <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/fashionista in a museum (pink frame-black bg).jpg"
-                    alt="Fashionista in a museum" class="photo">
-            </div>
 
             <div class="box">
                 <img src="../assets/My Art/Artwork - copyright/fashionista in a museum (pink frame, white bg).jpg"
@@ -70,8 +66,8 @@ export default {
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/hall of mirage-border.jpg" alt="Hall of mirage (border)"
-                    class="photo">
+                <img src="../assets/My Art/Artwork - copyright/hall of mirage (border).jpg"
+                    alt="Hall of mirage (border)" class="photo">
             </div>
 
             <div class="box">
