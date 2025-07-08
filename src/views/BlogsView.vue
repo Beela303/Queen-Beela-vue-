@@ -5,29 +5,28 @@ export default {
 </script>
 
 <template>
-    <div id="space">
-        <div id="blogs">
-            <h1>BLOGS</h1>
-            <a href="https://beela303.hashnode.dev" target="_blank" rel="noopener noreferrer">
-                <div class="blog-div" id="blog-div-1">
-                    <p>Coding</p>
-                </div>
-            </a>
+    <div id="blogs">
+        <h1>BLOGS</h1>
+        <a href="https://beela303.hashnode.dev" target="_blank" rel="noopener noreferrer">
+            <div class="blog-div" id="blog-div-1">
+                <p>Coding</p>
+            </div>
+        </a>
 
-            <a href="https://beela303.blogspot.com" target="_blank" rel="noopener noreferrer">
-                <div class="blog-div" id="blog-div-2">
-                    <p>Blog</p>
-                </div>
-            </a>
-        </div>
+        <a href="https://beela303.blogspot.com" target="_blank" rel="noopener noreferrer">
+            <div class="blog-div" id="blog-div-2">
+                <p>Blog</p>
+            </div>
+        </a>
     </div>
 </template>
 
 <style lang="scss" scoped>
 #blogs {
     width: 50%;
+    height: 100vh;
 
-    margin-top: 10%;
+    margin-top: 7%;
     margin-left: 25%;
     margin-right: 25%;
 

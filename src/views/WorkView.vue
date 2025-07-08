@@ -5,25 +5,21 @@ export default {
 </script>
 
 <template>
-    <div id="space">
-        <h1 id="work-title">WORK</h1>
-        <hr>
-        <!--===========================PORTFOLIO================================================-->
-        <div id="work-body">
-            <router-link to="/work/webdev">
-                <div class="work">
-                    <img src="../assets/website assets/blog website - blog list.jpeg" alt="Calm ambience">
-                    <h2 class="sub-title">Web development</h2>
-                </div>
-            </router-link>
+    <h1 id="work-title">WORK</h1>
+    <div id="work-body">
+        <a href="https://beela303-dev.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <div class="work">
+                <img src="../assets/website assets/blog website - blog list.jpeg" alt="Calm ambience">
+                <h2 class="sub-title">Web development</h2>
+            </div>
+        </a>
 
-            <router-link to="/work/art">
-                <div class="work">
-                    <img src="../assets/My Art/Artwork - copyright/calm ambience.jpg" alt="Calm ambience">
-                    <h2 class="sub-title">Art</h2>
-                </div>
-            </router-link>
-        </div>
+        <router-link to="/work/art">
+            <div class="work">
+                <img src="../assets/My Art/Artwork - copyright/calm ambience.jpg" alt="Calm ambience">
+                <h2 class="sub-title">Art</h2>
+            </div>
+        </router-link>
     </div>
 </template>
 
@@ -184,6 +180,12 @@ export default {
 @media screen and (max-width: 650px) {
     a .work h2 {
         font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 1028px) {
+    #work-body {
+        height: 80vh;
     }
 }
 

@@ -2,26 +2,26 @@
 export default {
   data() {
     return {
-        showScrollButton: false,
+      showScrollButton: false,
     }
   },
 
   methods: {
     handleScroll() {
-        this.showScrollButton = window.scrollY > 200;
+      this.showScrollButton = window.scrollY > 200;
     },
 
     scrollToTop() {
-        //window.scrollTo(0, 0)
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
+      //window.scrollTo(0, 0)
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
     },
   },
 
   mounted() {
-    window.addEventListener ('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   },
 
   beforeDestroy() {
@@ -31,39 +31,40 @@ export default {
 </script>
 
 <template>
-    <button title="Scroll to Top" id="scroll-to-top" type="button" v-if="showScrollButton" @click="scrollToTop"><i class="fas fa-arrow-up-long"></i></button>
+  <button title="Scroll to Top" id="scroll-to-top" type="button" v-if="showScrollButton" @click="scrollToTop"><i
+      class="fas fa-arrow-up-long"></i></button>
 </template>
 
 <style lang="scss">
 #scroll-to-top {
-    color: var(--white);
-    background: rgba(255, 255, 255, .2);
+  color: var(--white);
+  background: rgba(255, 255, 255, .2);
 
-    backdrop-filter: blur(10px);
-    --webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  --webkit-backdrop-filter: blur(10px);
 
-    border: 1px solid rgba(255, 255, 255, .3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-    font-size: 40px;
+  font-size: 40px;
 
-    height: 65px;
-    width: 65px;
+  height: 65px;
+  width: 65px;
 
-    top: 85%;
-    right: 30px;
+  top: 75%;
+  right: 30px;
 
-    border-radius: 50%;
-    outline: none;
+  border-radius: 50%;
+  outline: none;
 
-    position: fixed;
+  position: fixed;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: var(--transition);
+  transition: var(--transition);
 
-    &:hover {
-        border-radius: 20px;
-    }
+  &:hover {
+    border-radius: 20px;
+  }
 }
 </style>

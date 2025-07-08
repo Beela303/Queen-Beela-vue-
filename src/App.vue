@@ -178,18 +178,43 @@ html {
   color: rgb(183, 0, 255);
 }
 
-/*========================== GLOBAL VARIABLES =============================*/
-button,
-input,
-optgroup,
-select,
-textarea {
-  margin: 0;
+a {
+  color: var(--link);
+  text-decoration: none !important;
 
-  font-family: inherit;
-  font-size: inherit;
+  &:hover {
+    color: var(--hover);
+  }
+}
 
-  line-height: inherit;
+a p,
+a button {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  accent-color: var(--link);
+  display: table;
+
+  width: 100%;
+  height: 40px;
+  margin: 1.5% 0;
+
+  border: var(--border-main);
+  border-radius: 25px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 h1,
@@ -200,9 +225,13 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: .5rem;
-  font-weight: 500;
-  line-height: 1.2;
+
   text-align: center;
+
+  line-height: 1.2;
+
+  font-weight: 500;
+  font-family: var(--title);
 }
 
 h1 {
@@ -592,65 +621,9 @@ progress {
   display: none !important
 }
 
-a,
-.link {
-  color: var(--link);
-  text-decoration: none !important;
-}
-
-a,
-.link:hover {
-  color: var(--hover);
-}
-
-a p,
-a button {
-  text-decoration: none;
-}
-
-button {
-  border: none;
-  outline: none;
-}
-
-input {
-  accent-color: var(--link);
-  display: table;
-
-  width: 100%;
-  height: 40px;
-  margin: 1.5% 0;
-
-  border: var(--border-main);
-  border-radius: 25px;
-}
-
-ul li a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: center;
-  font-family: var(--title);
-}
-
 a div {
   text-decoration: none !important;
 }
-
-/*section{
-    margin-top: 2%;
-    padding: 2rem 0 4rem;
-}*/
 
 table {
   width: 100%;
@@ -670,56 +643,6 @@ select {
   cursor: pointer;
 }
 
-option {
-  font-size: 25px;
-}
-
-#space {
-  margin-left: 5% !important;
-}
-
-.line {
-  display: inline-block;
-}
-
-.line2 {
-  display: inline-block;
-}
-
-.line-hor {
-  display: block;
-}
-
-.horizontal {
-  overflow-x: scroll;
-  overflow-y: hidden;
-
-  white-space: nowrap;
-}
-
-.slide-hor {
-  display: flex;
-
-  overflow-x: scroll;
-  overflow-y: hidden;
-
-  white-space: nowrap;
-}
-
-.slide-ver {
-  display: table;
-
-  overflow-x: hidden;
-  overflow-y: scroll;
-
-  white-space: nowrap;
-}
-
-.ml-5-per {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 .button {
   color: var(--white);
   background: var(--dark-purple);
@@ -729,15 +652,15 @@ option {
 
   border-radius: 20px;
   border: var(--border-main);
-}
 
-.button:hover {
-  color: var(--dark-purple);
-  background: none;
+  &:hover {
+    color: var(--dark-purple);
+    background: none;
 
-  outline: none;
-  transition: var(--transition);
-  /*border-radius: 10px;*/
+    outline: none;
+    transition: var(--transition);
+    /*border-radius: 10px;*/
+  }
 }
 
 .primary-button {
@@ -760,19 +683,19 @@ option {
   height: 40px;
 
   border-radius: 10px;
-}
 
-.secondary-button:hover {
-  color: var(--dark-purple);
-  background: var(--white);
+  &:hover {
+    color: var(--dark-purple);
+    background: var(--white);
 
-  width: 190px;
-  height: 40px;
+    width: 190px;
+    height: 40px;
 
-  border: var(--border-main);
-  border-radius: 10px;
+    border: var(--border-main);
+    border-radius: 10px;
 
-  outline: none;
+    outline: none;
+  }
 }
 
 .tertiary-button {
@@ -785,14 +708,14 @@ option {
   height: 40px;
 
   border-radius: 10px;
-}
 
-.tertiary-button:hover {
-  color: var(--white);
-  background: var(--dark-purple);
+  &:hover {
+    color: var(--white);
+    background: var(--dark-purple);
 
-  border: none;
-  outline: none;
+    border: none;
+    outline: none;
+  }
 }
 
 .title {
@@ -820,89 +743,6 @@ option {
 .gray {
   color: var(--border);
 }
-
-.back-and-topic {
-  border-bottom: 2px solid var(--light-purple);
-}
-
-.back-to-menu {
-  font-size: 35px;
-
-  color: var(--light-purple);
-
-  cursor: pointer;
-}
-
-.back-to-menu:hover {
-  color: var(--hover);
-}
-
-.back-to-topic-go-back {
-  font-size: 35px;
-
-  text-decoration: none;
-
-  color: var(--light-purple);
-}
-
-.back-to-topic-go-back-title {
-  color: var(--dark-purple);
-
-  /*margin-left: 25px;
-    margin-left: 10px;*/
-
-  font-family: var(--title);
-  font-size: 35px;
-
-  text-align: center;
-  text-decoration: none;
-}
-
-.left {
-  float: left;
-  width: 50%;
-}
-
-.right {
-  float: right;
-  width: 50%;
-}
-
-.mid-left {
-  width: 33%;
-}
-
-.mid-mid {
-  width: 33%;
-}
-
-.mid-right {
-  width: 33%;
-}
-
-.aic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.air {
-  display: flex;
-  align-items: flex-end;
-  align-items: flex-end;
-}
-
-.flex-end {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.space-between {
-  display: flex;
-  justify-content: space-between;
-}
-
 
 /*========================== SCROLL BAR =============================*/
 /*
@@ -962,11 +802,6 @@ option {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 
   border-radius: 50%;
-
-  /*color: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);*/
 }
 
 .instagram-text {
@@ -1005,13 +840,11 @@ option {
 .fa-linkedin-in {
   color: var(--white);
   background: #0072b1;
-  /*#86888a #caccce*/
 }
 
 .fa-whatsapp {
   color: var(--white);
   background: #25d366;
-  /*#075e54 #128c7e*/
 
   border-radius: 25px;
 }
@@ -1027,39 +860,12 @@ option {
   color: #c4302b;
 }
 
-/*
-.fa-tiktok{
-    color: #111111;
-    filter: drop-shadow(-5px -5px 0 #24f6f0) contrast(150%) brightness(100%);
-    z-index: -1;
-}
-
-.fa-tiktok{
-    color: #111111;
-    filter: drop-shadow(2px 0 0 #fd3e3e) drop-shadow(-2px -2px 0 #4de8f4);
-}*/
-
 .fa-tiktok {
   color: #111111;
   filter: drop-shadow(2px 0 0 #fd3e3e) drop-shadow(-2px -2px 0 #4de8f4);
 }
 
-/*.tiktok-logo{
-    font-size: 100px;
-    position: relative;
-    color: #00fff8;
-}
-
-.tiktok-logo i:last-child{
-    mix-blend-mode: multiply;
-    color: #ff0010;
-    position: absolute;
-    left: 5px;
-    top: 7px;
-}*/
-
 .fa-spotify {
-  /*color: linear-gradient(120deg, #1db954,#191414);*/
   color: #1db954;
   background: #000;
 
@@ -1119,92 +925,18 @@ option {
 .fa-artstation {
   color: #1caad9;
 }
+
 .fa-x-twitter {
   color: #1da1f2;
 }
 
 /*========================== RESPONSIVE MEDIA QUERIES 500 690 947 999 1104 1330 =============================*/
-@media screen and (min-width: 1330px) {
-  .appear-phone-tablet {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-
-  .left,
-  .right {
-    width: 45%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .appear-phone-tablet {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #space {
-    margin-left: 0 !important;
-  }
-}
-
-@media screen and (max-width: 940px) {
-
-  .left,
-  .right {
-    width: 40%;
-  }
-}
-
 @media screen and (max-width: 900px) {
 
   /*========================== SCROLL BAR =============================*/
   ::-webkit-scrollbar {
     width: 5px;
     height: 8px;
-
-    /*========================== GLOBAL VARIABLES =============================*/
-    #space {
-      overflow-x: hidden;
-    }
-  }
-}
-
-@media screen and (max-width: 830px) {
-
-  .left,
-  .right {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .appear-phone-tablet {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  .appear-laptop {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 200px) and (max-width: 500px) {
-  .appear-laptop {
-    display: none;
-  }
-
-  .appear-phone-tablet {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 469px) {
-  .display-tablet {
-    display: none;
   }
 }
 
@@ -1400,11 +1132,6 @@ option {
 
 
 /// DARK THEME ////
-
-#phone-header li a {
-  color: #fffafa !important;
-}
-
 .title,
 .small-title,
 h1,
@@ -1413,35 +1140,14 @@ h3,
 h4,
 h5,
 h6,
-.comment,
-.important-info-box p a,
-.back-to-topic-go-back-title,
-#blog-title,
-#podcast-title,
-#audio-title,
-#video-title,
-#about-me-title,
-#socials-title,
-#faqs-title,
 #contact-me-title,
 #social-media-title,
 #art-portfolio-title h2,
 #web-dev-portfolio-title h2,
 .project-box p,
 .title,
-.sub-title,
-.blog-heading,
-.items-list-in-prod-item-title,
-#signin-form form label,
-#signup-form form label,
-#form .button:hover {
+.sub-title {
   color: var(--white);
-}
-
-#gallery-picture-prev,
-#gallery-picture-next,
-#close-picture {
-  color: var(--dark-purple);
 }
 
 .project-box a p {

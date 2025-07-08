@@ -5,108 +5,106 @@ export default {
 </script>
 
 <template>
-    <div id="space">
-        <h1 id="socials-links-title">SOCIALS AND LINKS</h1>
+    <h1 id="socials-links-title">SOCIALS AND LINKS</h1>
 
-        <div id="socials-links">
-            <a href="https://instagram.com/beela303" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-instagram"></i>
-                    <!--<p>Instagram</p>-->
-                </div>
-            </a>
+    <div id="socials-links">
+        <a href="https://instagram.com/beela303" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <!--<p>Instagram</p>-->
+            </div>
+        </a>
 
-            <a href="https://x.com/beela303" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-twitter"></i>
-                    <!--<p>X/Twitter</p>-->
-                </div>
-            </a>
+        <a href="https://x.com/beela303" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-twitter"></i>
+                <!--<p>X/Twitter</p>-->
+            </div>
+        </a>
 
-            <a href="https://www.imdb.com/name/nm14593893/" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-imdb"></i>
-                    <!--<p>IMDB</p>-->
-                </div>
-            </a>
+        <a href="https://www.imdb.com/name/nm14593893/" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-imdb"></i>
+                <!--<p>IMDB</p>-->
+            </div>
+        </a>
 
-            <a href="https://beela303.blogspot.com" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fas fa-blog"></i>
-                    <!--<p>Blog</p>-->
-                </div>
-            </a>
+        <a href="https://beela303.blogspot.com" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fas fa-blog"></i>
+                <!--<p>Blog</p>-->
+            </div>
+        </a>
 
-            <a href="https://beela303.hashnode.dev" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-hashnode"></i>
-                    <!--<p>Hashnode (Dev Blog)</p>-->
-                </div>
-            </a>
+        <a href="https://beela303.hashnode.dev" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-hashnode"></i>
+                <!--<p>Hashnode (Dev Blog)</p>-->
+            </div>
+        </a>
 
-            <a href="https://deviantart.com/beela303" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-deviantart"></i>
-                    <!--<p>DeviantArt</p>-->
-                </div>
-            </a>
+        <a href="https://deviantart.com/beela303" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-deviantart"></i>
+                <!--<p>DeviantArt</p>-->
+            </div>
+        </a>
 
-            <a href="https://beela303.artstation.com" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-artstation"></i>
-                    <!--<p>ArtStation</p>-->
-                </div>
-            </a>
+        <a href="https://beela303.artstation.com" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-artstation"></i>
+                <!--<p>ArtStation</p>-->
+            </div>
+        </a>
 
-            <router-link to="/podcast">
-                <div>
-                    <i class="fas fa-podcast"></i>
-                    <!--<p>Podcast</p>-->
-                </div>
-            </router-link>
+        <router-link to="/podcast">
+            <div>
+                <i class="fas fa-podcast"></i>
+                <!--<p>Podcast</p>-->
+            </div>
+        </router-link>
 
-            <a href="https://youtube.com/@beela303" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-youtube"></i>
-                    <!--<p>YouTube</p>-->
-                </div>
-            </a>
+        <a href="https://youtube.com/@beela303" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-youtube"></i>
+                <!--<p>YouTube</p>-->
+            </div>
+        </a>
 
-            <a href="https://reddit.com/beela303" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-reddit"></i>
-                    <!--<p>Reddit</p>-->
-                </div>
-            </a>
+        <a href="https://reddit.com/beela303" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-reddit"></i>
+                <!--<p>Reddit</p>-->
+            </div>
+        </a>
 
-            <a href="https://quora.com/beela303" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-quora"></i>
-                    <!--<p>Quora</p>-->
-                </div>
-            </a>
+        <a href="https://quora.com/beela303" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-quora"></i>
+                <!--<p>Quora</p>-->
+            </div>
+        </a>
 
-            <a href="https://pinterest.com/beela303" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-pinterest"></i>
-                    <!--<p>Pinterest</p>-->
-                </div>
-            </a>
+        <a href="https://pinterest.com/beela303" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-pinterest"></i>
+                <!--<p>Pinterest</p>-->
+            </div>
+        </a>
 
-            <a href="https://tiktok.com/beela303" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-tiktok"></i>
-                    <!--<p>TikTok</p>-->
-                </div>
-            </a>
+        <a href="https://tiktok.com/beela303" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-tiktok"></i>
+                <!--<p>TikTok</p>-->
+            </div>
+        </a>
 
-            <a href="https://linkedin.com/in/nabilaabubakar" target="_blank" rel="noopener noreferrer">
-                <div>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <!--<p>Linkedin</p>-->
-                </div>
-            </a>
-        </div>
+        <a href="https://linkedin.com/in/nabilaabubakar" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <!--<p>Linkedin</p>-->
+            </div>
+        </a>
     </div>
 </template>
 
