@@ -85,7 +85,7 @@ export default {
                     <p>PYTHON | JAVASCRIPT | HTML | CSS | BOOTSTRAP | SASS | JQUERY | BOOTSTRAP | SASS | VUE |
                         DJANGO</p>
                     <a href="https://beela303-dev.vercel.app/" target="_blank" rel="noopener noreferrer"><button
-                            type="button">MY PROJECTS</button></router-link></a>
+                            type="button">MY PROJECTS</button></a>
                 </div>
                 <img src="../assets/website assets/blog website - blog list.jpeg">
 
