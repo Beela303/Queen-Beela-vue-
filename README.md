@@ -7,6 +7,10 @@ The libararies used in the v1 were also included in this.
 <br>
 There are only a little modifications compared to the original.
 
+## LIVE VERSION
+
+https://beela303.vercel.app/
+
 ## TECH STACK
 
 Vue.js

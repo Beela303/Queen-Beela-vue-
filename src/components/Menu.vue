@@ -31,7 +31,9 @@ export default {
 
 <template>
     <header>
-        <p id="typing-name" class="typed">{{ typed }}</p>
+        <router-link to="/">
+            <p id="typing-name" class="typed">{{ typed }}</p>
+        </router-link>
 
         <a href="mailto:nabilaabubakar333@gmail.com" title="E-mail"><i class="fas fa-envelope"></i></a>
     </header>
