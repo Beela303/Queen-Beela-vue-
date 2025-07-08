@@ -105,6 +105,20 @@ export default {
                 <!--<p>Linkedin</p>-->
             </div>
         </a>
+
+        <a href="https://beela303.vercel.app" target="_blank" rel="noopener noreferrer">
+            <div>
+                <!--<i class="fa-brands fa-linkedin-in"></i>-->
+                <p>Dev<br />Portfolio</p>
+            </div>
+        </a>
+
+        <a href="https://art-sphere-vue.vercel.app" target="_blank" rel="noopener noreferrer">
+            <div>
+                <!---<i class="fa-brands fa-linkedin-in"></i>-->
+                <p>Art<br />Portfolio</p>
+            </div>
+        </a>
     </div>
 </template>
 

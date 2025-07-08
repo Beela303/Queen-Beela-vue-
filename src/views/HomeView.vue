@@ -36,7 +36,6 @@ export default {
     <!--===========================WHAT I DO================================================-->
     <section id="what-i-do" class="hidden-">
         <h1>WHAT I DO</h1>
-        <TypedText :strings="['Hello', 'Hi']" :options="{ typeSpeed: 100, backSpeed: 50, loop: true }" />
         <!--===========================IMAGE ACCORDION================================================-->
         <!--<div class="support-note">let's check browser support with modernizr -->
         <!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
