@@ -207,7 +207,7 @@ export default {
             <a href="https://beela303-dev.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-divs">
                 <p>WEB <br> DEVELOPMENT</p>
             </a>
-            <a href="http://art-sphere-vue.vercel.app" target="_blank" rel="noopener noreferrer">
+            <a href="http://art-sphere-vue.vercel.app" target="_blank" rel="noopener noreferrer" class="work-divs">
                 <p>DIGITAL ART</p>
             </a>
         </div>
