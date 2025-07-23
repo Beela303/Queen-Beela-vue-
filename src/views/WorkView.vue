@@ -14,12 +14,12 @@ export default {
             </div>
         </a>
 
-        <router-link to="/work/art">
+        <a href="https://art-sphere-vue.vercel.app/" target="_blank" rel="noopener noreferrer">
             <div class="work">
                 <img src="../assets/My Art/Artwork - copyright/calm ambience.jpg" alt="Calm ambience">
                 <h2 class="sub-title">Art</h2>
             </div>
-        </router-link>
+        </a>
     </div>
 </template>
 
