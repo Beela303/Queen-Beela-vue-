@@ -137,6 +137,10 @@ a button {
   text-decoration: none;
 }
 
+.link {
+  color: var(--link);
+}
+
 button {
   border: none;
   outline: none;

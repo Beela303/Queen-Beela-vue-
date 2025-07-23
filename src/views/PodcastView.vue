@@ -28,7 +28,7 @@ export default {
                         class="link">@UWNabila</a>
                     <br>Pinterest Board: <a href="https://pin.it/AXsrvY1" target="_blank" rel="noopener noreferrer"
                         class="link">https://pin.it/AXsrvY1</a>
-                    <br>facebook: <a href="https://facebook.com/undiscussedwithnabila" target="_blank"
+                    <br>Facebook: <a href="https://facebook.com/undiscussedwithnabila" target="_blank"
                         rel="noopener noreferrer" class="link">@undiscussedwithnabila</a>
 
                     <br><br>Host: @beela303
@@ -309,7 +309,7 @@ iframe {
             #podcast-name {
                 text-align: center;
 
-                color: var(--light-purple);
+                //color: var(--light-purple);
 
                 font-family: var(--title);
                 font-size: 2rem;
@@ -322,7 +322,6 @@ iframe {
                 }
             }
         }
-
 
         #podcast-description {
             margin-left: 2.5%;
@@ -346,6 +345,12 @@ iframe {
     }
 }
 
+@media screen and (max-width: 768px) {
+    #other-streaming-platforms {
+        columns: 3 !important;
+    }
+}
+
 @media screen and (max-width: 500px) {
     #podcast-name {
         font-size: 1.5rem;
@@ -356,11 +361,11 @@ iframe {
     }
 
     #other-streaming-platforms {
-        columns: 3;
-    }
+        columns: 2 !important;
 
-    #other-streaming-platforms a {
-        font-size: 1.3rem;
+        a {
+            font-size: 1.3rem;
+        }
     }
 }
 </style>
