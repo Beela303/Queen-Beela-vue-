@@ -61,7 +61,8 @@ export default {
                 <h2>ART</h2>
                 <P>EXPLORE THE UNIQUE PRESPECTIVE OF AN ARTIST AND ENVISION YOUR DREAMS COME TRUE.</P>
                 <div class="caption">
-                    <router-link to="/work/art"><button type="button">MY ARTWORKS</button></router-link>
+                    <a href="http://art-sphere-vue.vercel.app" target="_blank" rel="noopener noreferrer">
+                        <button type="button">MY ARTWORKS</button></a>
                 </div>
                 <img src="../assets/My Art/Artwork - copyright/galactic ocean of dreams.jpg"
                     alt="Galactic ocean of dreams">
@@ -94,7 +95,8 @@ export default {
                 <h2>ART</h2>
                 <P>EXPLORE THE UNIQUE PRESPECTIVE OF AN ARTIST AND ENVISION YOUR DREAMS COME TRUE.</P>
                 <div class="caption">
-                    <router-link to="/work/art"><button type="button">MY ARTWORKS</button></router-link>
+                    <a href="http://art-sphere-vue.vercel.app" target="_blank" rel="noopener noreferrer"><button
+                            type="button">MY ARTWORKS</button></a>
                 </div>
                 <img src="../assets/My Art/Artwork - copyright/galactic ocean of dreams.jpg"
                     alt="Galactic ocean of dreams">
@@ -205,9 +207,9 @@ export default {
             <a href="https://beela303-dev.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-divs">
                 <p>WEB <br> DEVELOPMENT</p>
             </a>
-            <router-link to="/work/art" class="work-divs">
+            <a href="http://art-sphere-vue.vercel.app" target="_blank" rel="noopener noreferrer">
                 <p>DIGITAL ART</p>
-            </router-link>
+            </a>
         </div>
     </section>
 
