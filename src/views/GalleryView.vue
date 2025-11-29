@@ -88,23 +88,7 @@ export default {
         </div>
 
         <div class="box">
-            <img src="../assets/My pictures/7.jpg" alt="My Picture" class="photo">
-        </div>
-
-        <div class="box">
             <img src="../assets/My pictures/3.jpg" alt="My Picture" class="photo">
-        </div>
-
-        <div class="box">
-            <img src="../assets/My pictures/4.jpg" alt="My Picture" class="photo">
-        </div>
-
-        <div class="box">
-            <img src="../assets/My pictures/5.jpg" alt="My Picture" class="photo">
-        </div>
-
-        <div class="box">
-            <img src="../assets/My pictures/6.jpg" alt="My Picture" class="photo">
         </div>
 
         <div class="box">
@@ -258,7 +242,6 @@ export default {
                 transform: var(--transform);
             }
         }
-
 
         .comment {
             color: var(--pastel-color-2);
