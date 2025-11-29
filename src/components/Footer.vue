@@ -1,9 +1,3 @@
-<script>
-export default {
-
-}
-</script>
-
 <template>
     <footer>
         <ul id="footer-socials">

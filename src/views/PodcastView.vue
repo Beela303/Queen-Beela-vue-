@@ -309,7 +309,7 @@ iframe {
             #podcast-name {
                 text-align: center;
 
-                //color: var(--light-purple);
+                //color: var(--pastel-color-2);
 
                 font-family: var(--title);
                 font-size: 2rem;

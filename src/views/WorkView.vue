@@ -61,7 +61,7 @@ export default {
 
 
         h2 {
-            color: var(--light-purple);
+            color: var(--pastel-color-2);
 
             font-size: 40px;
             /*60*/
@@ -99,7 +99,7 @@ export default {
 
 
     .project-box p {
-        color: var(--dark-purple);
+        color: var(--pastel-color);
         font-size: 1.5rem;
 
         transition: var(--transition);

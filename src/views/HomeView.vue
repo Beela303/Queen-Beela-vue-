@@ -230,7 +230,6 @@ export default {
 
 <style lang="scss">
 /*========================== HOME PAGE =============================*/
-
 .max-width {
     max-width: 1300px;
     margin: auto;
@@ -247,8 +246,8 @@ export default {
 
     padding: 100px 0;
 
-    /*color: var(--dark-purple);*/
-    color: var(--white);
+    /*color: var(--pastel-color);*/
+    color: var(--text-color);
 
     display: flex;
 
@@ -272,15 +271,15 @@ export default {
             margin: 5px 0;
 
             span {
-                color: var(--dark-purple);
+                color: var(--pastel-color);
                 font-weight: 500;
             }
         }
 
 
         a {
-            color: var(--white);
-            background: #551150;
+            color: var(--text-color);
+            background: var(--pastel-color-2); //#551050
 
             font-size: 25px;
             text-decoration: none;
@@ -289,7 +288,7 @@ export default {
 
             margin-top: 20px;
 
-            border: 2px solid #551150;
+            border: 2px solid var(--pastel-color-2);
             border-radius: 6px;
 
             display: inline-block;
@@ -297,7 +296,7 @@ export default {
             transition: var(--transition);
 
             &:hover {
-                color: var(--dark-purple);
+                color: var(--pastel-color);
                 background: none;
 
                 /*transition: all .3s ease;*/
@@ -310,7 +309,7 @@ export default {
 /*IMAGE GALLERY*/
 .img-gallery-body {
     /*background: #ccc;*/
-    background: var(--main);
+    background: var(--pastel-color);
 
     width: 100%;
     height: 400px;
@@ -425,7 +424,7 @@ export default {
 /*IMAGE GALLERY PHONE*/
 .img-gallery-body-phone {
     /*background: #ccc;*/
-    background: var(--main);
+    background: var(--pastel-color);
 
     width: 100%;
     height: 100px;
@@ -527,7 +526,7 @@ export default {
             padding: 30px;
             border-radius: 20px;
 
-            background: var(--dark-purple);
+            background: var(--pastel-color);
 
             text-align: center;
         }
@@ -558,7 +557,7 @@ export default {
 
     .work-divs {
         color: #fafafa;
-        background: var(--dark-purple);
+        background: var(--pastel-color);
 
         width: 45%;
         margin: 2.5%;
@@ -592,7 +591,7 @@ export default {
     margin-left: 2.5%;
 
     color: #fafafa;
-    background: var(--dark-purple);
+    background: var(--pastel-color);
 
     border: var(--border-main);
     border-radius: 30px;
@@ -606,7 +605,7 @@ export default {
 
             button {
                 color: #fafafa;
-                background: var(--light-purple);
+                background: var(--pastel-color-2);
 
                 width: 100%;
                 height: 12vh;
@@ -624,7 +623,7 @@ export default {
                 transform: var(--transform);
 
                 &:hover {
-                    background: var(--main2);
+                    background: var(--main);
                     transition: var(--transition);
                     transform: var(--transform);
                 }

@@ -138,7 +138,7 @@ export default {
     margin-bottom: 5%;
 
     div {
-        background-color: var(--pretty-blue);
+        background-color: var(--pastel-color);
 
         width: 90%;
         height: 70px;

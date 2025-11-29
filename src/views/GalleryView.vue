@@ -261,7 +261,7 @@ export default {
 
 
         .comment {
-            color: var(--light-purple);
+            color: var(--pastel-color-2);
 
             font-size: 30px;
             font-weight: 450;
