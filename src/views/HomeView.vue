@@ -29,7 +29,8 @@ export default {
                 <div class="text-1">✨Hello, my name is</div>
                 <div class="text-2">Nabila Abubakar</div>
                 <div class="text-3">And I'm <span id="typing" class="typed">{{ typed }}</span></div>
-                <router-link to="/work">Check out my work</router-link>
+                <router-link to="/work"><button>Check out my work</button>
+                </router-link>
             </div>
         </div>
     </section>
@@ -87,7 +88,7 @@ export default {
 
         a {
             color: var(--text-color);
-            background: var(--pastel-color-2); //#551050
+            background: var(--main-color); //#551050
 
             font-size: 25px;
             text-decoration: none;
@@ -96,21 +97,34 @@ export default {
 
             margin-top: 20px;
 
-            border: 2px solid var(--pastel-color-2);
+            border: 2px solid var(--main-color);
             border-radius: 6px;
 
             display: inline-block;
 
             transition: var(--transition);
 
+            button {
+                color: var(--text-color);
+                background: var(--main-color); //#551050
+
+                &:hover {
+                    color: var(--main-color);
+                    background: none;
+
+                    transition: var(--transition);
+                }
+            }
+
             &:hover {
-                color: var(--pastel-color);
+                color: var(--main-color);
                 background: none;
 
-                /*transition: all .3s ease;*/
+                //transition: all .3s ease;
                 transition: var(--transition);
             }
         }
+
     }
 }
 
