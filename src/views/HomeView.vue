@@ -46,7 +46,7 @@ export default {
 }
 
 #home-page {
-    background: url("../assets/My Art/Artworks/below\ the\ ocean.jpg") no-repeat center;
+    background: url("../assets/My\ Art/Artworks/underneath the interspace of stars and clouds.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 
