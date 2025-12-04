@@ -90,7 +90,6 @@ export default {
             color: var(--text-color);
             background: var(--main-color); //#551050
 
-            font-size: 25px;
             text-decoration: none;
 
             padding: 12px 36px;
@@ -107,6 +106,8 @@ export default {
             button {
                 color: var(--text-color);
                 background: var(--main-color); //#551050
+
+                font-size: 25px;
 
                 &:hover {
                     color: var(--main-color);
