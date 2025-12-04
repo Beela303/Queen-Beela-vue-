@@ -106,7 +106,7 @@ export default {
             </div>
         </a>
 
-        <a href="https://beela303.vercel.app" target="_blank" rel="noopener noreferrer">
+        <a href="https://beela303-dev.vercel.app" target="_blank" rel="noopener noreferrer">
             <div>
                 <!--<i class="fa-brands fa-linkedin-in"></i>-->
                 <p>Dev<br />Portfolio</p>
