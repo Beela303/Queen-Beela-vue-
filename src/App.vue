@@ -239,9 +239,9 @@ button {
   --webkit-text-fill-color: transparent;
 }
 
-.fa-twitter {
-  //color: #00acee;
-}
+/*.fa-twitter {
+  color: #00acee;
+}*/
 
 .fa-snapchat {
   //color: #000;
@@ -262,11 +262,11 @@ button {
   border-radius: 50%;
 }
 
-.fa-linkedin,
+/*.fa-linkedin,
 .fa-linkedin-in {
-  //color: var(--white);
-  //background: #0072b1;
-}
+  color: var(--white);
+  background: #0072b1;
+}*/
 
 .fa-whatsapp {
   //color: var(--white);
@@ -282,9 +282,9 @@ button {
   border-radius: 25px;
 }
 
-.fa-youtube {
-  //color: #c4302b;
-}
+/*.fa-youtube {
+  color: #c4302b;
+}*/
 
 .fa-tiktok {
   //color: #111111;
