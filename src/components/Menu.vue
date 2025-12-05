@@ -15,7 +15,7 @@ export default {
 
     mounted() {
         this.typed = new Typed('#typing-name', {
-            strings: ["Queen Beela", "Nabila", "@Beela303", "Q.B", "Queen Beela"],
+            strings: ["Queen Beela", "Nabila", "凤星云", "@Beela303", "Q.B", "Queen Beela"],
             typeSpeed: 50,
             backSpeed: 50,
             loop: false,
