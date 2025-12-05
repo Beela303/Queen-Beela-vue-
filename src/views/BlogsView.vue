@@ -7,15 +7,15 @@ export default {
 <template>
     <div id="blogs">
         <h1>BLOGS</h1>
-        <a href="https://beela303.hashnode.dev" target="_blank" rel="noopener noreferrer">
-            <div class="blog-div" id="blog-div-1">
-                <p>Coding</p>
-            </div>
-        </a>
-
         <a href="https://beela303.blogspot.com" target="_blank" rel="noopener noreferrer">
             <div class="blog-div" id="blog-div-2">
                 <p>Blog</p>
+            </div>
+        </a>
+
+        <a href="https://beela303.hashnode.dev" target="_blank" rel="noopener noreferrer">
+            <div class="blog-div" id="blog-div-1">
+                <p>Coding</p>
             </div>
         </a>
     </div>
