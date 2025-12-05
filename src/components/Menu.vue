@@ -145,9 +145,9 @@ header {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
     nav {
-        margin-top: 80vh;
+        margin-top: 77vh;
     }
 }
 </style>
