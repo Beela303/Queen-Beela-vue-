@@ -12,7 +12,7 @@ export default {
 
     mounted() {
         this.typed = new Typed('#typing', {
-            strings: ["a Full-stack Software Developer", "an Artist", "a Podcaster", "a Writer", "a Fashion Designer"],
+            strings: ["a Full-stack Software Developer", "an Artist", "a Podcaster", "a Poet", "a Writer", "a Fashion Designer"],
             typeSpeed: 50,
             backSpeed: 50,
             loop: true

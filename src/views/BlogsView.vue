@@ -23,15 +23,12 @@ export default {
 
 <style lang="scss" scoped>
 #blogs {
-    width: 50%;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
 
-    margin-top: 7%;
-    margin-left: 25%;
-    margin-right: 25%;
-
-    align-items: center;
-    justify-content: center;
+    margin-top: 10vh; //7%
+    margin-bottom: 20vh;
 }
 
 a .blog-div {
@@ -40,7 +37,9 @@ a .blog-div {
 }
 
 .blog-div {
-    height: 200px;
+    width: 40vw;
+    height: 40vh; //200px
+
     margin-bottom: 2.5%;
 
     border: var(--border-main);

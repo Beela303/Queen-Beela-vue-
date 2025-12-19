@@ -211,19 +211,18 @@ export default {
     columns: 4;
 
     .box {
-        background: var(--gallery-bg);
+        //background: var(--gallery-bg);
 
         /*width: 300px;*/
         width: 100%;
         margin: 2%;
 
         border-radius: 25px;
-        transition: var(--transition);
+        //transition: var(--transition);
 
-        &:hover {
+        /*&:hover {
             transform: var(--transform);
-
-        }
+        }*/
 
         img,
         iframe,
@@ -234,13 +233,12 @@ export default {
 
             border-radius: 25px;
 
-            transition: var(--transition);
+            //transition: var(--transition);
+            //cursor: pointer;
 
-            cursor: pointer;
-
-            &:hover {
+            /*&:hover {
                 transform: var(--transform);
-            }
+            }*/
         }
 
         .comment {

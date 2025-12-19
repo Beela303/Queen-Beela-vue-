@@ -8,6 +8,12 @@ export default {
     <h1 id="socials-links-title">SOCIALS AND LINKS</h1>
 
     <div id="socials-links">
+        <a href="https://hellopoetry.com/beela303" target="_blank" rel="noopener noreferrer">
+            <div>
+                <p><i class="fas fa-book" style="margin-right: 10px;"></i>Hello<br />Poetry</p>
+            </div>
+        </a>
+
         <a href="https://instagram.com/beela303" target="_blank" rel="noopener noreferrer">
             <div>
                 <i class="fa-brands fa-instagram"></i>
@@ -124,26 +130,27 @@ export default {
 
 <style lang="scss">
 #socials-links-title {
-    margin-top: 5%;
+    margin-top: 10vh;
     margin-bottom: 2.5%;
 }
 
 #socials-links {
-    /*align-items: center;
-    justify-content: center;*/
+    //columns: 3;
+    //column-gap: 200px;
 
-    columns: 3;
-    column-gap: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
 
-    margin-bottom: 5%;
+    margin-bottom: 20vh;
 
     div {
         background-color: var(--pastel-color);
 
-        width: 90%;
+        width: 10rem;
         height: 70px;
 
-        margin: 5%;
+        //margin: 5%;
 
         border-radius: 20px;
 
@@ -175,7 +182,7 @@ export default {
     }
 
     a div {
-        color: #fffafa;
+        color: var(--white); //#fffafa
         font-size: 1.3rem;
         text-decoration: none;
 
@@ -184,18 +191,18 @@ export default {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    #socials-links-title {
-        margin-top: 15%;
+@media screen and (max-width: 500px) {
+    #socials-links {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     #socials-links {
-        columns: 2;
-        column-gap: 100px;
+        //columns: 2;
+        //column-gap: 100px;
 
-        /*#socials-links div {
+        #socials-links div {
             width: 95% !important;
 
             padding: 1%;
@@ -203,7 +210,7 @@ export default {
 
             display: flex;
             justify-content: center;
-        }*/
+        }
     }
-}
+}*/
 </style>

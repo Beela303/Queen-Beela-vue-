@@ -279,6 +279,8 @@ iframe {
 }
 
 #podcast {
+    margin-top: 10vh;
+
     .podcast-info {
         border: var(--border-main);
         border-radius: 25px;
