@@ -1,14 +1,8 @@
-<script>
-export default {
-
-}
-</script>
-
 <template>
     <h1 id="socials-links-title">SOCIALS AND LINKS</h1>
 
     <div id="socials-links">
-        <a href="https://hellopoetry.com/beela303" target="_blank" rel="noopener noreferrer">
+        <a href="https://hellopoetry.com/Beela303/" target="_blank" rel="noopener noreferrer">
             <div>
                 <p><i class="fas fa-book" style="margin-right: 10px;"></i>Hello<br />Poetry</p>
             </div>

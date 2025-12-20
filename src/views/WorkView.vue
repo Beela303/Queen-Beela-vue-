@@ -45,7 +45,7 @@ export default {
 
     .work {
         width: 40vw; //30vh 350px
-        height: 40vh; //300px 350
+        height: 40vh; //300px 350px
 
         margin: 2.5%;
         padding: 2%;
