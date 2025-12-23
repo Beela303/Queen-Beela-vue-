@@ -22,7 +22,7 @@ export default {
             </div>
         </a>
 
-        <a href="https://hellopoetry.com/beela303/" target="_blank" rel="noopener noreferrer">
+        <a href="https://hellopoetry.com/Beela303/" target="_blank" rel="noopener noreferrer">
             <div class="work">
                 <img src="../assets/My Art/Artwork - copyright/below the ocean (2).jpg" alt="Calm ambience">
                 <h2 class="sub-title">Poetry</h2>
