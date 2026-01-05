@@ -9,7 +9,7 @@ export default {
         <h1>BLOGS</h1>
         <a href="https://beela303.blogspot.com" target="_blank" rel="noopener noreferrer">
             <div class="blog-div" id="blog-div-2">
-                <p>Blog</p>
+                <p>Personal</p>
             </div>
         </a>
 
