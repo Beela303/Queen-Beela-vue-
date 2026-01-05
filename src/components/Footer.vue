@@ -20,7 +20,7 @@
 
         <hr class="gray">
 
-        <p id="copyright">&copy;2025 Nabila Abubakar</p>
+        <p id="copyright">&copy;2026 Nabila Abubakar</p>
     </footer>
 </template>
 
