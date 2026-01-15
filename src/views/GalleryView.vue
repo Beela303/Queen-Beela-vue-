@@ -88,7 +88,155 @@ export default {
         </div>
 
         <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 05.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 06.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 07.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 08.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 09.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 10.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 11.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 12.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 13.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/2.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
             <img src="../assets/My pictures/3.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/8.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/9.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/10.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/11.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/12.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/13.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/14.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/15.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/16.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/17.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/19.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/20.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/21.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/22.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/23.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/25.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/27.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/28.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/29.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/30.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/32.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/33.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/34.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/35.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/36.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/37.jpg" alt="My Picture" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My pictures/38.jpg" alt="My Picture" class="photo">
         </div>
 
         <div class="box">
