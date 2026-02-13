@@ -124,6 +124,50 @@ export default {
         </div>
 
         <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 14.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 15.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 16.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 17.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 18.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 19.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 20.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 21.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 22.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 23.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/trad 24.jpg" alt="Traditional art" class="photo">
+        </div>
+
+        <div class="box">
             <img src="../assets/My pictures/2.jpg" alt="My Picture" class="photo">
         </div>
 
