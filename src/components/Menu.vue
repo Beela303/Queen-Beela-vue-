@@ -43,13 +43,13 @@ export default {
     <nav>
         <ul>
             <li v-tooltip="Home"><router-link to="/" title="Home"><i class="fas fa-home"></i></router-link></li>
-            <li v-tooltip="Blogs"><router-link to="/blogs" title="Blogs"><i class="fas fa-blog"></i></router-link></li>
-            <li v-tooltip="Podcast"><router-link to="/podcast" title="Podcast"><i
+            <li v-tooltip="Blogs"><router-link to="blogs" title="Blogs"><i class="fas fa-blog"></i></router-link></li>
+            <li v-tooltip="Podcast"><router-link to="podcast" title="Podcast"><i
                         class="fas fa-podcast"></i></router-link></li>
-            <li v-tooltip="Work"><router-link to="/work" title="Work"><i class="fas fa-stream"></i></router-link></li>
-            <li v-tooltip="Gallery"><router-link to="/gallery" title="Gallery"><i
+            <li v-tooltip="Work"><router-link to="work" title="Work"><i class="fas fa-stream"></i></router-link></li>
+            <li v-tooltip="Gallery"><router-link to="gallery" title="Gallery"><i
                         class="fas fa-video"></i></router-link></li>
-            <li v-tooltip="Socials"><router-link to="/socials" title="Socials"><i class="fas fa-user"></i></router-link>
+            <li v-tooltip="Socials"><router-link to="socials" title="Socials"><i class="fas fa-user"></i></router-link>
             </li>
         </ul>
     </nav>
