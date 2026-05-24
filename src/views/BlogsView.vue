@@ -1,9 +1,3 @@
-<script>
-export default {
-
-}
-</script>
-
 <template>
     <div id="blogs">
         <h1>BLOGS</h1>
@@ -51,11 +45,11 @@ a .blog-div {
 }
 
 #blog-div-1 {
-    background-image: url('../assets/My Art/Artworks/underneath the interspace of stars and clouds.png');
+    background-image: url('../assets/My Art/Artworks/underneath the interspace of stars and clouds.webp');
 }
 
 #blog-div-2 {
-    background-image: url('../assets/My Art/Artworks/below\ the\ ocean.jpg');
+    background-image: url('../assets/My Art/Artworks/below\ the\ ocean.webp');
 }
 
 .blog-div p {

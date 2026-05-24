@@ -46,19 +46,36 @@ export default {
 }
 
 #home-page {
-    background: url("../assets/My\ Art/Artworks/calm ambience.png") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-
+    /*color: var(--pastel-color);*/
+    color: var(--text-color);
+    
     height: 100vh;
     min-height: 500px;
 
     padding: 100px 0;
 
-    /*color: var(--pastel-color);*/
-    color: var(--text-color);
-
     display: flex;
+    position: relative;
+    
+    pointer-events: none;
+
+    &::before {
+        content: "";
+
+        background: url("../assets/My\ Art/Artwork - copyright/Seeking through the abyss.webp") no-repeat center;
+        background-size: cover;
+        position: absolute;
+        background-attachment: fixed;
+
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+
+        opacity: 0.3; 
+        z-index: -1; 
+    }
 
     #max-width {
         margin: auto 0 auto 40px;
@@ -80,11 +97,10 @@ export default {
             margin: 5px 0;
 
             span {
-                color: var(--pastel-color);
+                color: pink; //var(--pastel-color)
                 font-weight: 500;
             }
         }
-
 
         a {
             color: var(--text-color);

@@ -1,30 +1,24 @@
-<script>
-export default {
-
-}
-</script>
-
 <template>
     <div id="work-body">
         <h1 id="work-title">WORK</h1>
 
         <a href="https://beela303-dev.vercel.app/" target="_blank" rel="noopener noreferrer">
             <div class="work">
-                <img src="../assets/website assets/blog website - blog list.jpeg" alt="Calm ambience">
+                <img src="../assets/website assets/blog website - blog list.webp" alt="Calm ambience">
                 <h2 class="sub-title">Software development</h2>
             </div>
         </a>
 
         <a href="https://art-sphere-vue.vercel.app/" target="_blank" rel="noopener noreferrer">
             <div class="work">
-                <img src="../assets/My Art/Artwork - copyright/calm ambience.jpg" alt="Calm ambience">
+                <img src="../assets/My Art/Artwork - copyright/calm ambience.webp" alt="Calm ambience">
                 <h2 class="sub-title">Art</h2>
             </div>
         </a>
 
         <a href="https://hellopoetry.com/@Beela303/" target="_blank" rel="noopener noreferrer">
             <div class="work">
-                <img src="../assets/My Art/Artwork - copyright/below the ocean (2).jpg" alt="Calm ambience">
+                <img src="../assets/My Art/Artwork - copyright/below the ocean (2).webp" alt="Calm ambience">
                 <h2 class="sub-title">Poetry</h2>
             </div>
         </a>
@@ -42,6 +36,8 @@ export default {
 
     justify-content: center;
     align-items: center;
+
+    pointer-events: none;
 
     .work {
         width: 40vw; //30vh 350px

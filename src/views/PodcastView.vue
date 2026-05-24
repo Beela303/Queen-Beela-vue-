@@ -8,7 +8,7 @@ export default {
     <div id="podcast">
         <div class="podcast-info">
             <div id="podcast-head">
-                <img src="../assets/Undiscussed With Nabila/undiscussed with nabila.jpg"
+                <img src="../assets/Undiscussed With Nabila/undiscussed with nabila.webp"
                     alt="Undiscussed With Nabila poster" id="podcast-pic">
                 <p id="podcast-name">Undiscussed with Nabila</p>
             </div>
