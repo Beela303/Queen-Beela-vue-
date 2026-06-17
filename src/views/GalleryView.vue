@@ -10,6 +10,21 @@
 			<video src="../assets/Videos/1.mp4" autoplay loop muted></video>
 			<p class="comment">On IG</p>
 		</div>-->
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/phone on a desk.webp" alt="phone on a desk" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/silver haired lady without stars.webp"
+                alt="silver haired lady without stars" class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/silver haired lady with stars.webp"
+                alt="silver haired lady with stars" class="photo">
+        </div>
+
         <div class="box">
             <img src="../assets/My Art/Artwork - copyright/fashionista in a museum (pink frame-black bg).webp"
                 alt="Fashionista in a museum" class="photo">
@@ -25,11 +40,13 @@
         </div>
 
         <div class="box">
-            <img src="../assets/My Art/Artwork - copyright/Into the illusion of the mirror.webp" alt="Into the illusion of the mirror" class="photo">
+            <img src="../assets/My Art/Artwork - copyright/Into the illusion of the mirror.webp"
+                alt="Into the illusion of the mirror" class="photo">
         </div>
 
         <div class="box">
-            <img src="../assets/My Art/Artwork - copyright/Seeking through the abyss.webp" alt="Brown aesthetic" class="photo">
+            <img src="../assets/My Art/Artwork - copyright/Seeking through the abyss.webp" alt="Brown aesthetic"
+                class="photo">
         </div>
 
         <div class="box">
@@ -48,7 +65,8 @@
         </div>
 
         <div class="box">
-            <img src="../assets/My Art/Artwork - copyright/below the ocean (1).webp" alt="Below the ocean" class="photo">
+            <img src="../assets/My Art/Artwork - copyright/below the ocean (1).webp" alt="Below the ocean"
+                class="photo">
         </div>
 
         <div class="box">
@@ -138,8 +156,24 @@
         </div>
 
         <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/lady in an illusion 1.webp" alt="lady in an illusion 1"
+                class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/lady in an illusion 2.webp" alt="lady in an illusion 2"
+                class="photo">
+        </div>
+
+        <div class="box">
+            <img src="../assets/My Art/Artwork - copyright/lady in an illusion 3.webp" alt="lady in an illusion 3"
+                class="photo">
+        </div>
+
+        <div class="box">
             <img src="../assets/My Art/Artwork - copyright/trad 17.webp" alt="Traditional art" class="photo">
         </div>
+
 
         <div class="box">
             <img src="../assets/My Art/Artwork - copyright/trad 18.webp" alt="Traditional art" class="photo">
@@ -291,12 +325,13 @@
         </div>
 
         <div class="box">
-            <img src="../assets/Undiscussed With Nabila/UWN card-playing.webp" alt="Undiscussed With Nabila playing card"
-                class="photo">
+            <img src="../assets/Undiscussed With Nabila/UWN card-playing.webp"
+                alt="Undiscussed With Nabila playing card" class="photo">
         </div>
 
         <div class="box">
-            <img src="../assets/Undiscussed With Nabila/UWN card1.webp" alt="Undiscussed With Nabila card" class="photo">
+            <img src="../assets/Undiscussed With Nabila/UWN card1.webp" alt="Undiscussed With Nabila card"
+                class="photo">
         </div>
 
         <div class="box">
