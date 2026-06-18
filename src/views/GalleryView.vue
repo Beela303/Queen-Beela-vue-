@@ -166,14 +166,8 @@
         </div>
 
         <div class="box">
-            <img src="../assets/My Art/Artwork - copyright/lady in an illusion 3.webp" alt="lady in an illusion 3"
-                class="photo">
-        </div>
-
-        <div class="box">
             <img src="../assets/My Art/Artwork - copyright/trad 17.webp" alt="Traditional art" class="photo">
         </div>
-
 
         <div class="box">
             <img src="../assets/My Art/Artwork - copyright/trad 18.webp" alt="Traditional art" class="photo">

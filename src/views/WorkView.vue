@@ -37,7 +37,7 @@
     justify-content: center;
     align-items: center;
 
-    pointer-events: none;
+    //pointer-events: none;
 
     .work {
         width: 40vw; //30vh 350px
