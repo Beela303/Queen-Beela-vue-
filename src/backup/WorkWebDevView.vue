@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1 id="work-title">WEB DEVELOPMENT PROJECTS</h1>
+    <<!--h1 id="work-title">WEB DEVELOPMENT PROJECTS</h1>
     <div id="web-dev-work">
         <a href="https://beela303.github.io/blog-website">
             <div class="project-body">
@@ -92,7 +92,7 @@
                 </div>
             </div>
         </a>
-    </div>
+    </div>-->
 </template>
 
 <style lang="scss"></style>

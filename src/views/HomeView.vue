@@ -376,6 +376,8 @@ export default {
 </template>
 
 <style lang="scss">
+@use "sass:map";
+
 /*========================== HOME PAGE =============================*/
 .max-width {
     max-width: 1300px;
@@ -666,117 +668,92 @@ $thumb-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 // Gradient Map based on Range Classes
 $gradients: (
   'low': linear-gradient(90deg, #ff416c, #ff4b2b),    // Red/Orange range
-  //'mid': linear-gradient(90deg, #f7971e, #ffd200),    // Yellow/Orange range
   'mid': linear-gradient(90deg, #3f0540, #5c52f4),    // Blue/Purple
   'high': linear-gradient(90deg, #032825, #38ef7d)    // Green range
-  //'high': linear-gradient(90deg, #11998e, #38ef7d)    // Green range
 );
 
 .language-container {
   background: var(--dark-color);
-
   width: 50vw;
-  //max-width: 400px;
   padding: 20px;
   margin: 5% 0;
-
   border-radius: 12px;
   border: 1px dashed var(--pastel-color-2);
-
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-
   justify-self: center;
 
-
-.slider-group {
-  margin-bottom: 20px;
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 8px;
-}
-
-.label-row {
-  color: var(--text-color);
-
-  display: flex;
-  justify-content: space-between;
-
-  //font-family: sans-serif;
-  //font-weight: 600;
-  //color: #333;
-}
-
-.gradient-slider {
-  width: 100%;
-  height: 8px;
-
-  border-radius: 4px;
-
-  -webkit-appearance: none;
-  appearance: none;
-
-  outline: none;
-  cursor: pointer;
-
-  // Mixin to inject the background fill on webkit browsers
-  @mixin fill-track($gradient-fill) {
-    background: linear-gradient(
-      to right, 
-      transparent 0%, 
-       transparent var(--progress), 
-      $bg-track var(--progress), 
-      $bg-track 100%
-    ), $gradient-fill;
+  .slider-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
-  // Dynamic class mapping from SCSS map
-  &.range-low { @include fill-track(map-get($gradients, 'low')); }
-  &.range-mid { @include fill-track(map-get($gradients, 'mid')); }
-  &.range-high { @include fill-track(map-get($gradients, 'high')); }
+  .label-row {
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+  }
 
-  // Slider Thumb Styling (Webkit)
-  &::-webkit-slider-thumb {
-      background: $thumb-color;
-
-      width: 18px;
-      height: 18px;
-
-      border-radius: 50%;
-      border: 2px solid #ccc;
-
-      box-shadow: $thumb-shadow;
-
+  .gradient-slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
     -webkit-appearance: none;
     appearance: none;
+    outline: none;
+    cursor: pointer;
 
-    transition: transform 0.1s ease;
-
-    &:hover {
-      transform: scale(1.2);
+    // Mixin to inject the background fill on webkit browsers
+    @mixin fill-track($gradient-fill) {
+      background: linear-gradient(
+        to right, 
+        transparent 0%, 
+        transparent var(--progress), 
+        $bg-track var(--progress), 
+        $bg-track 100%
+      ), $gradient-fill;
     }
-  }
 
-   // Slider Thumb Styling (Firefox)
-  &::-moz-range-thumb {
+    // Modern Modern Dynamic Loop Class Mapping
+    @each $range, $gradient in $gradients {
+      &.range-#{$range} {
+        @include fill-track(map.get($gradients, $range));
+      }
+    }
+
+    // Slider Thumb Styling (Webkit)
+    &::-webkit-slider-thumb {
       background: $thumb-color;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      box-shadow: $thumb-shadow;
+      -webkit-appearance: none;
+      appearance: none;
+      transition: transform 0.1s ease;
 
-    width: 18px;
-    height: 18px;
-    
-    box-shadow: $thumb-shadow;
-    
-    border: none;
-    border-radius: 50%;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
 
-    transition: transform 0.1s ease;
+    // Slider Thumb Styling (Firefox)
+    &::-moz-range-thumb {
+      background: $thumb-color;
+      width: 18px;
+      height: 18px;
+      box-shadow: $thumb-shadow;
+      border: none;
+      border-radius: 50%;
+      transition: transform 0.1s ease;
 
-    &:hover {
-      transform: scale(1.2);
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
-}
 }
 
 /*========================== HOBBIES =============================*/
@@ -869,7 +846,8 @@ $text-color: #fafafa;
     }
 
     .hobby-description {
-        color: lighten($text-color, 20%);
+        color: var(--text-color);
+        //color: lighten($text-color, 20%);
         font-size: 1.15rem;
         //font-size: 0.95rem;
         line-height: 1.5;

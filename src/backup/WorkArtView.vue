@@ -16,73 +16,74 @@ export default {
 				<video src="../assets/Videos/1.mp4" autoplay loop muted></video>
 				<p class="comment">On IG</p>
 			</div>-->
+            <!--
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/fashionista in a museum (pink frame, white bg).webp"
+                <img src="../assets/My Art/artwork_copyright/fashionista_in_a_museum_pink_frame_white_bg.webp"
                     alt="Fashionista in a museum" class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/brown aesthetic.webp" alt="Brown aesthetic" class="photo">
+                <img src="../assets/My Art/artwork_copyright/brown_aesthetic.webp" alt="Brown aesthetic" class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/Fashionista in a museum (blue frame, black bg).webp"
+                <img src="../assets/My Art/artwork_copyright/fashionista_in_a_museum_blue_frame_black_bg.webp"
                     alt="Fashionista in a museum" class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/fashionista in a museum (blue frame, white bg).webp"
+                <img src="../assets/My Art/artwork_copyright/fashionista_in_a_museum_blue_frame_white_bg.webp"
                     alt="Fashionista in a museum" class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/Fashionista in a museum (white bg).webp"
+                <img src="../assets/My Art/artwork_copyright/fashionista_in_a_museum_white_bg_.webp"
                     alt="Fashionista in a museum" class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/below the ocean (1).webp" alt="Below the ocean"
+                <img src="../assets/My Art/artwork_copyright/below the ocean (1).webp" alt="Below the ocean"
                     class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/archer in the forest.webp" alt="Archer in the forest"
+                <img src="../assets/My Art/artwork_copyright/archer in the forest.webp" alt="Archer in the forest"
                     class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/below the interspace of stars and clouds.webp"
+                <img src="../assets/My Art/artwork_copyright/below the interspace of stars and clouds.webp"
                     alt="Below the interspace of stars and clouds" class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/calm ambience.webp" alt="calm ambience" class="photo">
+                <img src="../assets/My Art/artwork_copyright/calm ambience.webp" alt="calm ambience" class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/galactic ocean of dreams.webp"
+                <img src="../assets/My Art/artwork_copyright/galactic ocean of dreams.webp"
                     alt="Galactic ocean of dreams" class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/hall of mirage (border).webp"
+                <img src="../assets/My Art/artwork_copyright/hall of mirage (border).webp"
                     alt="Hall of mirage (border)" class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/hall of mirage.webp" alt="Hall of mirage" class="photo">
+                <img src="../assets/My Art/artwork_copyright/hall of mirage.webp" alt="Hall of mirage" class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/the city starry sky-night.webp"
+                <img src="../assets/My Art/artwork_copyright/the city starry sky-night.webp"
                     alt="The city's starry sky(night)" class="photo">
             </div>
 
             <div class="box">
-                <img src="../assets/My Art/Artwork - copyright/the city starry sky-day.webp"
+                <img src="../assets/My Art/artwork_copyright/the city starry sky-day.webp"
                     alt="The city's starry sky (day)" class="photo">
-            </div>
+            </div>-->
         </div>
     </div>
 </template>
