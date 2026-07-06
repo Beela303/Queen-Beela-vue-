@@ -3,23 +3,20 @@
         <h1 id="work-title">WORK</h1>
 
         <a href="https://beela303-dev.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <div class="work">
-                <img src="../assets/website assets/blog website - blog list.webp" alt="Calm ambience">
-                <h2 class="sub-title">Software development</h2>
+            <div class="work" id="work-div-1">
+                <p class="sub-title">Software Dev</p>
             </div>
         </a>
 
         <a href="https://art-sphere-vue.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <div class="work">
-                <img src="../assets/My Art/Artwork - copyright/calm ambience.webp" alt="Calm ambience">
-                <h2 class="sub-title">Art</h2>
+            <div class="work" id="work-div-2">
+                <p class="sub-title">Art</p>
             </div>
         </a>
 
         <a href="https://hellopoetry.com/@Beela303/" target="_blank" rel="noopener noreferrer">
-            <div class="work">
-                <img src="../assets/My Art/Artwork - copyright/below the ocean (2).webp" alt="Calm ambience">
-                <h2 class="sub-title">Poetry</h2>
+            <div class="work" id="work-div-3">
+                <p class="sub-title">Poetry</p>
             </div>
         </a>
     </div>
@@ -27,67 +24,72 @@
 
 <style lang="scss">
 #work-body {
-    margin-top: 10vh;
-    margin-bottom: 20vh;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
-    place-items: center;
+    gap: 20px;
 
     justify-content: center;
+    place-items: center;
     align-items: center;
 
     //pointer-events: none;
 
     .work {
-        width: 40vw; //30vh 350px
-        height: 40vh; //300px 350px
+        width: 30vw;
+        height: 30vh; //200px
 
-        margin: 2.5%;
-        padding: 2%;
+        margin-bottom: 2.5%;
 
         border: var(--border-main);
-        border-radius: 25px;
+        border-radius: 30px;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
         transition: var(--transition);
 
         &:hover {
+            transition: var(--transition);
             transform: var(--transform);
         }
 
-        img {
-            width: 100%;
-            height: 60%;
-
-            border-radius: 35px;
-
-            object-fit: cover;
+        p {
+            font-size: 2rem;
         }
+    }
 
+    #work-div-1 {
+        background-image: url('../assets/website assets/inventory_dashboard/categories-inventory-dashboard.jpg');
+    }
 
-        h2 {
-            color: var(--pastel-color-2);
+    #work-div-2 {
+        background-image: url('../assets/My Art/artwork_copyright/seeking_through_the_abyss.webp');
+    }
 
-            //font-size: 40px;
-            /*60*/
-            text-decoration: none !important;
+    #work-div-3 {
+        background-image: url('../assets/My poems/poem_1.webp');
+    }
+}
 
-            &:hover {
-                color: var(--hover);
-            }
+@media screen and (max-width: 600px) {
+    #work-body {
+        grid-template-columns: 1fr 1fr;
+
+        .work {
+            width: 30vw;
+            height: 20vh;
         }
     }
 }
 
 @media screen and (max-width: 500px) {
     #work-body {
-        .work {
-            width: 45vw;
-            height: 45vh;
+        grid-template-columns: 1fr;
 
-            h2 {
-                font-size: 1.5rem;
-            }
+        .work {
+            width: 50vw;
+            height: 25vh;
         }
     }
 }

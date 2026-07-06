@@ -32,7 +32,7 @@ export default {
 <template>
     <header>
         <router-link to="/">
-            <p id="typing-name">Queen Beela</p>
+            <p id="typing-name"></p>
             <!--<p id="typing-name" class="typed">{{ typed }}</p>-->
         </router-link>
 
@@ -42,14 +42,17 @@ export default {
     <!--======================================== MENU ==========================================================-->
     <nav>
         <ul>
-            <li v-tooltip="Home"><router-link to="/" title="Home"><i class="fas fa-home"></i></router-link></li>
-            <li v-tooltip="Blogs"><router-link to="blogs" title="Blogs"><i class="fas fa-blog"></i></router-link></li>
+            <li v-tooltip="Home"><router-link to="/" title="Home" exact-active-class="active-class"><i class="fas fa-home"></i></router-link></li>
+            <li v-tooltip="Writing & Podcast"><router-link to="writingandpodcast" title="Writing & Podcast"  exact-active-class="active-class"><i
+                        class="fas fa-keyboard"></i></router-link></li>
+            <!--<li v-tooltip="Blogs"><router-link to="blogs" title="Blogs"><i class="fas fa-blog"></i></router-link></li>
             <li v-tooltip="Podcast"><router-link to="podcast" title="Podcast"><i
-                        class="fas fa-podcast"></i></router-link></li>
-            <li v-tooltip="Work"><router-link to="work" title="Work"><i class="fas fa-stream"></i></router-link></li>
-            <li v-tooltip="Gallery"><router-link to="gallery" title="Gallery"><i
-                        class="fas fa-video"></i></router-link></li>
-            <li v-tooltip="Socials"><router-link to="socials" title="Socials"><i class="fas fa-user"></i></router-link>
+                        class="fas fa-podcast"></i></router-link></li>-->
+            <li v-tooltip="Work & Experience"><router-link to="workexp" title="Work & Experience" exact-active-class="active-class"><i
+                        class="fas fa-stream"></i></router-link></li>
+            <li v-tooltip="Gallery"><router-link to="gallery" title="Gallery" exact-active-class="active-class"><i class="fas fa-video"></i></router-link>
+            </li>
+            <li v-tooltip="Socials"><router-link to="socials" title="Socials" exact-active-class="active-class"><i class="fas fa-user"></i></router-link>
             </li>
         </ul>
     </nav>
@@ -67,7 +70,8 @@ nav {
     height: 7vh;
 
     margin-left: 5%;
-    margin-top: 90vh;
+    margin-top: 92vh;
+    //margin-top: 90vh;
 
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, .3);
@@ -78,6 +82,7 @@ nav {
     --webkit-backdrop-filter: blur(10px);
 
     position: fixed;
+    z-index: 9999;
 
     h1 {
         cursor: pointer;
@@ -89,25 +94,33 @@ nav {
         display: flex;
         justify-content: space-between;
 
-        transition: var(--transition);
+        transition: .5s;
 
         li {
             font-size: 23px;
 
+            transition: .5s;
             cursor: pointer;
 
             a {
                 color: var(--white);
 
                 padding: 14px 16px;
+                transition: .5s;
 
                 &:hover {
-                    color: var(--hover);
-
+                    color: var(--main-color);
+                    //color: var(--hover);
                 }
             }
         }
     }
+}
+
+.active-class {
+    background-color: var(--main-color);
+
+    border-radius: 30px;
 }
 
 /*========================== HEADER =============================*/
@@ -135,9 +148,10 @@ header {
     justify-content: space-around;
 
     position: fixed;
+    z-index: 9999;
 
     a {
-        color: #fafafa;
+        color: var(--text-color);
 
         &:hover {
             color: var(--hover);
@@ -145,9 +159,16 @@ header {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     nav {
-        margin-top: 80vh;
+        margin-top: 92vh !important;
+        //margin-top: 85vh;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header {
+        font-size: 1.8rem;
     }
 }
 </style>

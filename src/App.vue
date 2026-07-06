@@ -23,6 +23,10 @@ import ScrollToTop from './components/ScrollToTop.vue';
   --main: #801375;
   --main2: #3f0938;
 
+  --exquisite-purple: #160b17;
+
+  //--main-color: #3b0d43;
+  //--main-color: #1A0A1D;
   --main-color: #6A1E55;
   --pastel-color: #A64D79;
   --pastel-color-1: #9d7f84;
@@ -80,6 +84,11 @@ body {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+.typed {
+  display: inline-block;
+  min-height: 1.2em;
 }
 
 a {

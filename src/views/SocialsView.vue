@@ -2,9 +2,25 @@
     <h1 id="socials-links-title">SOCIALS AND LINKS</h1>
 
     <div id="socials-links">
+                <a href="https://beela303-dev.vercel.app" target="_blank" rel="noopener noreferrer">
+            <div>
+                <!--<i class="fa-brands fa-linkedin-in"></i>-->
+                <p>Dev<br />Portfolio</p>
+            </div>
+        </a>
+
+        <a href="https://art-sphere-vue.vercel.app" target="_blank" rel="noopener noreferrer">
+            <div>
+                <!---<i class="fa-brands fa-linkedin-in"></i>-->
+                <p>Art<br />Portfolio</p>
+            </div>
+        </a>
+
         <a href="https://hellopoetry.com/@Beela303/" target="_blank" rel="noopener noreferrer">
             <div>
-                <p><i class="fas fa-book" style="margin-right: 10px;"></i>Hello<br />Poetry</p>
+                <!--<i class="fas fa-book" style="margin-right: 10px;"></i>-->
+                <p>
+                    Hello<br />Poetry</p>
             </div>
         </a>
 
@@ -78,6 +94,13 @@
             </div>
         </a>
 
+        <a href="https://tumblr.com/beela303" target="_blank" rel="noopener noreferrer">
+            <div>
+                <i class="fa-brands fa-tumblr"></i>
+                <!--<p>Tumblr</p>-->
+            </div>
+        </a>
+
         <a href="https://quora.com/beela303" target="_blank" rel="noopener noreferrer">
             <div>
                 <i class="fa-brands fa-quora"></i>
@@ -105,20 +128,6 @@
                 <!--<p>Linkedin</p>-->
             </div>
         </a>
-
-        <a href="https://beela303-dev.vercel.app" target="_blank" rel="noopener noreferrer">
-            <div>
-                <!--<i class="fa-brands fa-linkedin-in"></i>-->
-                <p>Dev<br />Portfolio</p>
-            </div>
-        </a>
-
-        <a href="https://art-sphere-vue.vercel.app" target="_blank" rel="noopener noreferrer">
-            <div>
-                <!---<i class="fa-brands fa-linkedin-in"></i>-->
-                <p>Art<br />Portfolio</p>
-            </div>
-        </a>
     </div>
 </template>
 
@@ -132,41 +141,29 @@
     //columns: 3;
     //column-gap: 200px;
 
+    padding: 30px;
+    margin-bottom: 5vh;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     place-items: center;
-
-    margin-bottom: 20vh;
-
+    
     div {
-        background-color: var(--pastel-color);
+        background-color: var(--dark-color);
 
         width: 10rem;
-        height: 70px;
-
-        //margin: 5%;
+        height: 15vh;
 
         border-radius: 20px;
+        border: 1px solid var(--pastel-color-2);
 
         text-align: center;
-
-        /*border: 2px var(--first-color-lighter);
-        border-radius: 30px;
-
-        width: 50%;
-        padding: 1%;
-
-        margin-left: 25%;
-        margin-right: 25%;
-
-        display: flex;
-        justify-content: center;*/
 
         &:hover {
             transform: var(--transform);
             transition: var(--transition);
         }
-
 
         .fas,
         .fa-brands {
@@ -176,18 +173,44 @@
     }
 
     a div {
-        color: var(--white); //#fffafa
+        color: var(--text-color); //#fffafa
+
         font-size: 1.3rem;
         text-decoration: none;
 
-        padding: .5%;
-        margin-bottom: 2.5%;
+        padding: 15px;
+        margin-bottom: 5vh;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #socials-links {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #socials-links {
+        div {
+            width: 7rem;
+            height: 13vh;
+            padding: 5px;
+
+            .fas,
+            .fa-brands {
+                font-size: 2.5rem;
+            }
+        }
+
+        a div {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #socials-links {
+        grid-template-columns: 1fr !important;
     }
 }
 

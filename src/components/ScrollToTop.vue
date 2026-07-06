@@ -51,13 +51,15 @@ export default {
   height: 65px;
   width: 65px;
 
-  top: 75%;
+  top: 80%;
+  //top: 75%;
   right: 30px;
 
   border-radius: 50%;
   outline: none;
 
   position: fixed;
+  z-index: 9999;
 
   cursor: pointer;
 

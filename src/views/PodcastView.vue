@@ -8,7 +8,7 @@ export default {
     <div id="podcast">
         <div class="podcast-info">
             <div id="podcast-head">
-                <img src="../assets/Undiscussed With Nabila/undiscussed with nabila.webp"
+                <img src="../assets/Undiscussed With Nabila/undiscussed_with_nabila.webp"
                     alt="Undiscussed With Nabila poster" id="podcast-pic">
                 <p id="podcast-name">Undiscussed with Nabila</p>
             </div>
@@ -279,7 +279,7 @@ iframe {
 }
 
 #podcast {
-    margin-top: 10vh;
+    width: 70vw;
 
     .podcast-info {
         border: var(--border-main);
@@ -350,6 +350,22 @@ iframe {
 @media screen and (max-width: 768px) {
     #other-streaming-platforms {
         columns: 3 !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #podcast {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #podcast-head {
+        display: block !important;
+
+        img {
+            width: 100% !important;
+        }
     }
 }
 
