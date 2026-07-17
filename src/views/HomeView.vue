@@ -98,7 +98,7 @@ export default {
                 <div class="text-1">✨Hello, my name is</div>
                 <div class="text-2">Nabila Abubakar</div>
                 <div class="text-3">And I'm <span id="typing" class="typed"></span></div>
-                <router-link to="/work"><button>Check out my work</button></router-link>
+                <router-link to="/workexp"><button>Check out my work</button></router-link>
             </div>
         </div>
     </section>
