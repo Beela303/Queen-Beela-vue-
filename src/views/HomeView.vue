@@ -27,6 +27,8 @@ export default {
                 { id: 3, name: 'Photography', icon: 'fa-camera-retro', description: 'Capturing landscapes and street life.' },
                 { id: 4, name: 'Art', icon: 'fa-palette', description: 'Exploring the world and documenting it.' },
                 { id: 5, name: 'Writing', icon: 'fa-keyboard', description: 'Showcasing the world of imagination through writing.' },
+                { id: 6, name: 'Coding', icon: 'fa-code', description: 'Building things I want and like.' },
+                { id: 7, name: 'Gaming', icon: 'fa-gamepad', description: 'Having fun in another world.' },
             ],
         };
     },
@@ -79,11 +81,11 @@ export default {
         },
 
         // LANGUAGES
-         getColorClass(pct) {
-      if (pct < 35) return 'range-low'
-      if (pct < 75) return 'range-mid'
-      return 'range-high'
-    }
+        getColorClass(pct) {
+            if (pct < 35) return 'range-low'
+            if (pct < 75) return 'range-mid'
+            return 'range-high'
+        }
     }
 }
 </script>
@@ -121,7 +123,7 @@ export default {
             <h2>Multifaceted Artist with a background in Science</h2>
 
             <p>I believe everything can be ART and everything is ART.</p>
-            <p>I use ART to capture memories, experiences, timelines and illusions, 
+            <p>I use ART to capture memories, experiences, timelines and illusions,
                 <br>
                 using this art,
                 <br>
@@ -202,24 +204,45 @@ export default {
             <a href="http://beela303.blogspot.com" target="_blank" rel="noopener noreferrer">Queen Beela</a>
             where I started posting my works, thoughts generally and what I'm up to.
         </p>
+        <h3>Podcasting</h3>
+        <p>
+            I've always been interested in public speaking and debates that eventually led me to
+            create my own podcast.
+            <br />
+            It's called Undiscussed With Nabila, and it's named that way
+            because I use this as an avenue for expression, exploration and literally discussing
+            ANYTHING and EVERYTHING.
+        </p>
         <h3>Nursing</h3>
         <p>At 17, in 2023, I followed another of my passions (since I was 3) to be in the medical field
             which shaped my perception of life.
             <br>
-            Despite how Nursing School was, I still continued with my other passions and interests.
+            Despite how stressful Nursing School was, I still continued with my other passions and interests.
             <br>
             I became an ambassador and a frontend and backend intern before graduation.
-            <br>
-            At 20, in 2026, I graduated from Nursing school and officially became a Registered Nurse (RN)
-            and attended an Art x Tech Workshop by CAVIC that helped me understand more about visuals, sound,
+        </p>
+        <h3>2026</h3>
+        <p>
+            [MAY]
+            <br />
+            At 20, in 2026, I graduated from Nursing school
+            and officially became a Registered Nurse (RN).
+            <br />
+            [JUNE]
+            <br />
+            I attended an Art x Tech Workshop by CAVIC that helped me understand more about visuals, sound,
             haptics, immersion and experience.
+            <br />
+            [JULY]
+            <br />
+            Currently enrolled in a K-POP dance class by the Korean Cultural Center.
         </p>
     </section>
 
     <!--========================== WORK =============================-->
     <section id="work">
         <h1>What I do</h1>
-        
+
         <div class="job">
             <div class="left">
                 <h2>Software Development</h2>
@@ -240,7 +263,8 @@ export default {
                         rel="noopener noreferrer">https://beela303-dev.vercel.app/</a></p>
             </div>
             <div class="right">
-                <img src="../assets/website assets/inventory_dashboard/categories-inventory-dashboard.jpg" alt="My Picture" class="photo">
+                <img src="../assets/website assets/inventory_dashboard/categories-inventory-dashboard.jpg"
+                    alt="My Picture" class="photo">
             </div>
         </div>
 
@@ -331,46 +355,35 @@ export default {
     <!--========================== LANGUAGES =============================-->
     <section id="languages">
         <h2>Languages</h2>
-        
+
         <div class="language-container">
-            <div 
-                v-for="lang in languages" 
-                :key="lang.name" 
-                class="slider-group"
-                :style="{ '--progress': lang.percentage + '%' }"
-            >
+            <div v-for="lang in languages" :key="lang.name" class="slider-group"
+                :style="{ '--progress': lang.percentage + '%' }">
                 <div class="label-row">
                     <span class="lang-name">{{ lang.name }}</span>
                     <span class="lang-pct">{{ lang.percentage }}%</span>
                 </div>
 
-                <input 
-                    type="range" 
-                    min="0" 
-                    max="100" 
-                    :value="lang.percentage" 
-                    disabled
-                    class="gradient-slider"
-                    :class="getColorClass(lang.percentage)"
-                />
+                <input type="range" min="0" max="100" :value="lang.percentage" disabled class="gradient-slider"
+                    :class="getColorClass(lang.percentage)" />
             </div>
         </div>
     </section>
 
     <!--========================== HOBBIES =============================-->
     <section id="hobbies">
-      <div class="hobbies-container">
-    <h2 class="title">My Hobbies</h2>
-    <div class="cards-grid">
-      <div v-for="hobby in hobbies" :key="hobby.id" class="hobby-card">
-        <div class="icon-wrapper">
-          <i :class="['fas', hobby.icon]" class="icon"></i>
+        <div class="hobbies-container">
+            <h2 class="title">My Hobbies</h2>
+            <div class="cards-grid">
+                <div v-for="hobby in hobbies" :key="hobby.id" class="hobby-card">
+                    <div class="icon-wrapper">
+                        <i :class="['fas', hobby.icon]" class="icon"></i>
+                    </div>
+                    <h3 class="hobby-name">{{ hobby.name }}</h3>
+                    <p class="hobby-description">{{ hobby.description }}</p>
+                </div>
+            </div>
         </div>
-        <h3 class="hobby-name">{{ hobby.name }}</h3>
-        <p class="hobby-description">{{ hobby.description }}</p>
-      </div>
-    </div>
-  </div>
     </section>
 
 </template>
@@ -466,8 +479,8 @@ export default {
                 font-size: 25px;
 
                 &:hover {
-                    color: var(--main-color);
-                    background: none;
+                    //color: var(--main-color);
+                    //background: none;
 
                     transition: var(--transition);
                 }
@@ -493,8 +506,8 @@ export default {
     justify-self: center;
     opacity: 0;
 
-    width: 100%; 
-    max-width: max-content; 
+    width: 100%;
+    max-width: max-content;
 
     transform: translateZ(0);
     will-change: transform, position;
@@ -509,15 +522,16 @@ export default {
         display: flex;
         justify-content: flex-start;
 
-        flex-wrap: nowrap; 
-        
-        overflow-x: auto; 
-        -webkit-overflow-scrolling: touch; 
+        flex-wrap: nowrap;
 
-        scrollbar-width: none; 
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
 
-        padding: 0 10px; /* Protects edges when scrolling */
-        
+        scrollbar-width: none;
+
+        padding: 0 10px;
+        /* Protects edges when scrolling */
+
         /* Hides scrollbar track on Chrome/Safari */
         &::-webkit-scrollbar {
             display: none;
@@ -527,16 +541,16 @@ export default {
             color: var(--text-color);
 
             padding: 15px;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
 
-            flex-shrink: 0; 
+            flex-shrink: 0;
 
             a {
                 color: var(--text-color);
-                white-space: nowrap; 
+                white-space: nowrap;
 
                 &:hover {
-                    color: var(--main-color);
+                    color: var(--pastel-color-2);
                 }
             }
         }
@@ -555,6 +569,7 @@ export default {
 
 .full {
     height: 100vh;
+    overflow-y: scroll;
 
     justify-content: center;
     align-content: center;
@@ -564,7 +579,7 @@ export default {
 
 #about-me {
     background-color: var(--dark-color);
-    
+
     width: 50%;
 
     padding: 30px;
@@ -630,21 +645,21 @@ export default {
         justify-content: space-between;
 
         .left {
-           color: var(--text-color) !important;
+            color: var(--text-color) !important;
 
             width: 70%;
             font-size: 1.3rem;
 
             a {
-                color: var(--pastel-color);
+                color: var(--pastel-color-2);
                 transition: var(--transition);
 
                 &:hover {
-                    color: var(--pastel-color-2);
+                    color: var(--pastel-color);
                 }
             }
         }
-        
+
         .right {
             width: 27%;
 
@@ -667,93 +682,93 @@ $thumb-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
 // Gradient Map based on Range Classes
 $gradients: (
-  'low': linear-gradient(90deg, #ff416c, #ff4b2b),    // Red/Orange range
-  'mid': linear-gradient(90deg, #3f0540, #5c52f4),    // Blue/Purple
-  'high': linear-gradient(90deg, #032825, #38ef7d)    // Green range
+    'low': linear-gradient(90deg, #ff416c, #ff4b2b),
+    // Red/Orange range
+    'mid': linear-gradient(90deg, #3f0540, #5c52f4),
+    // Blue/Purple
+    'high': linear-gradient(90deg, #032825, #38ef7d) // Green range
 );
 
 .language-container {
-  background: var(--dark-color);
-  width: 50vw;
-  padding: 20px;
-  margin: 5% 0;
-  border-radius: 12px;
-  border: 1px dashed var(--pastel-color-2);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  justify-self: center;
+    background: var(--dark-color);
+    width: 50vw;
+    padding: 20px;
+    margin: 5% 0;
+    border-radius: 12px;
+    border: 1px dashed var(--pastel-color-2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    justify-self: center;
 
-  .slider-group {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .label-row {
-    color: var(--text-color);
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .gradient-slider {
-    width: 100%;
-    height: 8px;
-    border-radius: 4px;
-    -webkit-appearance: none;
-    appearance: none;
-    outline: none;
-    cursor: pointer;
-
-    // Mixin to inject the background fill on webkit browsers
-    @mixin fill-track($gradient-fill) {
-      background: linear-gradient(
-        to right, 
-        transparent 0%, 
-        transparent var(--progress), 
-        $bg-track var(--progress), 
-        $bg-track 100%
-      ), $gradient-fill;
+    .slider-group {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
-    // Modern Modern Dynamic Loop Class Mapping
-    @each $range, $gradient in $gradients {
-      &.range-#{$range} {
-        @include fill-track(map.get($gradients, $range));
-      }
+    .label-row {
+        color: var(--text-color);
+        display: flex;
+        justify-content: space-between;
     }
 
-    // Slider Thumb Styling (Webkit)
-    &::-webkit-slider-thumb {
-      background: $thumb-color;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      border: 2px solid #ccc;
-      box-shadow: $thumb-shadow;
-      -webkit-appearance: none;
-      appearance: none;
-      transition: transform 0.1s ease;
+    .gradient-slider {
+        width: 100%;
+        height: 8px;
+        border-radius: 4px;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
 
-      &:hover {
-        transform: scale(1.2);
-      }
+        // Mixin to inject the background fill on webkit browsers
+        @mixin fill-track($gradient-fill) {
+            background: linear-gradient(to right,
+                    transparent 0%,
+                    transparent var(--progress),
+                    $bg-track var(--progress),
+                    $bg-track 100%), $gradient-fill;
+        }
+
+        // Modern Modern Dynamic Loop Class Mapping
+        @each $range, $gradient in $gradients {
+            &.range-#{$range} {
+                @include fill-track(map.get($gradients, $range));
+            }
+        }
+
+        // Slider Thumb Styling (Webkit)
+        &::-webkit-slider-thumb {
+            background: $thumb-color;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+            box-shadow: $thumb-shadow;
+            -webkit-appearance: none;
+            appearance: none;
+            transition: transform 0.1s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        // Slider Thumb Styling (Firefox)
+        &::-moz-range-thumb {
+            background: $thumb-color;
+            width: 18px;
+            height: 18px;
+            box-shadow: $thumb-shadow;
+            border: none;
+            border-radius: 50%;
+            transition: transform 0.1s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
     }
-
-    // Slider Thumb Styling (Firefox)
-    &::-moz-range-thumb {
-      background: $thumb-color;
-      width: 18px;
-      height: 18px;
-      box-shadow: $thumb-shadow;
-      border: none;
-      border-radius: 50%;
-      transition: transform 0.1s ease;
-
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-  }
 }
 
 /*========================== HOBBIES =============================*/
@@ -765,95 +780,96 @@ $card-bg: #ffffff;
 $text-color: #fafafa;
 
 .hobbies-container {
-  background-color: var(--exquisite-purple);
+    background-color: var(--exquisite-purple);
 
-  width: 75%;
-  //max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 5%;
-  padding: 40px 20px;
+    width: 75%;
+    //max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    padding: 40px 20px;
 
-  border-radius: 30px;
-  border: 1px dashed var(--pastel-color-2);
-
-  justify-self: center;
-
-  .title {
-    color: var(--text-color);
-
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 24px;
-  }
-
-  .hobby-card {
-    //background-color: #a788a7;
-    //background-color: #674967;
-    //background-color: #c3b5c3;
-   
-    padding: 30px 20px;
-    border-radius: 12px;
+    border-radius: 30px;
     border: 1px dashed var(--pastel-color-2);
-   
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-   
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 
-    &:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-    }
+    justify-self: center;
 
-    .icon-wrapper {
-      background-color: var(--pastel-color-2);
-      //background-color: rgba($primary-color, 0.1);
-
-      width: 60px;
-      height: 60px;
-
-      margin-bottom: 20px;
-      border-radius: 50%;
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .icon {
-        color: var(--dark-color);
-
-        font-size: 24px;
-      }
-    }
-
-    .hobby-name {
+    .title {
         color: var(--text-color);
-        //color: var(--dark-color);
-        //color: $primary-color;
 
-      font-size: 1.3rem;
-      //font-size: 1.25rem;
-      margin-bottom: 10px;
+        margin-bottom: 30px;
+        text-align: center;
     }
 
-    .hobby-description {
-        color: var(--text-color);
-        //color: lighten($text-color, 20%);
-        font-size: 1.15rem;
-        //font-size: 0.95rem;
-        line-height: 1.5;
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 24px;
     }
-  }
+
+    .hobby-card {
+        //background-color: #a788a7;
+        //background-color: #674967;
+        //background-color: #c3b5c3;
+
+        padding: 30px 20px;
+        border-radius: 12px;
+        border: 1px dashed var(--pastel-color-2);
+
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .icon-wrapper {
+            background-color: var(--pastel-color-2);
+            //background-color: rgba($primary-color, 0.1);
+
+            width: 60px;
+            height: 60px;
+
+            margin-bottom: 20px;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon {
+                color: var(--dark-color);
+
+                font-size: 24px;
+            }
+        }
+
+        .hobby-name {
+            color: var(--text-color);
+            //color: var(--dark-color);
+            //color: $primary-color;
+
+            font-size: 1.3rem;
+            //font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .hobby-description {
+            color: var(--text-color);
+            //color: lighten($text-color, 20%);
+            font-size: 1.15rem;
+            //font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    }
 }
+
 /*========================== RESPONSIVE MEDIA QUERIES =============================*/
 @media screen and (max-width: 1330px) {
     #home-page .max-width {
@@ -885,6 +901,7 @@ $text-color: #fafafa;
 }
 
 @media screen and (min-width:501px) and (max-width:1023px) {
+
     /*========================== HOME-PAGE =============================*/
     #home-page #home-page-content {
         .text-2 {
@@ -898,6 +915,7 @@ $text-color: #fafafa;
 }
 
 @media screen and (max-width: 690px) {
+
     /*========================== HOME-PAGE =============================*/
     .max-width {
         padding: 0 23px;
@@ -926,24 +944,24 @@ $text-color: #fafafa;
     #home-nav {
         ul {
             display: flex;
-            flex-wrap: nowrap;  
-            overflow-x: auto;      
+            flex-wrap: nowrap;
+            overflow-x: auto;
             -webkit-overflow-scrolling: touch;
-            
-            gap: 20px;     
-            padding: 15px;   
-            scrollbar-width: none;  
+
+            gap: 20px;
+            padding: 15px;
+            scrollbar-width: none;
 
             &:-webkit-scrollbar {
-               display: none;
+                display: none;
             }
 
-            
+
             li {
                 padding: 5px;
 
                 a {
-                    white-space: nowrap;     
+                    white-space: nowrap;
                 }
             }
         }
@@ -963,7 +981,7 @@ $text-color: #fafafa;
         width: 95%;
 
         .job {
-            
+
             .right {
                 img {
                     height: 25vh;
@@ -985,6 +1003,7 @@ $text-color: #fafafa;
 }
 
 @media screen and (min-width:300px) and (max-width:500px) {
+
     /*========================== HOME-PAGE =============================*/
     #home-page #home-page-content {
         .text-2 {

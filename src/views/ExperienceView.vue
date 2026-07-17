@@ -88,7 +88,6 @@ const filteredJobs = computed(() => {
     margin: 0 auto;
     padding: 2rem;
 
-
     /* Category Filter Tags Style */
     .categories {
         margin-bottom: 3.5rem;

@@ -15,7 +15,7 @@ export default {
 
     mounted() {
         this.typed = new Typed('#typing-name', {
-            strings: ["Queen Beela", "Nabila", "凤星云", "@Beela303", "Q.B", "Queen Beela"],
+            strings: ["Queen Beela", "Nabila", "凤星云", "봉성운", "@Beela303", "Q.B", "Queen Beela"],
             typeSpeed: 50,
             backSpeed: 50,
             loop: false,
@@ -42,17 +42,20 @@ export default {
     <!--======================================== MENU ==========================================================-->
     <nav>
         <ul>
-            <li v-tooltip="Home"><router-link to="/" title="Home" exact-active-class="active-class"><i class="fas fa-home"></i></router-link></li>
-            <li v-tooltip="Writing & Podcast"><router-link to="writingandpodcast" title="Writing & Podcast"  exact-active-class="active-class"><i
-                        class="fas fa-keyboard"></i></router-link></li>
+            <li v-tooltip="Home"><router-link to="/" title="Home" exact-active-class="active-class"><i
+                        class="fas fa-home"></i></router-link></li>
+            <li v-tooltip="Writing & Podcast"><router-link to="writingandpodcast" title="Writing & Podcast"
+                    exact-active-class="active-class"><i class="fas fa-keyboard"></i></router-link></li>
             <!--<li v-tooltip="Blogs"><router-link to="blogs" title="Blogs"><i class="fas fa-blog"></i></router-link></li>
             <li v-tooltip="Podcast"><router-link to="podcast" title="Podcast"><i
                         class="fas fa-podcast"></i></router-link></li>-->
-            <li v-tooltip="Work & Experience"><router-link to="workexp" title="Work & Experience" exact-active-class="active-class"><i
-                        class="fas fa-stream"></i></router-link></li>
-            <li v-tooltip="Gallery"><router-link to="gallery" title="Gallery" exact-active-class="active-class"><i class="fas fa-video"></i></router-link>
+            <li v-tooltip="Work & Experience"><router-link to="workexp" title="Work & Experience"
+                    exact-active-class="active-class"><i class="fas fa-stream"></i></router-link></li>
+            <li v-tooltip="Gallery"><router-link to="gallery" title="Gallery" exact-active-class="active-class"><i
+                        class="fas fa-video"></i></router-link>
             </li>
-            <li v-tooltip="Socials"><router-link to="socials" title="Socials" exact-active-class="active-class"><i class="fas fa-user"></i></router-link>
+            <li v-tooltip="Socials"><router-link to="socials" title="Socials" exact-active-class="active-class"><i
+                        class="fas fa-user"></i></router-link>
             </li>
         </ul>
     </nav>
