@@ -147,7 +147,7 @@ export default {
         </p>
         <h3>Singing</h3>
         <p>I started singing before I could even speak and wrote songs and poetry before I could
-            even properly write. I found myself always singing to the point I got bullied by my classmates
+            even properly write. I found myself always singing and I got bullied by my classmates
             in Junior Secondary School because of this, this led me to slowly sing less and over time,
             I found out I never sang as much as before.
             <br>
@@ -170,7 +170,7 @@ export default {
             <br>
             I went further to learn properly by watching YouTube videos.
             <br>
-            In 2023 (at 17), my mum enrolled me in a class that lasted about a month and a half
+            In 2023, my mum enrolled me in a class that lasted about a month and a half
             to learn more about producing clothes, different machines and how to use them.
             <br>
             I later took an online Diploma course that year on Fashion Design and another on Business
@@ -182,17 +182,17 @@ export default {
             passions and how every single item could be used to make beautiful pieces.
         </p>
         <h3>Coding</h3>
-        <p>At 12, in JSS 3 (9th grade), we were taught Scratch and how to use it to make stories and
+        <p>In JSS 3 (9th grade, 2018), we were taught Scratch and how to use it to make stories and
             games, this sparked my love in coding, at the time, I wanted to become a game developer.
             <br>
-            At 15, after graduating from secondary school, I started learning how to code but got into web
+            After graduating from secondary school, I started learning how to code but got into web
             development and later app development.
         </p>
         <h3>Music</h3>
         <p>At 12, I learnt how to play the acoustic guitar, which also made me learn a lot about
             music and music production.
             <br>
-            Around 2021 - 2023 (15 - 17) and started learning how to use bandlab to make and produce my
+            Around 2021 - 2023 and started learning how to use bandlab to make and produce my
             own songs, fueling my artistic passion.
         </p>
         <h3>Writing</h3>
@@ -214,7 +214,7 @@ export default {
             ANYTHING and EVERYTHING.
         </p>
         <h3>Nursing</h3>
-        <p>At 17, in 2023, I followed another of my passions (since I was 3) to be in the medical field
+        <p>In 2023, I followed another of my passions (since I was 3) to be in the medical field
             which shaped my perception of life.
             <br>
             Despite how stressful Nursing School was, I still continued with my other passions and interests.
@@ -225,7 +225,7 @@ export default {
         <p>
             [MAY]
             <br />
-            At 20, in 2026, I graduated from Nursing school
+            I graduated from Nursing school
             and officially became a Registered Nurse (RN).
             <br />
             [JUNE]

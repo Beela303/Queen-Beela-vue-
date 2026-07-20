@@ -15,7 +15,7 @@ const experiences = ref([
     {
         id: 2,
         role: 'Frontend Developer Intern',
-        company: 'FexiSAF Edusoft Limited',
+        company: 'FlexiSAF Edusoft Limited',
         dates: 'January 2026 - April 2026',
         description: 'Developing scalable web applications using React.',
         category: 'Software Development',
@@ -25,12 +25,12 @@ const experiences = ref([
     {
         id: 3,
         role: 'Backend Developer Intern',
-        company: 'FexiSAF Edusoft Limited',
+        company: 'FlexiSAF Edusoft Limited',
         dates: 'May 2026 - Present',
         description: 'Developing scalable secure backend applications.',
         category: 'Software Development',
         icon: 'fa-code',
-        tags: ['Java', 'Springboot']
+        tags: ['Java', 'Backend']
     },
 ]);
 
