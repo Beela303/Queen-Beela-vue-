@@ -6,6 +6,7 @@ const selectedCategory = ref('All');
 const searchQuery = ref('');
 const activePhoto = ref(null);
 
+//148
 const photos = ref([
     {
         id: 1,
@@ -356,6 +357,13 @@ const photos = ref([
         url: new URL('../assets/My Art/artwork_copyright/trad_28.webp', import.meta.url).href,
         categories: ['Traditional Art', 'Art'],
         title: 'Basket of Fruits'
+    },
+    {
+        id: 148,
+        type: 'image',
+        url: new URL('../assets/My Art/artwork_copyright/amulet_of_avalor.webp', import.meta.url).href,
+        categories: ['Digital Art', 'Art'],
+        title: 'Amulet of Avalor'
     },
 
     // MY PICTURES
