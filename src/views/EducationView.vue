@@ -37,7 +37,7 @@ const education = ref([
         duration: '2023',
         category: 'Business',
         icon: 'fa-people-arrows',
-    },    
+    },
     {
         id: 5,
         course: 'Blockchain & Crypto',
@@ -85,6 +85,24 @@ const education = ref([
     },
     {
         id: 10,
+        course: 'Introduction to Web Development',
+        type: 'Certificate',
+        school: 'Distinction',
+        duration: 'Feb. 2026',
+        category: 'Software Development',
+        icon: 'fa-code',
+    },
+    {
+        id: 11,
+        course: 'Mastering Productivity, Collaboration & Problem Solving for High-Performers',
+        type: 'Certificate',
+        school: 'Distinction',
+        duration: 'Feb. 2026',
+        category: 'Others',
+        icon: 'fa-code',
+    },
+    {
+        id: 12,
         course: 'Nursing',
         type: 'Registered Nursing',
         school: 'FCT college of Nursing Sciences',
@@ -93,8 +111,8 @@ const education = ref([
         icon: 'fa-stethoscope',
     },
     {
-        id: 11,
-        course: 'Infinite Realms - Creative (Art x Tech) Workshops',
+        id: 13,
+        course: 'Infinite Realms - Creative (Art x Tech) Workshop',
         type: 'Diploma',
         school: 'ACERCA and CAVIC',
         duration: 'June 2026',
@@ -102,7 +120,7 @@ const education = ref([
         icon: 'fa-palette',
     },
     {
-        id: 12,
+        id: 14,
         course: 'K-pop Dance Class',
         type: '',
         school: 'The Korean Cultural Center Nigeria',
@@ -112,7 +130,7 @@ const education = ref([
     },
 ]);
 
-const categories = ['All', 'Business', 'Dance', 'Fashion Design', 'Nursing', 'Software Development', 'Workshop', 'Writing'];
+const categories = ['All', 'Business', 'Dance', 'Fashion Design', 'Nursing', 'Others', 'Software Development', 'Workshop', 'Writing'];
 const selectedCategory = ref('All');
 
 const filteredEdu = computed(() => {
@@ -162,6 +180,7 @@ const filteredEdu = computed(() => {
     max-width: 600px;
 
     .timeline-content {
+
         h3,
         h4,
         p {
