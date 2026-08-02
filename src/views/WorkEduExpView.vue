@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue';
 
 import Work from './WorkView.vue'
-import EduxExp from './eduexpView.vue'
+import EduxExp from './EduExpView.vue'
 //import Experience from './ExperienceView.vue'
 
 export default {
