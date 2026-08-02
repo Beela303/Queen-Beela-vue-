@@ -4,6 +4,16 @@ import { ref, computed } from 'vue';
 const experiences = ref([
     {
         id: 1,
+        role: 'Host & Producer (Podcast)',
+        company: 'Undiscussed With Nabila',
+        dates: 'Oct. 2022 - May 2023',
+        description: "Disccussing life's issues and the world at large.",
+        category: 'Host',
+        icon: 'fa-microphone',
+        tags: ['Podcast', 'Writing']
+    },
+    {
+        id: 2,
         role: 'Ambassador',
         company: 'Cowrywise',
         dates: 'Dec. 2025 - May 2026',
@@ -13,7 +23,7 @@ const experiences = ref([
         tags: ['Finance', 'Education', 'Investment']
     },
     {
-        id: 2,
+        id: 3,
         role: 'Frontend Developer Intern',
         company: 'FlexiSAF Edusoft Limited',
         dates: 'January 2026 - April 2026',
@@ -23,10 +33,10 @@ const experiences = ref([
         tags: ['React', 'JavaScript', 'HTML/CSS']
     },
     {
-        id: 3,
+        id: 4,
         role: 'Backend Developer Intern',
         company: 'FlexiSAF Edusoft Limited',
-        dates: 'May 2026 - Present',
+        dates: 'May 2026 - August 2026',
         description: 'Developing scalable secure backend applications.',
         category: 'Software Development',
         icon: 'fa-code',
@@ -34,7 +44,7 @@ const experiences = ref([
     },
 ]);
 
-const categories = ['All', 'Software Development', 'Brand'];
+const categories = ['All', 'Brand', 'Host', 'Software Development'];
 const selectedCategory = ref('All');
 
 const filteredJobs = computed(() => {
@@ -87,14 +97,22 @@ const filteredJobs = computed(() => {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
+    padding-top: 0 !important;
 
     /* Category Filter Tags Style */
     .categories {
-        margin-bottom: 3.5rem;
-        gap: 12px;
+        margin-bottom: 2rem;
+        //margin-bottom: 3.5rem;
+        /*gap: 12px;
+
+        display: flex;
+        justify-content: center;*/
+        margin-bottom: 30px;
+        gap: 10px;
 
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
 
         .tag {
             color: #4b5563;
@@ -259,4 +277,29 @@ const filteredJobs = computed(() => {
 .timeline-list-move {
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/*@media screen and (max-width: 600px) {
+    .categories {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        
+        gap: 20px;
+        padding: 15px;
+        scrollbar-width: none;
+    }
+
+     .categories {
+        .tag {
+            &:first-child {
+                margin-left: 250px;
+            }
+
+            &:last-child {
+                margin-right: 50px;
+            }
+        }
+    }
+}*/
 </style>

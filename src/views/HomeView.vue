@@ -22,7 +22,7 @@ export default {
             ],
 
             hobbies: [
-                { id: 1, name: 'Dancing', icon: 'fa-music', description: 'Expressing my self through my body movements.' },
+                { id: 1, name: 'Dancing', icon: 'fa-music', description: 'Expressing my self through body movements.' },
                 { id: 2, name: 'Singing', icon: 'fa-microphone', description: 'Telling stories through lyrics.' },
                 { id: 3, name: 'Photography', icon: 'fa-camera-retro', description: 'Capturing landscapes and street life.' },
                 { id: 4, name: 'Art', icon: 'fa-palette', description: 'Exploring the world and documenting it.' },
@@ -98,7 +98,7 @@ export default {
                 <div class="text-1">✨Hello, my name is</div>
                 <div class="text-2">Nabila Abubakar</div>
                 <div class="text-3">And I'm <span id="typing" class="typed"></span></div>
-                <router-link to="/workexp"><button>Check out my work</button></router-link>
+                <router-link to="/workeduexp"><button>Check out my work</button></router-link>
             </div>
         </div>
     </section>
@@ -235,7 +235,7 @@ export default {
             <br />
             [JULY]
             <br />
-            Currently enrolled in a K-POP dance class by the Korean Cultural Center.
+            Finished a one month advanced K-POP dance class by the Korean Cultural Center Nigeria.
         </p>
     </section>
 
@@ -689,13 +689,19 @@ $gradients: (
     'high': linear-gradient(90deg, #032825, #38ef7d) // Green range
 );
 
+#languages {
+    margin: 5% 0;
+}
+
 .language-container {
     background: var(--dark-color);
+
     width: 50vw;
     padding: 20px;
-    margin: 5% 0;
+
     border-radius: 12px;
     border: 1px dashed var(--pastel-color-2);
+
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     justify-self: center;
 
@@ -955,7 +961,6 @@ $text-color: #fafafa;
             &:-webkit-scrollbar {
                 display: none;
             }
-
 
             li {
                 padding: 5px;

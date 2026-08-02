@@ -9,7 +9,9 @@ import ExperienceView from '@/views/ExperienceView.vue'
 import GalleryView from '@/views/GalleryView.vue'
 import SocialsView from '@/views/SocialsView.vue'
 import WritingPodcastView from '@/views/WritingPodcastView.vue'
-import WorkExpView from '@/views/WorkExpView.vue'
+import WorkEduExpView from '@/views/WorkEduExpView.vue'
+import EduExpView from '@/views/EduExpView.vue'
+import EducationView from '@/views/EducationView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -42,9 +44,19 @@ const router = createRouter({
       component: WorkView,
     },
     {
-      path: '/workexp',
-      name: 'work and experience',
-      component: WorkExpView,
+      path: '/workeduexp',
+      name: 'work, education and experience',
+      component: WorkEduExpView,
+    },
+    {
+      path: '/eduexp',
+      name: 'education and experience',
+      component: EduExpView,
+    },
+    {
+      path: '/education',
+      name: 'education',
+      component: EducationView,
     },
     {
       path: '/experience',
