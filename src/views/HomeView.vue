@@ -29,6 +29,7 @@ export default {
                 { id: 5, name: 'Writing', icon: 'fa-keyboard', description: 'Showcasing the world of imagination through writing.' },
                 { id: 6, name: 'Coding', icon: 'fa-code', description: 'Building things I want and like.' },
                 { id: 7, name: 'Gaming', icon: 'fa-gamepad', description: 'Having fun in another world.' },
+                { id: 8, name: 'Chess', icon: 'fa-chess', description: 'Brainstorming situations.' },
             ],
         };
     },
