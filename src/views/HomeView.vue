@@ -511,15 +511,15 @@ export default {
             margin: 5px 0;
 
             span {
-                //color: var(--light-purple);
+                color: var(--pastel-color-2);
                 //#160b17 #FAD0C4;
                 //color: pink; //var(--pastel-color)
 
                 padding-right: 20px;
 
-                border-bottom: 3px dashed var(--pastel-color-2);
-                //border-top: 3px dashed var(--pastel-color-2);
-                //border-left: 3px dashed var(--pastel-color-2);
+                //border-bottom: 1px solid var(--pastel-color-2);
+                //border-top: 1px solid var(--pastel-color-2);
+                //border-left: 1px solid var(--pastel-color-2);
                 border-radius: 10px;
 
                 font-weight: 500;
@@ -536,13 +536,13 @@ export default {
 
             button {
                 color: var(--text-color);
-                background: var(--main-color); //#551050
+                background: var(--pastel-color-2); //#551050
 
                 //padding: 12px 36px;
                 padding: 20px;
                 margin-top: 20px;
 
-                border: 3px dashed var(--pastel-color-2);
+                border: 1px solid var(--pastel-color-2);
                 border-radius: 30px;
 
                 font-size: 20px;
@@ -559,7 +559,7 @@ export default {
             }
 
             &:hover {
-                color: var(--main-color);
+                color: var(--pastel-color-2);
                 background: none;
 
                 //transition: all .3s ease;
@@ -612,8 +612,8 @@ export default {
         li {
             color: var(--text-color);
 
-            padding: 20px;
-            font-size: 1.5rem;
+            padding: 15px;
+            font-size: 1.2rem;
 
             flex-shrink: 0;
 
@@ -658,17 +658,16 @@ export default {
     margin: 0 25%;
 
     border-radius: 30px;
-    border: 3px dashed var(--pastel-color-2);
+    border: 1px solid var(--pastel-color-2);
 
     text-align: center;
 
     h2 {
         color: var(--pastel-color-2);
-        font-size: 1.75rem;
     }
 
     p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -677,10 +676,10 @@ export default {
     //background-color: #1A0A1D;
 
     width: 60%;
-    padding: 50px;
+    padding: 20px;
 
     border-radius: 30px;
-    border: 3px dashed var(--pastel-color-2);
+    border: 1px solid var(--pastel-color-2);
 
     justify-self: center;
 
@@ -691,7 +690,7 @@ export default {
     h3 {
         margin-top: 2%;
 
-        border-bottom: 1px dashed var(--pastel-color-2);
+        border-bottom: 1px solid var(--pastel-color-2);
         text-align: left;
 
         display: list-item;
@@ -709,10 +708,10 @@ export default {
     width: 70%;
 
     margin-top: 2.5%;
-    padding: 50px;
+    padding: 20px;
 
     border-radius: 30px;
-    border: 3px dashed var(--pastel-color-2);
+    border: 1px solid var(--pastel-color-2);
 
     justify-self: center;
 
@@ -778,10 +777,10 @@ $gradients: (
     width: 60%;
 
     margin: 2.5% 0;
-    padding: 50px;
+    padding: 20px;
 
     border-radius: 30px;
-    border: 3px dashed var(--pastel-color-2);
+    border: 1px solid var(--pastel-color-2);
 
     justify-self: center;
 }
@@ -794,7 +793,7 @@ $gradients: (
     margin-top: 2.5%;
 
     border-radius: 12px;
-    //border: 1px dashed var(--pastel-color-2);
+    //border: 1px solid var(--pastel-color-2);
 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     justify-self: center;
@@ -887,11 +886,11 @@ $text-color: #fafafa;
 
     margin: 0 auto;
     margin-bottom: 3%;
-    padding: 50px;
+    padding: 20px;
     //padding: 40px 20px;
 
     border-radius: 30px;
-    border: 3px dashed var(--pastel-color-2);
+    border: 1px solid var(--pastel-color-2);
 
     justify-self: center;
 }
@@ -920,7 +919,7 @@ $text-color: #fafafa;
 
         padding: 30px 20px;
         border-radius: 12px;
-        //border: 1px dashed var(--pastel-color-2);
+        //border: 1px solid var(--pastel-color-2);
 
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 

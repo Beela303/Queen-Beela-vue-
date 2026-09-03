@@ -163,7 +163,7 @@
         height: 15vh;
 
         border-radius: 20px;
-        border: 3px dashed var(--pastel-color-2);
+        border: 1px solid var(--pastel-color-2);
         //border: 1px solid var(--pastel-color-2);
 
         text-align: center;

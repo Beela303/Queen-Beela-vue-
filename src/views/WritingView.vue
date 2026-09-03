@@ -42,7 +42,7 @@
 }
 
 a {
-    border: 3px dashed var(--border-main) !important;
+    border: 1px solid var(--border-main) !important;
 
 }
 
@@ -57,7 +57,7 @@ a .writing-div {
 
     margin-bottom: 2.5%;
 
-    border: 3px dashed var(--pastel-color-2) !important;
+    border: 1px solid var(--pastel-color-2) !important;
     border-radius: 30px;
 
     display: flex;

@@ -276,7 +276,7 @@ iframe {
     width: 70vw;
 
     .podcast-info {
-        border: 3px dashed var(--pastel-color-2);
+        border: 1px solid var(--pastel-color-2);
         //border: var(--border-main);
         border-radius: 25px;
 

@@ -93,8 +93,6 @@ export default {
             background-color: transparent;
 
             padding: 12px 0;
-
-            font-size: 1.3rem;
             font-weight: 600;
 
             border: none;

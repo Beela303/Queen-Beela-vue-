@@ -40,7 +40,7 @@
 
         margin-bottom: 2.5%;
 
-        border: 3px dashed var(--pastel-color-2);
+        border: 1px solid var(--pastel-color-2);
         //border: var(--border-main);
         border-radius: 30px;
 
