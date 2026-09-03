@@ -538,7 +538,7 @@ export default {
 
             button {
                 color: var(--text-color);
-                background: var(--exquisite-purple); //#551050
+                background: var(--pastel-color-2); //#551050
 
                 //padding: 12px 36px;
                 padding: 20px;
