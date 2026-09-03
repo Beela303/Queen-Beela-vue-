@@ -1102,13 +1102,12 @@ $text-color: #fafafa;
         padding: 25px !important;
     }
 
-    /*#about-me,
-    #my-story {
+    #about-me {
         width: 90%;
         margin: 2.5% 5%;
     }
 
-    #my-story {
+    /*#my-story {
         padding: 30px;
     }*/
 
