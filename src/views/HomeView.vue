@@ -677,7 +677,7 @@ export default {
 #work,
 #languages,
 #hobbies {
-    margin-bottom: 2.5vh;
+    margin-bottom: 5vh;
     justify-self: center !important;
 }
 
@@ -1101,7 +1101,7 @@ $text-color: #fafafa;
     #hobbies {
         width: 90% !important;
         margin: 2.5% 5%;
-        padding: 25px !important;
+        padding: 15px !important;
     }
 
     #about-me {
@@ -1126,7 +1126,7 @@ $text-color: #fafafa;
     }
 
     .language-container {
-        width: 70vw;
+        width: 75vw;
         justify-self: center !important;
     }
 

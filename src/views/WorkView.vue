@@ -36,7 +36,7 @@
 
     .work {
         color: var(--text-color);
-        background: var(--main-color);
+        background: var(--pastel-color-2);
         width: 30vw;
         height: 30vh; //200px
 
@@ -83,6 +83,10 @@
         .work {
             width: 50vw;
             height: 25vh;
+
+            p {
+                font-size: 1.5rem;
+            }
         }
     }
 }

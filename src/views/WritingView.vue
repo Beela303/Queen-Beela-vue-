@@ -47,7 +47,7 @@ a {
 
 a .writing-div {
     color: var(--text-color);
-    background: var(--main-color);
+    background: var(--pastel-color-2);
     text-decoration: none !important;
 }
 
