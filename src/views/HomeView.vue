@@ -1004,6 +1004,7 @@ $text-color: #fafafa;
 
     #work {
         .job {
+            padding: 15px;
             display: block;
 
             .left,

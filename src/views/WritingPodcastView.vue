@@ -90,7 +90,7 @@ export default {
         }
 
         .tab-btn {
-            color: #4b5563;
+            color: var(--text-color);
             background-color: transparent;
 
             padding: 12px 0;

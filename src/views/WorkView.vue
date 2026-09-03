@@ -81,7 +81,11 @@
 
         .work {
             width: 30vw;
-            height: 20vh;
+            height: 30vh;
+
+            p {
+                font-size: 1.2rem;
+            }
         }
     }
 }

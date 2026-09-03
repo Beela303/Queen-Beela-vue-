@@ -99,6 +99,17 @@ a .writing-div {
 }
 */
 
+@media screen and (max-width: 600px) {
+    .writing-div {
+        width: 30vw;
+        height: 30vh;
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
 @media screen and (max-width: 350px) {
     #writing {
         grid-template-columns: 1fr;

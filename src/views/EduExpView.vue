@@ -57,13 +57,14 @@ export default {
         //background-color: #f3f4f6;
         background-color: var(--main-color);
 
+
         width: 500px;
         border-radius: 30;
         border: 1px solid var(--pastel-color-2);
 
         .tab-btn {
-            color: var(--text-color);
             //color: #4b5563;
+            color: #4b5563;
             background-color: transparent;
         }
     }
