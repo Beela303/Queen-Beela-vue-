@@ -85,7 +85,7 @@ nav {
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter: blur(10px);
 
-    position: sticky;
+    position: fixed;
     z-index: 9999;
 
     h1 {
