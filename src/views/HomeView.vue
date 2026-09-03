@@ -513,8 +513,7 @@ export default {
             margin: 5px 0;
 
             span {
-                color: var(--main-color);
-                //color: var(--pastel-color-2);
+                color: var(--pastel-color-2);
                 //#160b17 #FAD0C4;
                 //color: pink; //var(--pastel-color)
 
