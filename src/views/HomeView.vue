@@ -586,6 +586,8 @@ export default {
     transform: translateZ(0);
     will-change: transform, position;
 
+    display: none !important;
+
     ul {
         background-color: var(--dark-color);
         //background-color: transparent;
@@ -1128,7 +1130,7 @@ $text-color: #fafafa;
     }
 
     .language-container {
-        width: 80% !important;
+        width: 60vw !important;
         justify-self: center !important;
     }
 
