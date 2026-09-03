@@ -1679,13 +1679,16 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeyDown));
     font-size: 30px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    //justify-content: space-between;
     justify-self: center !important;
     place-items: center;
 
     button {
         color: var(--text-color);
         background: none;
+
+        margin-left: 30px;
     }
 }
 
