@@ -65,7 +65,7 @@ import ScrollToTop from './components/ScrollToTop.vue';
 }
 
 body {
-  /*color: var(--text-color) !important;
+  color: var(--text-color) !important;
   background-color: var(--dark-color-2) !important;
 
   font-family: "Bitcount Prop Single", system-ui;
@@ -75,11 +75,11 @@ body {
     "slnt" 0,
     "CRSV" 0.5,
     "ELSH" 0,
-    "ELXP" 0;*/
+    "ELXP" 0;
 
-  font-family: "playfair Display", serif;
+  /*font-family: "playfair Display", serif;
   font-optical-sizing: auto;
-  font-style: normal;
+  font-style: normal;*/
 
   outline: none;
   overflow-x: hidden !important;
@@ -178,18 +178,18 @@ h6 {
 }
 
 button {
-  /*font-family: "Bitcount Prop Single", system-ui;
+  font-family: "Bitcount Prop Single", system-ui;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
     "slnt" 0,
     "CRSV" 0.5,
     "ELSH" 0,
-    "ELXP" 0;*/
+    "ELXP" 0;
 
-  font-family: "playfair Display", serif;
+  /*font-family: "playfair Display", serif;
   font-optical-sizing: auto;
-  font-style: normal;
+  font-style: normal;*/
 
   border: none;
   outline: none;
