@@ -171,12 +171,14 @@ export default {
             </p>
             <h3>Singing</h3>
             <p>I started singing before I could even speak and wrote songs and poetry before I could
-                even properly write. I found myself always singing and I got bullied by my classmates
+                even properly write. <!--I found myself always singing and I got bullied by my classmates
                 in Junior Secondary School because of this, this led me to slowly sing less and over time,
-                I found out I never sang as much as before.
+                I found out I never sang as much as before.-->
                 <br>
-                Later in life, I realized this was just giving them what they wanted so I started being me again
-                and also found my found my passion in Dance.
+                Because of certain life events, I sang less and less but I realized this wasn't what I wanted,
+                I wanted to continue expressing myself through music
+                <!--was just giving them what they wanted so I started being me again-->
+                and this also made me find a burning flame for Dance.
             </p>
             <h3>Knitting & Crochet</h3>
             <p>At 6, my mum taught me how to knit and crochet. In Junior Secondary School, I often sold
