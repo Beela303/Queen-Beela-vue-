@@ -1125,7 +1125,7 @@ $text-color: #fafafa;
 
     .language-container {
         width: 70vw;
-        justify-self-center !important;
+        justify-self: center !important;
     }
 
     .hobbies-container {

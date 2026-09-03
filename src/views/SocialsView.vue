@@ -61,7 +61,7 @@
 
         <!--<a href="" target="_blank" rel="noopener noreferrer">
             <div>
-                <!--<i class="fa-brands fa-rednote"></i>
+                <i class="fa-brands fa-rednote"></i>
                 <p>Rednote<br />小红书</p>
             </div>
         </a>-->
