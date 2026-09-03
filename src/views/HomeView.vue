@@ -477,7 +477,7 @@ export default {
 
         //background: url("../assets/My\ Art/artwork_copyright/calm_ambience.webp") no-repeat center;
         //background: url("../assets/My\ Art/artwork_copyright/seeking_through_the_abyss.webp") no-repeat center;
-        background: transparent;
+        background: var(--exquisite-purple);
         background-size: cover;
         position: absolute;
         background-attachment: fixed;
