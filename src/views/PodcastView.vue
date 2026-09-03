@@ -274,7 +274,7 @@ iframe {
 
 #podcast {
     width: 70vw;
-    padding: 30px;
+    justify-self: center;
 
     .podcast-info {
         border: 1px solid var(--pastel-color-2);
