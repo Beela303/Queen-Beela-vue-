@@ -53,7 +53,7 @@ export default {
         // INITIALIZED TYPED.JS
         this.typed = new Typed('#typing', {
             strings: [
-                "a Software Developer",
+                "a Software Engineer",
                 "a Nurse",
                 "an Artist",
                 "a Podcaster",
@@ -283,7 +283,7 @@ export default {
             <div class="job">
                 <div class="left">
                     <h2>Software Development</h2>
-                    <p>I'm a fullstack web and app developer with experience as a Frontend and Backend Intern at
+                    <p>I'm a Software Engineer with experience as a Frontend and Backend Intern at
                         FlexiSAF Edusoft Limited.
                     </p>
                     <br />
@@ -815,7 +815,7 @@ $gradients: (
     //border: 1px solid var(--pastel-color-2);
 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    //justify-self: center;
+    justify-self: center;
 
     .slider-group {
         margin-bottom: 20px;
@@ -1138,7 +1138,7 @@ $text-color: #fafafa;
 
     .language-container {
         width: 75vw !important;
-        justify-content: center;
+        //justify-content: center;
         place-items: center;
         justify-self: center !important;
     }
