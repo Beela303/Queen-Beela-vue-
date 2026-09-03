@@ -1,6 +1,8 @@
 <script setup>
 import { ref, computed } from 'vue';
 
+const categoriesTab = ref(false)
+
 const education = ref([
     {
         id: 1,
@@ -145,8 +147,16 @@ const filteredEdu = computed(() => {
 
 <template>
     <div class="experience-page">
+        <div id="categories-div-arrow">
+            <p>Categories</p>
+
+            <button id="button-open-close" @click="categoriesTab = !categoriesTab" type="button">
+                <i :class="['fas', categoriesTab ? 'fa-chevron-up' : 'fa-chevron-down']"></i>
+            </button>
+        </div>
+
         <!-- Category Tags Navigation -->
-        <div class="categories">
+        <div class="categories" v-if="categoriesTab">
             <button v-for="category in categories" :key="category"
                 :class="['tag', { active: selectedCategory === category }]" @click="selectedCategory = category">
                 {{ category }}
@@ -157,7 +167,7 @@ const filteredEdu = computed(() => {
         <div class="timeline">
             <!-- TransitionGroup enables fluid shuffling/filtering animations -->
             <TransitionGroup name="timeline-list">
-                <div v-for="(education, index) in filteredEdu" :key="education.id" class="timeline-item">
+                <div v-for="(education) in filteredEdu" :key="education.id" class="timeline-item">
                     <!-- Dynamic Font Awesome Icon replaces standard dot -->
                     <div class="timeline-dot-icon">
                         <i :class="['fas', education.icon]"></i>
@@ -174,18 +184,3 @@ const filteredEdu = computed(() => {
         </div>
     </div>
 </template>
-
-<style lang="scss" scoped>
-.experience-page {
-    max-width: 600px;
-
-    .timeline-content {
-
-        h3,
-        h4,
-        p {
-            text-align: center;
-        }
-    }
-}
-</style>

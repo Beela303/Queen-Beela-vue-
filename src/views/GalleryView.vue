@@ -5,6 +5,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 const selectedCategory = ref('All');
 const searchQuery = ref('');
 const activePhoto = ref(null);
+const categoriesTab = ref(false)
 
 //148
 const photos = ref([
@@ -1125,8 +1126,16 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeyDown));
                 class="search-bar" />
         </div>
 
+        <div id="categories-div-arrow">
+            <p>Categories</p>
+
+            <button id="button-open-close" @click="categoriesTab = !categoriesTab" type="button">
+                <i :class="['fas', categoriesTab ? 'fa-chevron-up' : 'fa-chevron-down']"></i>
+            </button>
+        </div>
+
         <!-- Category Tabs -->
-        <div class="tabs">
+        <div class="tabs" v-if="categoriesTab">
             <button v-for="cat in categoriesList" :key="cat" :class="{ active: selectedCategory === cat }"
                 @click="selectedCategory = cat">
                 {{ cat }}
@@ -1663,6 +1672,22 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeyDown));
     }
 }
 
+    #categories-div-arrow {
+        width: 70%;
+        margin-bottom: 2%;
+
+        font-size: 30px;
+
+        display: flex;
+        justify-content: space-between;
+        justify-self: center;
+
+        button {
+            color: var(--text-color);
+            background: none;
+        }
+    }
+
 .gallery-container {
     max-width: 1200px;
 
@@ -1683,7 +1708,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeyDown));
 
             padding: 12px;
 
-            border: 2px solid var(--main-color);
+            border: 2px solid var(--pastel-color-2);
             border-radius: 25px;
 
             font-size: 16px;
@@ -1699,11 +1724,13 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeyDown));
         justify-content: center;
         flex-wrap: wrap;
 
+        transition: 5s;
+
         button {
             background: var(--text-color);
 
             padding: 10px 20px;
-            border: 1px solid var(--main-color);
+            border: 1px solid var(--pastel-color-2);
 
             border-radius: 20px;
             font-weight: bold;

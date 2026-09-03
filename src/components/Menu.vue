@@ -49,8 +49,9 @@ export default {
             <!--<li v-tooltip="Blogs"><router-link to="blogs" title="Blogs"><i class="fas fa-blog"></i></router-link></li>
             <li v-tooltip="Podcast"><router-link to="podcast" title="Podcast"><i
                         class="fas fa-podcast"></i></router-link></li>-->
-            <li v-tooltip="Work, Education & Experience"><router-link to="workeduexp" title="Work, Education & Experience"
-                    exact-active-class="active-class"><i class="fas fa-stream"></i></router-link></li>
+            <li v-tooltip="Work, Education & Experience"><router-link to="workeduexp"
+                    title="Work, Education & Experience" exact-active-class="active-class"><i
+                        class="fas fa-stream"></i></router-link></li>
             <li v-tooltip="Gallery"><router-link to="gallery" title="Gallery" exact-active-class="active-class"><i
                         class="fas fa-video"></i></router-link>
             </li>
@@ -121,9 +122,10 @@ nav {
 }
 
 .active-class {
+    color: var(--text-color);
     background-color: var(--main-color);
 
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 /*========================== HEADER =============================*/

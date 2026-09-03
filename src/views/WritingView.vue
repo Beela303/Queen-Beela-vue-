@@ -41,6 +41,11 @@
     gap: 20px;
 }
 
+a {
+    border: 3px dashed var(--border-main) !important;
+
+}
+
 a .writing-div {
     color: var(--text-color);
     text-decoration: none !important;
@@ -52,13 +57,13 @@ a .writing-div {
 
     margin-bottom: 2.5%;
 
-    border: var(--border-main);
+    border: 3px dashed var(--pastel-color-2) !important;
     border-radius: 30px;
 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
+
     transition: var(--transition);
 
     &:hover {

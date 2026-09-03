@@ -1,9 +1,3 @@
-<script>
-export default {
-
-}
-</script>
-
 <template>
     <div id="podcast">
         <div class="podcast-info">
@@ -168,103 +162,103 @@ export default {
         </div>
         <iframe style="border-radius:12px"
             src="https://open.spotify.com/embed/episode/4WlVocHG9wycMO0qLd3c38?utm_source=generator" width="100%"
-            height="152" frameBorder="0" allowfullscreen=""
+            height="152" frameBorder="0" allowfullscreen="true"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <hr>
         <div id="audio">
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/4RWC0ZqEvcZzdQEVgKeUgi?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/5kikp7hOfknRMPfOiMW4e9?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/514nnTewUoirbsPOF0KaGQ?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/3OpdeX9gc8BMEl2yql3lXZ?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/76Hddi3McI3l9VxFhw2jPC?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/53olV3XoNunCd7Iro1K6Gk?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/1gIx2W5sVnoY091VUzcXO1?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/5AF3dxsSRhWAA1e1cpFSAU?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/0gtZ16t6dwHXHu1kGoe8mG?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/1aodgcLo54onTnnGs0FP5L?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/6WAiTBtbBU4pPoPB8IY1eY?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/1waV40Vs8qepQz4j5QH5fg?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/0bx2vXkNyPv4yYo0XG2QMf?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/0wZ9Q4os30b2CqJY1Knme3?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/454OJ5mTH5g79KoHsIUaul?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/5Elk3sd4kdVv9YKmUq2OBw?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/1HFKCCkPe7FCDVPjPRyQw3?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/7GMQ61t6exSXqVZyHxuoq6?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/26TFlSaH4fNLOQ4ucfDx6u?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
         </div>
@@ -282,7 +276,8 @@ iframe {
     width: 70vw;
 
     .podcast-info {
-        border: var(--border-main);
+        border: 3px dashed var(--pastel-color-2);
+        //border: var(--border-main);
         border-radius: 25px;
 
         margin: 1%;

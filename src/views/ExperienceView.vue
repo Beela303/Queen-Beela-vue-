@@ -1,13 +1,15 @@
 <script setup>
 import { ref, computed } from 'vue';
 
+const categoriesTab = ref(false)
+
 const experiences = ref([
     {
         id: 1,
         role: 'Host & Producer (Podcast)',
         company: 'Undiscussed With Nabila',
         dates: 'Oct. 2022 - May 2023',
-        description: "Disccussing life's issues and the world at large.",
+        description: "Discussing life's issues and the world at large.",
         category: 'Host',
         icon: 'fa-microphone',
         tags: ['Podcast', 'Writing']
@@ -42,6 +44,16 @@ const experiences = ref([
         icon: 'fa-code',
         tags: ['Java', 'Backend']
     },
+    {
+        id: 5,
+        role: 'Python Programming Intern',
+        company: 'FlexiSAF Edusoft Limited',
+        dates: 'Sept. 2026 - Present',
+        description: 'Developing scalable, secure and robust applications.',
+        category: 'Software Development',
+        icon: 'fa-code',
+        tags: ['Python', 'API']
+    },
 ]);
 
 const categories = ['All', 'Brand', 'Host', 'Software Development'];
@@ -59,8 +71,16 @@ const filteredJobs = computed(() => {
 
 <template>
     <div class="experience-page">
+        <div id="categories-div-arrow">
+            <p>Categories</p>
+
+            <button id="button-open-close" @click="categoriesTab = !categoriesTab" type="button">
+                <i :class="['fas', categoriesTab ? 'fa-chevron-up' : 'fa-chevron-down']"></i>
+            </button>
+        </div>
+
         <!-- Category Tags Navigation -->
-        <div class="categories">
+        <div class="categories" v-if="categoriesTab">
             <button v-for="category in categories" :key="category"
                 :class="['tag', { active: selectedCategory === category }]" @click="selectedCategory = category">
                 {{ category }}
@@ -71,7 +91,7 @@ const filteredJobs = computed(() => {
         <div class="timeline">
             <!-- TransitionGroup enables fluid shuffling/filtering animations -->
             <TransitionGroup name="timeline-list">
-                <div v-for="(job, index) in filteredJobs" :key="job.id" class="timeline-item">
+                <div v-for="(job) in filteredJobs" :key="job.id" class="timeline-item">
                     <!-- Dynamic Font Awesome Icon replaces standard dot -->
                     <div class="timeline-dot-icon">
                         <i :class="['fas', job.icon]"></i>
@@ -95,9 +115,27 @@ const filteredJobs = computed(() => {
 <style lang="scss">
 .experience-page {
     max-width: 800px;
+    min-width: 800px;
+
     margin: 0 auto;
     padding: 2rem;
     padding-top: 0 !important;
+
+    #categories-div-arrow {
+        width: 70%;
+        margin-bottom: 2%;
+
+        font-size: 30px;
+
+        display: flex;
+        justify-content: space-between;
+        justify-self: center;
+
+        button {
+            color: var(--text-color);
+            background: none;
+        }
+    }
 
     /* Category Filter Tags Style */
     .categories {
@@ -123,6 +161,7 @@ const filteredJobs = computed(() => {
             border: 1px solid #e5e7eb;
             border-radius: 25px;
 
+            font-size: 1rem;
             font-weight: 500;
 
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -132,8 +171,8 @@ const filteredJobs = computed(() => {
 
             &.active,
             &:hover {
-                color: var(--text-color);
-                background: var(--main-color);
+                //color: var(--text-color);
+                background: var(--pastel-color-2);
 
                 border-color: var(--pastel-color-2);
 
@@ -161,13 +200,15 @@ const filteredJobs = computed(() => {
 
             border-radius: 8px;
             border: 1px solid var(--pastel-color-2);
+            //border: 1px solid var(--pastel-color-2);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 
             position: relative;
 
             .timeline-dot-icon {
-                color: var(--text-color);
-                background: var(--main-color);
+                //color: var(--text-color);
+                color: #4b5563;
+                background: var(--pastel-color-2);
 
                 left: -3.45rem;
                 top: 14px;
@@ -192,12 +233,14 @@ const filteredJobs = computed(() => {
                 color: var(--text-color);
                 background-color: var(--dark-color);
 
+                text-align: center;
+
                 h3 {
                     color: var(--text-color);
                     //color: #111827;
 
                     margin: 0;
-                    font-size: 1.25rem;
+                    font-size: 1.6rem; //1.25rem
                 }
 
                 h4 {
@@ -205,6 +248,8 @@ const filteredJobs = computed(() => {
                     //color: #4b5563;
 
                     margin: 0.35rem 0 0;
+
+                    font-size: 1.4rem;
                     font-weight: 500;
                 }
 
@@ -214,7 +259,7 @@ const filteredJobs = computed(() => {
 
                     margin: 0.5rem 0 0.75rem;
 
-                    font-size: 0.85rem;
+                    font-size: 1.2rem; //0.85rem
                     font-weight: 500;
                 }
 
@@ -223,13 +268,16 @@ const filteredJobs = computed(() => {
                     //color: #374151;
 
                     margin: 0;
+
+                    font-size: 1.5rem;
                     line-height: 1.5;
                 }
 
                 .job-tags {
                     margin-top: 1rem;
-
                     gap: 8px;
+
+                    justify-content: center;
 
                     display: flex;
                     flex-wrap: wrap;
@@ -244,7 +292,7 @@ const filteredJobs = computed(() => {
                         border: 1px solid var(--pastel-color-2);
 
                         font-weight: 500;
-                        font-size: 0.75rem;
+                        font-size: 1.3rem; //0.75rem
                     }
                 }
             }
@@ -276,6 +324,13 @@ const filteredJobs = computed(() => {
 /* Smooth reordering layout movement (v-move) */
 .timeline-list-move {
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 768px) {
+    .experience-page {
+        max-width: 600px !important;
+        min-width: 600px !important;
+    }
 }
 
 /*@media screen and (max-width: 600px) {

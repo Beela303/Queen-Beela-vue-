@@ -1,8 +1,23 @@
 <script>
-import Typed from 'typed.js'
+import Typed from 'typed.js';
+import { ref, computed } from 'vue';
 
 export default {
     name: 'HomeView',
+
+    setup() {
+        const mystorySection = ref(false)
+        const workSection = ref(false)
+        const languagesSection = ref(false)
+        const hobbiesSection = ref(false)
+
+        return {
+            mystorySection,
+            workSection,
+            languagesSection,
+            hobbiesSection
+        }
+    },
 
     data() {
         return {
@@ -141,240 +156,274 @@ export default {
 
     <!--========================== MY STORY =============================-->
     <section id="my-story">
-        <h2>My Story</h2>
 
-        <p>Every single thing I do didn't just start from nowhere but has been a testimony
-            of perseverance, faith, endurance and passion.
-        </p>
-        <h3>Singing</h3>
-        <p>I started singing before I could even speak and wrote songs and poetry before I could
-            even properly write. I found myself always singing and I got bullied by my classmates
-            in Junior Secondary School because of this, this led me to slowly sing less and over time,
-            I found out I never sang as much as before.
-            <br>
-            Later in life, I realized this was just giving them what they wanted so I started being me again
-            and also found my found my passion in Dance.
-        </p>
-        <h3>Knitting & Crochet</h3>
-        <p>At 6, my mum taught me how to knit and crochet. In Junior Secondary School, I often sold
-            Scrunchies to classmates.
-        </p>
-        <h3>Jewelry Making & Design</h3>
-        <p>At 7, I loved how Jewelry were being made and how it looked, so my mum tok me for classes
-            during the holiday, after which I started making pieces for myself and my mum.
-        </p>
-        <h3>Fashion Design</h3>
-        <p>I started sewing and designing clothes mainly because of the clothes Sofia from
-            Sofia the First wore, especially the one she wore for the flying horse race so I asked
-            my mum to get me a purple material and some sewing materials. From there, I traced my
-            clothes onto the fabric, cut it and hand sewed it.
-            <br>
-            I went further to learn properly by watching YouTube videos.
-            <br>
-            In 2023, my mum enrolled me in a class that lasted about a month and a half
-            to learn more about producing clothes, different machines and how to use them.
-            <br>
-            I later took an online Diploma course that year on Fashion Design and another on Business
-            Administration on Alison despite being in Nursing School.
-        </p>
-        <h3>Design (General)</h3>
-        <p>During a holiday at around 10-12, I learnt how to make throw pillows and artistic designs
-            using bottles, mirrors, cardboard and some other materials. This fueled my artistic
-            passions and how every single item could be used to make beautiful pieces.
-        </p>
-        <h3>Coding</h3>
-        <p>In JSS 3 (9th grade, 2018), we were taught Scratch and how to use it to make stories and
-            games, this sparked my love in coding, at the time, I wanted to become a game developer.
-            <br>
-            After graduating from secondary school, I started learning how to code but got into web
-            development and later app development.
-        </p>
-        <h3>Music</h3>
-        <p>At 12, I learnt how to play the acoustic guitar, which also made me learn a lot about
-            music and music production.
-            <br>
-            Around 2021 - 2023 and started learning how to use bandlab to make and produce my
-            own songs, fueling my artistic passion.
-        </p>
-        <h3>Writing</h3>
-        <p>I wrote my first book at 13/14 on Wattpad which got over a thousand views and two awards
-            but unfortunately I didn't finish it at the time. (I'm currently working on this book)
-            <br>
-            Although from a young age, I've been into poems and song writing, I never really wrote them
-            down or published them so at 19, in 2025, I made my blog
-            <a href="http://beela303.blogspot.com" target="_blank" rel="noopener noreferrer">Queen Beela</a>
-            where I started posting my works, thoughts generally and what I'm up to.
-        </p>
-        <h3>Podcasting</h3>
-        <p>
-            I've always been interested in public speaking and debates that eventually led me to
-            create my own podcast.
-            <br />
-            It's called Undiscussed With Nabila, and it's named that way
-            because I use this as an avenue for expression, exploration and literally discussing
-            ANYTHING and EVERYTHING.
-        </p>
-        <h3>Nursing</h3>
-        <p>In 2023, I followed another of my passions (since I was 3) to be in the medical field
-            which shaped my perception of life.
-            <br>
-            Despite how stressful Nursing School was, I still continued with my other passions and interests.
-            <br>
-            I became an ambassador and a frontend and backend intern before graduation.
-        </p>
-        <h3>2026</h3>
-        <p>
-            [MAY]
-            <br />
-            I graduated from Nursing school
-            and officially became a Registered Nurse (RN).
-            <br />
-            [JUNE]
-            <br />
-            I attended an Art x Tech Workshop by CAVIC that helped me understand more about visuals, sound,
-            haptics, immersion and experience.
-            <br />
-            [JULY]
-            <br />
-            Finished a one month advanced K-POP dance class by the Korean Cultural Center Nigeria.
-        </p>
+        <div class="dsb">
+            <h2>My Story</h2>
+
+            <button class="button-open-close" @click="mystorySection = !mystorySection" type="button">
+                <i :class="['fas', mystorySection ? 'fa-chevron-up' : 'fa-chevron-down']"></i>
+            </button>
+        </div>
+
+        <div v-if="mystorySection">
+            <p>Every single thing I do didn't just start from nowhere but has been a testimony
+                of perseverance, faith, endurance and passion.
+            </p>
+            <h3>Singing</h3>
+            <p>I started singing before I could even speak and wrote songs and poetry before I could
+                even properly write. I found myself always singing and I got bullied by my classmates
+                in Junior Secondary School because of this, this led me to slowly sing less and over time,
+                I found out I never sang as much as before.
+                <br>
+                Later in life, I realized this was just giving them what they wanted so I started being me again
+                and also found my found my passion in Dance.
+            </p>
+            <h3>Knitting & Crochet</h3>
+            <p>At 6, my mum taught me how to knit and crochet. In Junior Secondary School, I often sold
+                Scrunchies to classmates.
+            </p>
+            <h3>Jewelry Making & Design</h3>
+            <p>At 7, I loved how Jewelry were being made and how it looked, so my mum tok me for classes
+                during the holiday, after which I started making pieces for myself and my mum.
+            </p>
+            <h3>Fashion Design</h3>
+            <p>I started sewing and designing clothes mainly because of the clothes Sofia from
+                Sofia the First wore, especially the one she wore for the flying horse race so I asked
+                my mum to get me a purple material and some sewing materials. From there, I traced my
+                clothes onto the fabric, cut it and hand sewed it.
+                <br>
+                I went further to learn properly by watching YouTube videos.
+                <br>
+                In 2023, my mum enrolled me in a class that lasted about a month and a half
+                to learn more about producing clothes, different machines and how to use them.
+                <br>
+                I later took an online Diploma course that year on Fashion Design and another on Business
+                Administration on Alison despite being in Nursing School.
+            </p>
+            <h3>Design (General)</h3>
+            <p>During a holiday at around 10-12, I learnt how to make throw pillows and artistic designs
+                using bottles, mirrors, cardboard and some other materials. This fueled my artistic
+                passions and how every single item could be used to make beautiful pieces.
+            </p>
+            <h3>Coding</h3>
+            <p>In JSS 3 (9th grade, 2018), we were taught Scratch and how to use it to make stories and
+                games, this sparked my love in coding, at the time, I wanted to become a game developer.
+                <br>
+                After graduating from secondary school, I started learning how to code but got into web
+                development and later app development.
+            </p>
+            <h3>Music</h3>
+            <p>At 12, I learnt how to play the acoustic guitar, which also made me learn a lot about
+                music and music production.
+                <br>
+                Around 2021 - 2023 and started learning how to use bandlab to make and produce my
+                own songs, fueling my artistic passion.
+            </p>
+            <h3>Writing</h3>
+            <p>I wrote my first book at 13/14 on Wattpad which got over a thousand views and two awards
+                but unfortunately I didn't finish it at the time. (I'm currently working on this book)
+                <br>
+                Although from a young age, I've been into poems and song writing, I never really wrote them
+                down or published them so at 19, in 2025, I made my blog
+                <a href="http://beela303.blogspot.com" target="_blank" rel="noopener noreferrer">Queen Beela</a>
+                where I started posting my works, thoughts generally and what I'm up to.
+            </p>
+            <h3>Podcasting</h3>
+            <p>
+                I've always been interested in public speaking and debates that eventually led me to
+                create my own podcast.
+                <br />
+                It's called Undiscussed With Nabila, and it's named that way
+                because I use this as an avenue for expression, exploration and literally discussing
+                ANYTHING and EVERYTHING.
+            </p>
+            <h3>Nursing</h3>
+            <p>In 2023, I followed another of my passions (since I was 3) to be in the medical field
+                which shaped my perception of life.
+                <br>
+                Despite how stressful Nursing School was, I still continued with my other passions and interests.
+                <br>
+                I became an ambassador and a frontend and backend intern before graduation.
+            </p>
+            <h3>2026</h3>
+            <p>
+                [MAY]
+                <br />
+                I graduated from Nursing school
+                and officially became a Registered Nurse (RN).
+                <br />
+                [JUNE]
+                <br />
+                I attended an Art x Tech Workshop by CAVIC that helped me understand more about visuals, sound,
+                haptics, immersion and experience.
+                <br />
+                [JULY]
+                <br />
+                Finished a one month advanced K-POP dance class by the Korean Cultural Center Nigeria.
+            </p>
+        </div>
     </section>
 
     <!--========================== WORK =============================-->
     <section id="work">
-        <h1>What I do</h1>
 
-        <div class="job">
-            <div class="left">
-                <h2>Software Development</h2>
-                <p>I'm a fullstack web and app developer with experience as a Frontend and Backend Intern at
-                    FlexiSAF
-                    Edusoft Limited.
-                </p>
-                <br />
-                <p>
-                    FRONTEND: Vue.js, React.js, Tailwind, Bootstrap, SASS/SCSS, CSS & JavaScript
-                    <br />
-                    BACKEND: Django, MySQL, Python
-                    <br />
-                    APP: Ionic, Electron
-                </p>
-                <br />
-                <p>Check out my dev portfolio at <a href="https://beela303-dev.vercel.app/" target="_blank"
-                        rel="noopener noreferrer">https://beela303-dev.vercel.app/</a></p>
-            </div>
-            <div class="right">
-                <img src="../assets/website assets/inventory_dashboard/categories-inventory-dashboard.jpg"
-                    alt="My Picture" class="photo">
-            </div>
+        <div class="dsb">
+            <h1>What I do</h1>
+
+            <button class="button-open-close" @click="workSection = !workSection" type="button">
+                <i :class="['fas', workSection ? 'fa-chevron-up' : 'fa-chevron-down']"></i>
+            </button>
         </div>
 
-        <div class="job">
-            <div class="left">
-                <h2>Art</h2>
-                <p>I'm both a tradional (Pencil) and digital artist.</p>
-                <br />
-                <p>Art is a way of capturing the soul
-                    seeing through mirages,
-                    determining your fate
-                    and interpreting your dreams.</p>
-                <br />
-                <p>Art is a way of life, an exquisite and supernatural way of telling
-                    lies from the truth
-                </p>
-                <br />
-                <p>Check out my art at <a href="https://art-sphere-vue.vercel.app/" target="_blank"
-                        rel="noopener noreferrer">https://art-sphere.vercel.app/</a></p>
-            </div>
-            <div class="right">
-                <img src="../assets/My Art/artwork_copyright/seeking_through_the_abyss.webp" alt="Archer in the forest"
-                    class="photo" />
-            </div>
-        </div>
-
-        <div class="job">
-            <div class="left">
-                <h2>Writing</h2>
-                <p>As a Poet, Writer & Novelist, I see writing as the fundamental instrument in which the human life
-                    depends on.
+        <div v-if="workSection">
+            <div class="job">
+                <div class="left">
+                    <h2>Software Development</h2>
+                    <p>I'm a fullstack web and app developer with experience as a Frontend and Backend Intern at
+                        FlexiSAF Edusoft Limited.
+                    </p>
                     <br />
+                    <p>
+                        FRONTEND: Vue.js, React.js, Tailwind, Bootstrap, SASS/SCSS, CSS & JavaScript
+                        <br />
+                        BACKEND: Django, MySQL, Python
+                        <br />
+                        APP: Ionic, Electron
+                    </p>
                     <br />
-                    Without text, without the form in which to write words in,
-                    how can one comprehend the intricacies of one's thought well?
+                    <p>Check out my dev portfolio at <a href="https://beela303-dev.vercel.app/" target="_blank"
+                            rel="noopener noreferrer">https://beela303-dev.vercel.app/</a></p>
+                </div>
+                <div class="right">
+                    <img src="../assets/website assets/inventory_dashboard/categories-inventory-dashboard.jpg"
+                        alt="My Picture" class="photo">
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="left">
+                    <h2>Art</h2>
+                    <p>I'm both a tradional (Pencil) and digital artist.</p>
                     <br />
-                    And that is why I put my thoughts, my feels and what I do into writing.
+                    <p>Art is a way of capturing the soul
+                        seeing through mirages,
+                        determining your fate
+                        and interpreting your dreams.</p>
                     <br />
-                    I regularly post poems and update my blog regularly + I'm currently working on my first fiction
-                    novel.
-                </p>
-                <br />
-                <p>Check out all my wrtitings at <router-link to="writingandpodcast">here</router-link>,
-                    poems at
-                    <a href="https://hellopoetry.com/beela303" target="_blank"
-                        rel="noopener noreferrer">hellopoetry.com/beela303</a>
-                    and my blog at
-                    <a href="https://beela303.blogspot.com" target="_blank"
-                        rel="noopener noreferrer">beela303.blogspot.com</a>
-                </p>
+                    <p>Art is a way of life, an exquisite and supernatural way of telling
+                        lies from the truth
+                    </p>
+                    <br />
+                    <p>Check out my art at <a href="https://art-sphere-vue.vercel.app/" target="_blank"
+                            rel="noopener noreferrer">https://art-sphere.vercel.app/</a></p>
+                </div>
+                <div class="right">
+                    <img src="../assets/My Art/artwork_copyright/seeking_through_the_abyss.webp"
+                        alt="Archer in the forest" class="photo" />
+                </div>
             </div>
 
-            <div class="right">
-                <img src="../assets/My Art/artwork_copyright/calm_ambience.webp" alt="calm ambience" class="photo">
-            </div>
-        </div>
+            <div class="job">
+                <div class="left">
+                    <h2>Writing</h2>
+                    <p>As a Poet, Writer & Novelist, I see writing as the fundamental instrument in which the human life
+                        depends on.
+                        <br />
+                        <br />
+                        Without text, without the form in which to write words in,
+                        how can one comprehend the intricacies of one's thought well?
+                        <br />
+                        And that is why I put my thoughts, my feels and what I do into writing.
+                        <br />
+                        I regularly post poems and update my blog regularly + I'm currently working on my first fiction
+                        novel.
+                    </p>
+                    <br />
+                    <p>Check out all my wrtitings at <router-link to="writingandpodcast">here</router-link>,
+                        poems at
+                        <a href="https://hellopoetry.com/beela303" target="_blank"
+                            rel="noopener noreferrer">hellopoetry.com/beela303</a>
+                        and my blog at
+                        <a href="https://beela303.blogspot.com" target="_blank"
+                            rel="noopener noreferrer">beela303.blogspot.com</a>
+                    </p>
+                </div>
 
-        <div class="job">
-            <div class="left">
-                <h2>Podcasting</h2>
-                <p>My podcast Undiscussed With Nabila is all about controversial topics,
-                    debunking topics, discussing undiscussed topics and issues and elaborating
-                    on different situations and opinions that affect our society.
-                    <br> It's also your one stop for motivation insight and advice.
-                </p>
-                <br />
-                <p>Check out my podcast <router-link to="writingandpodcast">here</router-link></p>
+                <div class="right">
+                    <img src="../assets/My Art/artwork_copyright/calm_ambience.webp" alt="calm ambience" class="photo">
+                </div>
             </div>
 
-            <div class="right">
-                <img src="../assets/Undiscussed With Nabila/undiscussed_with_nabila.webp"
-                    alt="Undiscussed With Nabila poster">
-            </div>
-        </div>
+            <div class="job">
+                <div class="left">
+                    <h2>Podcasting</h2>
+                    <p>My podcast Undiscussed With Nabila is all about controversial topics,
+                        debunking topics, discussing undiscussed topics and issues and elaborating
+                        on different situations and opinions that affect our society.
+                        <br> It's also your one stop for motivation insight and advice.
+                    </p>
+                    <br />
+                    <p>Check out my podcast <router-link to="writingandpodcast">here</router-link></p>
+                </div>
 
-        <div class="job">
-            <div class="left">
-                <h2>Nursing</h2>
-                <p>I'm a Registered Nurse and recently graduated from the College of Nursing Sciences, Gwagwalada,
-                    Abuja, Nigeria.</p>
+                <div class="right">
+                    <img src="../assets/Undiscussed With Nabila/undiscussed_with_nabila.webp"
+                        alt="Undiscussed With Nabila poster">
+                </div>
             </div>
-            <div class="right">
-                <img src="../assets/My pictures/67.webp" alt="My Picture" class="photo">
+
+            <div class="job">
+                <div class="left">
+                    <h2>Nursing</h2>
+                    <p>I'm a Registered Nurse and recently graduated from the College of Nursing Sciences, Gwagwalada,
+                        Abuja, Nigeria.</p>
+                </div>
+                <div class="right">
+                    <img src="../assets/My pictures/67.webp" alt="My Picture" class="photo">
+                </div>
             </div>
         </div>
     </section>
 
     <!--========================== LANGUAGES =============================-->
     <section id="languages">
-        <h2>Languages</h2>
 
-        <div class="language-container">
-            <div v-for="lang in languages" :key="lang.name" class="slider-group"
-                :style="{ '--progress': lang.percentage + '%' }">
-                <div class="label-row">
-                    <span class="lang-name">{{ lang.name }}</span>
-                    <span class="lang-pct">{{ lang.percentage }}%</span>
+        <div class="dsb">
+            <h2>Languages</h2>
+
+            <button class="button-open-close" @click="languagesSection = !languagesSection" type="button">
+                <i :class="['fas', languagesSection ? 'fa-chevron-up' : 'fa-chevron-down']"></i>
+            </button>
+        </div>
+
+        <div v-if="languagesSection">
+            <div class="language-container">
+                <div v-for="lang in languages" :key="lang.name" class="slider-group"
+                    :style="{ '--progress': lang.percentage + '%' }">
+                    <div class="label-row">
+                        <span class="lang-name">{{ lang.name }}</span>
+                        <span class="lang-pct">{{ lang.percentage }}%</span>
+                    </div>
+
+                    <input type="range" min="0" max="100" :value="lang.percentage" disabled class="gradient-slider"
+                        :class="getColorClass(lang.percentage)" />
                 </div>
-
-                <input type="range" min="0" max="100" :value="lang.percentage" disabled class="gradient-slider"
-                    :class="getColorClass(lang.percentage)" />
             </div>
         </div>
     </section>
 
     <!--========================== HOBBIES =============================-->
     <section id="hobbies">
-        <div class="hobbies-container">
-            <h2 class="title">My Hobbies</h2>
+
+        <div class="dsb">
+            <h2>Hobbies</h2>
+
+            <button class="button-open-close" @click="hobbiesSection = !hobbiesSection" type="button">
+                <i :class="['fas', hobbiesSection ? 'fa-chevron-up' : 'fa-chevron-down']"></i>
+            </button>
+        </div>
+
+        <div class="hobbies-container" v-if="hobbiesSection">
             <div class="cards-grid">
                 <div v-for="hobby in hobbies" :key="hobby.id" class="hobby-card">
                     <div class="icon-wrapper">
@@ -391,6 +440,16 @@ export default {
 
 <style lang="scss">
 @use "sass:map";
+
+.dsb {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        color: var(--text-color);
+        background: none;
+    }
+}
 
 /*========================== HOME PAGE =============================*/
 .max-width {
@@ -416,7 +475,8 @@ export default {
     &::before {
         content: "";
 
-        background: url("../assets/My\ Art/artwork_copyright/seeking_through_the_abyss.webp") no-repeat center;
+        background: url("../assets/My\ Art/artwork_copyright/calm_ambience.webp") no-repeat center;
+        //background: url("../assets/My\ Art/artwork_copyright/seeking_through_the_abyss.webp") no-repeat center;
         background-size: cover;
         position: absolute;
         background-attachment: fixed;
@@ -451,37 +511,48 @@ export default {
             margin: 5px 0;
 
             span {
-                color: pink; //var(--pastel-color)
+                //color: var(--light-purple);
+                //#160b17 #FAD0C4;
+                //color: pink; //var(--pastel-color)
+
+                padding-right: 20px;
+
+                border-bottom: 3px dashed var(--pastel-color-2);
+                //border-top: 3px dashed var(--pastel-color-2);
+                //border-left: 3px dashed var(--pastel-color-2);
+                border-radius: 10px;
+
                 font-weight: 500;
             }
         }
 
         a {
-            color: var(--text-color);
-            background: var(--main-color); //#551050
-
-            text-decoration: none;
-
-            padding: 12px 36px;
-
             margin-top: 20px;
 
-            border: 2px solid var(--main-color);
-            border-radius: 6px;
-
+            text-decoration: none;
             display: inline-block;
 
-            transition: var(--transition);
+            cursor: pointer !important;
 
             button {
                 color: var(--text-color);
                 background: var(--main-color); //#551050
 
-                font-size: 25px;
+                //padding: 12px 36px;
+                padding: 20px;
+                margin-top: 20px;
+
+                border: 3px dashed var(--pastel-color-2);
+                border-radius: 30px;
+
+                font-size: 20px;
+
+                transition: var(--transition);
+                cursor: pointer !important;
 
                 &:hover {
-                    //color: var(--main-color);
-                    //background: none;
+                    color: var(--text-color);
+                    background: none;
 
                     transition: var(--transition);
                 }
@@ -541,8 +612,8 @@ export default {
         li {
             color: var(--text-color);
 
-            padding: 15px;
-            font-size: 1.2rem;
+            padding: 20px;
+            font-size: 1.5rem;
 
             flex-shrink: 0;
 
@@ -582,21 +653,22 @@ export default {
     background-color: var(--dark-color);
 
     width: 50%;
-
     padding: 30px;
-    border-radius: 30px;
-    border: 1px solid var(--pastel-color-2);
 
     margin: 0 25%;
+
+    border-radius: 30px;
+    border: 3px dashed var(--pastel-color-2);
 
     text-align: center;
 
     h2 {
         color: var(--pastel-color-2);
+        font-size: 1.75rem;
     }
 
     p {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -608,9 +680,13 @@ export default {
     padding: 50px;
 
     border-radius: 30px;
-    border: 1px solid var(--pastel-color-2);
+    border: 3px dashed var(--pastel-color-2);
 
     justify-self: center;
+
+    .dsb {
+        margin-bottom: 2.5%;
+    }
 
     h3 {
         margin-top: 2%;
@@ -631,15 +707,23 @@ export default {
 
 #work {
     width: 70%;
+
     margin-top: 2.5%;
+    padding: 50px;
+
+    border-radius: 30px;
+    border: 3px dashed var(--pastel-color-2);
 
     justify-self: center;
 
     .job {
+        color: var(--text-color);
+        background: var(--dark-color);
+
         margin: 20px;
         padding: 20px;
 
-        border: 1.5px dashed var(--pastel-color-2);
+        //border: 1.5px dashed var(--pastel-color-2);
         border-radius: 15px;
 
         display: flex;
@@ -691,7 +775,15 @@ $gradients: (
 );
 
 #languages {
-    margin: 5% 0;
+    width: 60%;
+
+    margin: 2.5% 0;
+    padding: 50px;
+
+    border-radius: 30px;
+    border: 3px dashed var(--pastel-color-2);
+
+    justify-self: center;
 }
 
 .language-container {
@@ -699,9 +791,10 @@ $gradients: (
 
     width: 50vw;
     padding: 20px;
+    margin-top: 2.5%;
 
     border-radius: 12px;
-    border: 1px dashed var(--pastel-color-2);
+    //border: 1px dashed var(--pastel-color-2);
 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     justify-self: center;
@@ -786,19 +879,25 @@ $card-bg: #ffffff;
 //$text-color: #333333;
 $text-color: #fafafa;
 
-.hobbies-container {
-    background-color: var(--exquisite-purple);
+#hobbies {
+    //background-color: var(--exquisite-purple);
 
-    width: 75%;
+    width: 70%;
     //max-width: 1200px;
+
     margin: 0 auto;
-    margin-bottom: 5%;
-    padding: 40px 20px;
+    margin-bottom: 3%;
+    padding: 50px;
+    //padding: 40px 20px;
 
     border-radius: 30px;
-    border: 1px dashed var(--pastel-color-2);
+    border: 3px dashed var(--pastel-color-2);
 
     justify-self: center;
+}
+
+.hobbies-container {
+    margin-top: 2.5%;
 
     .title {
         color: var(--text-color);
@@ -814,13 +913,14 @@ $text-color: #fafafa;
     }
 
     .hobby-card {
+        background-color: var(--exquisite-purple);
         //background-color: #a788a7;
         //background-color: #674967;
         //background-color: #c3b5c3;
 
         padding: 30px 20px;
         border-radius: 12px;
-        border: 1px dashed var(--pastel-color-2);
+        //border: 1px dashed var(--pastel-color-2);
 
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
@@ -887,7 +987,6 @@ $text-color: #fafafa;
 @media screen and (max-width: 768px) {
     #about-me {
         width: 70%;
-
         margin: 0 15%;
     }
 

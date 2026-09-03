@@ -2,7 +2,7 @@
     <h1 id="socials-links-title">SOCIALS AND LINKS</h1>
 
     <div id="socials-links">
-                <a href="https://beela303-dev.vercel.app" target="_blank" rel="noopener noreferrer">
+        <a href="https://beela303-dev.vercel.app" target="_blank" rel="noopener noreferrer">
             <div>
                 <!--<i class="fa-brands fa-linkedin-in"></i>-->
                 <p>Dev<br />Portfolio</p>
@@ -56,6 +56,13 @@
             <div>
                 <i class="fa-brands fa-hashnode"></i>
                 <!--<p>Hashnode (Dev Blog)</p>-->
+            </div>
+        </a>
+
+        <a href="https://xhslink.cn/m/Alblyiawf8q" target="_blank" rel="noopener noreferrer">
+            <div>
+                <!--<i class="fa-brands fa-rednote"></i>-->
+                <p>Rednote<br />小红书</p>
             </div>
         </a>
 
@@ -148,7 +155,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     //grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     place-items: center;
-    
+
     div {
         background-color: var(--dark-color);
 
@@ -156,7 +163,8 @@
         height: 15vh;
 
         border-radius: 20px;
-        border: 1px solid var(--pastel-color-2);
+        border: 3px dashed var(--pastel-color-2);
+        //border: 1px solid var(--pastel-color-2);
 
         text-align: center;
 

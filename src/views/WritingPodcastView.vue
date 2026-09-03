@@ -5,23 +5,23 @@ import Writing from './WritingView.vue'
 import Podcast from './PodcastView.vue'
 
 export default {
-  setup() {
-    const tabs = ['Writing', 'Podcast']
-    const currentTab = ref('Writing')
+    setup() {
+        const tabs = ['Writing', 'Podcast']
+        const currentTab = ref('Writing')
 
-    // Find index to multiply position for the purple sliding indicator
-    const currentTabIndex = computed(() => tabs.indexOf(currentTab.value))
+        // Find index to multiply position for the purple sliding indicator
+        const currentTabIndex = computed(() => tabs.indexOf(currentTab.value))
 
-    const tabMap = { Writing, Podcast }
-    const currentTabComponent = computed(() => tabMap[currentTab.value])
+        const tabMap = { Writing, Podcast }
+        const currentTabComponent = computed(() => tabMap[currentTab.value])
 
-    return {
-        tabs,
-        currentTab,
-        currentTabIndex,
-        currentTabComponent
+        return {
+            tabs,
+            currentTab,
+            currentTabIndex,
+            currentTabComponent
+        }
     }
-  }
 }
 </script>
 
@@ -30,21 +30,14 @@ export default {
         <!-- TAB HEADERS -->
         <div class="tabs-header">
             <!-- Purple sliding pill background -->
-            <div 
-                class="slider-indicator" 
-                :style="{ transform: `translateX(${currentTabIndex * 100}%)` }"
-            ></div>
-            
-            <button
-                v-for="tab in tabs"
-                :key="tab"
-                :class="['tab-btn', { active: currentTab === tab }]"
-                @click="currentTab = tab"
-            >
+            <div class="slider-indicator" :style="{ transform: `translateX(${currentTabIndex * 100}%)` }"></div>
+
+            <button v-for="tab in tabs" :key="tab" :class="['tab-btn', { active: currentTab === tab }]"
+                @click="currentTab = tab">
                 {{ tab }}
             </button>
         </div>
-        
+
         <!-- PAGE CONTENT AREA -->
         <div class="tab-body">
             <Transition name="slide-fade" mode="out-in">
@@ -88,7 +81,7 @@ export default {
 
             width: calc(50% - 6px); // Half container width minus track padding
             border-radius: 99px; // Fully circular pill ends
-            
+
             position: absolute;
 
             transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,6 +93,8 @@ export default {
             background-color: transparent;
 
             padding: 12px 0;
+
+            font-size: 1.3rem;
             font-weight: 600;
 
             border: none;
@@ -130,12 +125,12 @@ export default {
         .slide-fade-leave-active {
             transition: all 0.3s ease-out;
         }
-        
+
         .slide-fade-enter-from {
             transform: translateX(20px);
             opacity: 0;
         }
-        
+
         .slide-fade-leave-to {
             transform: translateX(-20px);
             opacity: 0;

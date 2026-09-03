@@ -7,7 +7,7 @@
                     title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href="https://www.twitter.com/beela303" target="_blank" rel="noopener noreferrer" title="Twitter"><i
                         class="fa-brands fa-twitter"></i></a></li>
-            <li><router-link to="/podcast" title="Podcast"><i class="fas fa-podcast"></i></router-link></li>
+            <li><router-link to="/writingandpodcast" title="Podcast"><i class="fas fa-podcast"></i></router-link></li>
             <li><a href="https://www.youtube.com/@beela303" target="_blank" rel="noopener noreferrer" title="YouTube"><i
                         class="fa-brands fa-youtube"></i></a></li>
             <li><a href="https://www.tiktok/beela303" target="_blank" rel="noopener noreferrer" title="TikTok"><i
@@ -42,7 +42,7 @@ footer {
         justify-content: space-evenly;
 
         li {
-            color: var(--white);
+            color: var(--text-color);
             font-size: 2rem;
 
             transition: var(--transition);
@@ -61,12 +61,10 @@ footer {
                 }
             }
         }
-
-
     }
 
     p {
-        color: #fafafa;
+        color: var(--text-color);
 
         padding-top: 20px;
 
