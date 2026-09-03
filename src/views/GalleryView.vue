@@ -1681,6 +1681,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeyDown));
     display: flex;
     justify-content: space-between;
     justify-self: center !important;
+    place-items: center;
 
     button {
         color: var(--text-color);

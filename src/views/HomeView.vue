@@ -734,7 +734,7 @@ export default {
         margin: 20px;
         padding: 50px;
 
-        //border: 1.5px dashed var(--pastel-color-2);
+        border: 1px solid var(--pastel-color-2);
         border-radius: 15px;
 
         display: flex;
@@ -1130,7 +1130,9 @@ $text-color: #fafafa;
     }
 
     .language-container {
-        width: 60vw !important;
+        width: 80vw !important;
+        justify-content: center;
+        place-items: center;
         justify-self: center !important;
     }
 
