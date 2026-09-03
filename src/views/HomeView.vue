@@ -185,13 +185,15 @@ export default {
                 Scrunchies to classmates.
             </p>
             <h3>Jewelry Making & Design</h3>
-            <p>At 7, I loved how Jewelry were being made and how it looked, so my mum tok me for classes
+            <p>At 7, I loved how Jewelry were being made and how it looked, so my mum took me for classes
                 during the holiday, after which I started making pieces for myself and my mum.
             </p>
             <h3>Fashion Design</h3>
             <p>I started sewing and designing clothes mainly because of the clothes Sofia from
                 Sofia the First wore, especially the one she wore for the flying horse race so I asked
-                my mum to get me a purple material and some sewing materials. From there, I traced my
+                my mum to get me a purple material and some sewing materials.
+                <br />
+                From there, I traced my
                 clothes onto the fabric, cut it and hand sewed it.
                 <br>
                 I went further to learn properly by watching YouTube videos.
@@ -226,7 +228,7 @@ export default {
                 but unfortunately I didn't finish it at the time. (I'm currently working on this book)
                 <br>
                 Although from a young age, I've been into poems and song writing, I never really wrote them
-                down or published them so at 19, in 2025, I made my blog
+                down or published them so in 2025, I made my blog
                 <a href="http://beela303.blogspot.com" target="_blank" rel="noopener noreferrer">Queen Beela</a>
                 where I started posting my works, thoughts generally and what I'm up to.
             </p>
@@ -703,7 +705,7 @@ export default {
     }
 
     h3 {
-        margin-top: 2%;
+        margin-top: 2vh;
 
         border-bottom: 1px solid var(--pastel-color-2);
         text-align: left;
