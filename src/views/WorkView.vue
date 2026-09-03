@@ -75,22 +75,7 @@
     }*/
 }
 
-@media screen and (max-width: 600px) {
-    #work-body {
-        grid-template-columns: 1fr 1fr;
-
-        .work {
-            width: 25vw;
-            height: 25vh;
-
-            p {
-                font-size: 1.2rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 500px) {
     #work-body {
         grid-template-columns: 1fr;
 

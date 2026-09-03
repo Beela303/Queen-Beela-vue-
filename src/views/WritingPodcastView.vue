@@ -58,7 +58,8 @@ export default {
 
     // SLIDER CONTAINER
     .tabs-header {
-        background-color: #f3f4f6;
+        color: var(--text-color) !important;
+        background-color: var(--dark-color);
 
         width: 320px;
         padding: 6px;
@@ -89,7 +90,7 @@ export default {
         }
 
         .tab-btn {
-            color: #4b5563;
+            color: var(--text-color);
             background-color: transparent;
 
             padding: 12px 0;

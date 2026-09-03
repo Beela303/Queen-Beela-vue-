@@ -1003,8 +1003,10 @@ $text-color: #fafafa;
     }
 
     #work {
+        padding: 20px !important;
+
         .job {
-            padding: 5px;
+            padding: 15px;
             display: block;
 
             .left,
@@ -1019,7 +1021,6 @@ $text-color: #fafafa;
     }
 
     #my-story,
-    #work,
     #languages,
     #hobbies {
         width: 80% !important;
@@ -1124,7 +1125,7 @@ $text-color: #fafafa;
     }
 
     .language-container {
-        width: 70vw;
+        width: 80vw;
         justify-self: center !important;
     }
 
