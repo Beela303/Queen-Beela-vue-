@@ -107,13 +107,13 @@ nav {
             cursor: pointer;
 
             a {
-                color: var(--white);
+                color: var(--text-color);
 
                 padding: 14px 16px;
                 transition: .5s;
 
                 &:hover {
-                    color: var(--main-color);
+                    color: var(--text-color);
                     //color: var(--hover);
                 }
             }

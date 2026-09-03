@@ -36,7 +36,7 @@
 
     .work {
         color: var(--text-color);
-        background: var(--dark-color);
+        background: var(--main-color);
         width: 30vw;
         height: 30vh; //200px
 
@@ -58,6 +58,7 @@
         }
 
         p {
+            text-align: center !important;
             font-size: 2rem;
         }
     }

@@ -55,14 +55,15 @@ export default {
     // SLIDER CONTAINER
     .tabs-header {
         //background-color: #f3f4f6;
-        background-color: #f3f4f6;
+        color: var(--text-color) !important;
+        background-color: var(--dark-color);
 
         width: 500px;
         border-radius: 30;
         border: 1px solid var(--pastel-color-2);
 
         .tab-btn {
-            color: #4b5563;
+            color: var(--text-color);
             //color: #4b5563;
             background-color: transparent;
         }

@@ -580,7 +580,7 @@ export default {
     justify-self: center;
     opacity: 0;
 
-    width: 100%;
+    width: 95%;
     max-width: max-content;
 
     transform: translateZ(0);
@@ -677,6 +677,7 @@ export default {
 #work,
 #languages,
 #hobbies {
+    margin-bottom: 2.5vh;
     justify-self: center !important;
 }
 
@@ -1125,7 +1126,7 @@ $text-color: #fafafa;
     }
 
     .language-container {
-        width: 80vw;
+        width: 70vw;
         justify-self: center !important;
     }
 

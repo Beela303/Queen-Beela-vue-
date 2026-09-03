@@ -78,12 +78,12 @@ body {
     "ELXP" 0;*/
 
   outline: none;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .typed {
@@ -99,7 +99,6 @@ a {
     color: var(--hover);
   }
 }
-
 
 li {
   list-style: none;
