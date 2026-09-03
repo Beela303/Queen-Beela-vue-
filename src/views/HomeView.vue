@@ -1004,7 +1004,7 @@ $text-color: #fafafa;
 
     #work {
         .job {
-            padding: 15px;
+            padding: 5px;
             display: block;
 
             .left,
@@ -1125,6 +1125,7 @@ $text-color: #fafafa;
 
     .language-container {
         width: 70vw;
+        justify-self-center !important;
     }
 
     .hobbies-container {

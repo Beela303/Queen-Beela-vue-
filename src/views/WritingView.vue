@@ -101,8 +101,8 @@ a .writing-div {
 
 @media screen and (max-width: 600px) {
     .writing-div {
-        width: 30vw;
-        height: 30vh;
+        width: 25vw;
+        height: 25vh;
 
         p {
             font-size: 1.2rem;

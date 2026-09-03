@@ -72,8 +72,7 @@ export default {
 
         // PURPLE SLIDING BACKGROUND PILL
         .slider-indicator {
-            color: var(--text-color) !important;
-            background-color: var(--dark-color);
+            background-color: var(--main-color);
             //background-color: #8b5cf6;
 
             top: 6px;
@@ -90,7 +89,7 @@ export default {
         }
 
         .tab-btn {
-            color: var(--text-color);
+            color: #4b5563;
             background-color: transparent;
 
             padding: 12px 0;
