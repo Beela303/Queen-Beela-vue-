@@ -729,7 +729,8 @@ export default {
 
     .job {
         color: var(--text-color);
-        background: var(--dark-color);
+        background: var(--exquisite-purple);
+        //background: var(--dark-color);
 
         margin: 20px;
         padding: 50px;
@@ -1130,7 +1131,7 @@ $text-color: #fafafa;
     }
 
     .language-container {
-        width: 80vw !important;
+        width: 70vw !important;
         justify-content: center;
         place-items: center;
         justify-self: center !important;

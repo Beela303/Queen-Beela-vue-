@@ -47,7 +47,7 @@ a {
 
 a .writing-div {
     color: var(--text-color);
-    background: var(--dark-color-2);
+    background: var(--exquisite-purple);
     text-decoration: none !important;
 }
 

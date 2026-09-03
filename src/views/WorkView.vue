@@ -36,7 +36,9 @@
 
     .work {
         color: var(--text-color);
-        background: var(--dark-color);
+        background: var(--exquisite-purple);
+        //background: var(--dark-color);
+
         width: 30vw;
         height: 30vh; //200px
 
