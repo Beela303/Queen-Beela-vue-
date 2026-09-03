@@ -475,8 +475,8 @@ export default {
     &::before {
         content: "";
 
-        background: url("../assets/My\ Art/artwork_copyright/calm_ambience.webp") no-repeat center;
-        //background: url("../assets/My\ Art/artwork_copyright/seeking_through_the_abyss.webp") no-repeat center;
+        //background: url("../assets/My\ Art/artwork_copyright/calm_ambience.webp") no-repeat center;
+        background: url("../assets/My\ Art/artwork_copyright/seeking_through_the_abyss.webp") no-repeat center;
         background-size: cover;
         position: absolute;
         background-attachment: fixed;
@@ -1002,6 +1002,10 @@ $text-color: #fafafa;
                 margin-bottom: 1.5rem;
             }
         }
+    }
+
+    #languages {
+        width: 80%;
     }
 }
 
