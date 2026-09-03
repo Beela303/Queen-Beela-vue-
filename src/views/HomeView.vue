@@ -513,7 +513,8 @@ export default {
             margin: 5px 0;
 
             span {
-                color: var(--pastel-color-2);
+                color: var(--main-color);
+                //color: var(--pastel-color-2);
                 //#160b17 #FAD0C4;
                 //color: pink; //var(--pastel-color)
 
@@ -537,15 +538,15 @@ export default {
             cursor: pointer !important;
 
             button {
-                //color: var(--text-color);
-                color: #222;
-                background: var(--pastel-color-2); //#551050
+                color: var(--text-color);
+                //color: #222;
+                background: var(--main-color); //#551050
 
                 //padding: 12px 36px;
                 padding: 20px;
                 margin-top: 20px;
 
-                border: 1px solid var(--pastel-color-2);
+                //border: 1px solid var(--pastel-color-2);
                 border-radius: 20px;
 
                 font-size: 20px;
@@ -800,7 +801,8 @@ $gradients: (
 }
 
 .language-container {
-    background: var(--dark-color);
+    background: var(--exquisite-purple);
+    //background: var(--dark-color);
 
     width: 50vw;
     padding: 20px;
