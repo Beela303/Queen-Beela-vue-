@@ -815,7 +815,7 @@ $gradients: (
     //border: 1px solid var(--pastel-color-2);
 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    justify-self: center;
+    //justify-self: center;
 
     .slider-group {
         margin-bottom: 20px;
