@@ -1007,7 +1007,9 @@ $text-color: #fafafa;
         padding: 20px !important;
 
         .job {
+            margin: 5px;
             padding: 15px;
+
             display: block;
 
             .left,
@@ -1101,7 +1103,7 @@ $text-color: #fafafa;
     #hobbies {
         width: 90% !important;
         margin: 2.5% 5%;
-        padding: 15px !important;
+        padding: 25px !important;
     }
 
     #about-me {
@@ -1126,7 +1128,7 @@ $text-color: #fafafa;
     }
 
     .language-container {
-        width: 75vw;
+        width: 80% !important;
         justify-self: center !important;
     }
 
