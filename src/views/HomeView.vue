@@ -537,7 +537,8 @@ export default {
             cursor: pointer !important;
 
             button {
-                color: var(--text-color);
+                //color: var(--text-color);
+                color: #222;
                 background: var(--pastel-color-2); //#551050
 
                 //padding: 12px 36px;
