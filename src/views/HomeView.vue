@@ -536,13 +536,13 @@ export default {
 
             button {
                 color: var(--text-color);
-                background: var(--pastel-color-2); //#551050
+                background: var(--main-color); //#551050
 
                 //padding: 12px 36px;
                 padding: 20px;
                 margin-top: 20px;
 
-                border: 1px solid var(--pastel-color-2);
+                border: 1px solid var(--main-color);
                 border-radius: 30px;
 
                 font-size: 20px;
@@ -559,7 +559,7 @@ export default {
             }
 
             &:hover {
-                color: var(--pastel-color-2);
+                color: var(--main-color);
                 background: none;
 
                 //transition: all .3s ease;
@@ -1004,8 +1004,11 @@ $text-color: #fafafa;
         }
     }
 
-    #languages {
-        width: 80%;
+    #my-story,
+    #work,
+    #languages,
+    #hobbies {
+        width: 85% !important;
     }
 }
 
