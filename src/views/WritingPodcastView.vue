@@ -72,7 +72,8 @@ export default {
 
         // PURPLE SLIDING BACKGROUND PILL
         .slider-indicator {
-            background-color: var(--main-color);
+            color: var(--text-color) !important;
+            background-color: var(--dark-color);
             //background-color: #8b5cf6;
 
             top: 6px;

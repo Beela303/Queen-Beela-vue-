@@ -43,11 +43,11 @@
 
 a {
     border: 1px solid var(--border-main) !important;
-
 }
 
 a .writing-div {
     color: var(--text-color);
+    background: var(--dark-color);
     text-decoration: none !important;
 }
 
@@ -76,6 +76,7 @@ a .writing-div {
     }
 }
 
+/*
 #writing-div-1 {
     color: var(--dark-color);
     background-image: url('../assets/My Art/artwork_copyright/phone_on_a_desk.webp');
@@ -96,8 +97,9 @@ a .writing-div {
 #writing-div-5 {
     background-image: url('../assets/My Art/artwork_copyright/archer_in_the_forest.webp');
 }
+*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 350px) {
     #writing {
         grid-template-columns: 1fr;
     }

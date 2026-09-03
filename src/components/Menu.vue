@@ -85,8 +85,8 @@ nav {
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter: blur(10px);
 
-    position: fixed;
-    z-index: 9999;
+    position: fixed !important;
+    z-index: 1000 !important;
 
     h1 {
         cursor: pointer;

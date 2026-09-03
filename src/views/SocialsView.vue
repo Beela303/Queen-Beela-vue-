@@ -59,12 +59,12 @@
             </div>
         </a>
 
-        <a href="https://xhslink.cn/m/Alblyiawf8q" target="_blank" rel="noopener noreferrer">
+        <!--<a href="" target="_blank" rel="noopener noreferrer">
             <div>
-                <!--<i class="fa-brands fa-rednote"></i>-->
+                <!--<i class="fa-brands fa-rednote"></i>
                 <p>Rednote<br />小红书</p>
             </div>
-        </a>
+        </a>-->
 
         <a href="https://deviantart.com/beela303" target="_blank" rel="noopener noreferrer">
             <div>

@@ -5,23 +5,23 @@ import Education from './EducationView.vue'
 import Experience from './ExperienceView.vue'
 
 export default {
-  setup() {
-    const tabs = ['Education', 'Experience']
-    const currentTab = ref('Education')
+    setup() {
+        const tabs = ['Education', 'Experience']
+        const currentTab = ref('Education')
 
-    // Find index to multiply position for the purple sliding indicator
-    const currentTabIndex = computed(() => tabs.indexOf(currentTab.value))
+        // Find index to multiply position for the purple sliding indicator
+        const currentTabIndex = computed(() => tabs.indexOf(currentTab.value))
 
-    const tabMap = { Education, Experience }
-    const currentTabComponent = computed(() => tabMap[currentTab.value])
+        const tabMap = { Education, Experience }
+        const currentTabComponent = computed(() => tabMap[currentTab.value])
 
-    return {
-        tabs,
-        currentTab,
-        currentTabIndex,
-        currentTabComponent
+        return {
+            tabs,
+            currentTab,
+            currentTabIndex,
+            currentTabComponent
+        }
     }
-  }
 }
 </script>
 
@@ -30,21 +30,14 @@ export default {
         <!-- TAB HEADERS -->
         <div class="tabs-header">
             <!-- Purple sliding pill background -->
-            <div 
-                class="slider-indicator" 
-                :style="{ transform: `translateX(${currentTabIndex * 100}%)` }"
-            ></div>
-            
-            <button
-                v-for="tab in tabs"
-                :key="tab"
-                :class="['tab-btn', { active: currentTab === tab }]"
-                @click="currentTab = tab"
-            >
+            <div class="slider-indicator" :style="{ transform: `translateX(${currentTabIndex * 100}%)` }"></div>
+
+            <button v-for="tab in tabs" :key="tab" :class="['tab-btn', { active: currentTab === tab }]"
+                @click="currentTab = tab">
                 {{ tab }}
             </button>
         </div>
-        
+
         <!-- PAGE CONTENT AREA -->
         <div class="tab-body">
             <Transition name="slide-fade" mode="out-in">
@@ -62,8 +55,7 @@ export default {
     // SLIDER CONTAINER
     .tabs-header {
         //background-color: #f3f4f6;
-        color: var(--text-color) !important;
-        background-color: var(--dark-color);
+        background-color: var(--main-color);
 
         width: 500px;
         border-radius: 30;

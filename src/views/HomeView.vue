@@ -545,7 +545,7 @@ export default {
                 margin-top: 20px;
 
                 border: 1px solid var(--main-color);
-                border-radius: 30px;
+                border-radius: 20px;
 
                 font-size: 20px;
 
@@ -673,12 +673,19 @@ export default {
     }
 }
 
+#my-story,
+#work,
+#languages,
+#hobbies {
+    justify-self: center !important;
+}
+
 #my-story {
     background-color: var(--exquisite-purple);
     //background-color: #1A0A1D;
 
     width: 60%;
-    padding: 20px;
+    padding: 50px;
 
     border-radius: 30px;
     border: 1px solid var(--pastel-color-2);
@@ -710,7 +717,7 @@ export default {
     width: 70%;
 
     margin-top: 2.5%;
-    padding: 20px;
+    padding: 50px;
 
     border-radius: 30px;
     border: 1px solid var(--pastel-color-2);
@@ -722,7 +729,7 @@ export default {
         background: var(--dark-color);
 
         margin: 20px;
-        padding: 20px;
+        padding: 50px;
 
         //border: 1.5px dashed var(--pastel-color-2);
         border-radius: 15px;
@@ -779,7 +786,7 @@ $gradients: (
     width: 60%;
 
     margin: 2.5% 0;
-    padding: 20px;
+    padding: 50px;
 
     border-radius: 30px;
     border: 1px solid var(--pastel-color-2);
@@ -888,7 +895,7 @@ $text-color: #fafafa;
 
     margin: 0 auto;
     margin-bottom: 3%;
-    padding: 20px;
+    padding: 50px;
     //padding: 40px 20px;
 
     border-radius: 30px;
@@ -986,6 +993,10 @@ $text-color: #fafafa;
 }
 
 @media screen and (max-width: 768px) {
+    #home-page {
+        height: 90vh;
+    }
+
     #about-me {
         width: 70%;
         margin: 0 15%;
@@ -1010,7 +1021,8 @@ $text-color: #fafafa;
     #work,
     #languages,
     #hobbies {
-        width: 85% !important;
+        width: 80% !important;
+        padding: 25px !important;
     }
 }
 
@@ -1080,7 +1092,16 @@ $text-color: #fafafa;
         }
     }
 
-    #about-me,
+    #my-story,
+    #work,
+    #languages,
+    #hobbies {
+        width: 90% !important;
+        margin: 2.5% 5%;
+        padding: 25px !important;
+    }
+
+    /*#about-me,
     #my-story {
         width: 90%;
         margin: 2.5% 5%;
@@ -1088,13 +1109,12 @@ $text-color: #fafafa;
 
     #my-story {
         padding: 30px;
-    }
+    }*/
 
     #work {
-        width: 95%;
+        //width: 95%;
 
         .job {
-
             .right {
                 img {
                     height: 25vh;

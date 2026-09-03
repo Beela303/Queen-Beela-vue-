@@ -1672,21 +1672,21 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeyDown));
     }
 }
 
-    #categories-div-arrow {
-        width: 70%;
-        margin-bottom: 2%;
+#categories-div-arrow {
+    width: 70%;
+    margin-bottom: 2%;
 
-        font-size: 30px;
+    font-size: 30px;
 
-        display: flex;
-        justify-content: space-between;
-        justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center !important;
 
-        button {
-            color: var(--text-color);
-            background: none;
-        }
+    button {
+        color: var(--text-color);
+        background: none;
     }
+}
 
 .gallery-container {
     max-width: 1200px;

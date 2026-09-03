@@ -35,6 +35,8 @@
     //pointer-events: none;
 
     .work {
+        color: var(--text-color);
+        background: var(--dark-color);
         width: 30vw;
         height: 30vh; //200px
 
@@ -60,7 +62,7 @@
         }
     }
 
-    #work-div-1 {
+    /*#work-div-1 {
         background-image: url('../assets/website assets/inventory_dashboard/categories-inventory-dashboard.jpg');
     }
 
@@ -70,7 +72,7 @@
 
     #work-div-3 {
         background-image: url('../assets/My poems/poem_1.webp');
-    }
+    }*/
 }
 
 @media screen and (max-width: 600px) {
@@ -84,7 +86,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 350px) {
     #work-body {
         grid-template-columns: 1fr;
 
