@@ -1139,7 +1139,7 @@ $text-color: #fafafa;
     .language-container {
         width: 75vw !important;
         //justify-content: center;
-        place-items: center;
+        //place-items: center;
         justify-self: center !important;
     }
 
